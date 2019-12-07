@@ -20,7 +20,7 @@
             <h1>Jonathan Foots</h1>
             <h2>Portfolio</h2>
             <nav>
-                <script id='nav'>
+                <script id='nav' type="text/javascript">
                     function menu() { 
                         var classes = document.querySelector('label[for=menu]').classList;
                         classes.toggle('fa-times'); classes.toggle('fa-bars');
@@ -35,7 +35,7 @@
                         });
                     }
                     function createNavigation() {
-                        readData("/TXT/file.txt");
+                        readData("/TXT/navigation.txt");
                     }
                     window.onload = createNavigation;
                 </script>
