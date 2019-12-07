@@ -24,13 +24,19 @@
         </header>
         <main>
             <section>
-                <h1>Head</h1>
+                <h2>Head</h2>
                 <p>Test
                     text
                 </p>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <details id='footer'>
+                <script></script>
+                <summary onload="this.innerHTML += document.lastModified;">Last Updated: </summary>
+                <p> - by Refsnes Data. All Rights Reserved.</p>
+            </details>
+        </footer>
     </body>
     <!--Data-->
     <iframe src="TXT/navigation.txt" onload='createNavigation(this.contentDocument.body.firstChild.innerHTML)'></iframe>
