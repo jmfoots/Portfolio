@@ -9,7 +9,6 @@ function pages(id) {
 }
 
 document.addEventListener('keydown', function(e) {
-    if (document.querySelector('nav') !== document.activeElement) return;
     var children = document.querySelectorAll('nav > label');
     var current = document.querySelectorAll('nav > label[class*=far]')
     var index = Array.prototype.indexOf.call(children, current);
