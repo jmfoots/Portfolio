@@ -15,16 +15,8 @@
         <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="JS/CreateNavigation.js"></script>
         <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
-        <!--Data-->
-        <iframe id='data-navigation' src="TXT/navigation.txt"></iframe>
     </head>
     <body>
-        <script>
-            window.onload = function(){
-                createNavigation(document.querySelector('iframe[id=data-navigation]').contentDocument.body.firstChild.innerHTML);
-
-            }
-        </script>
         <header>
             <h1>Jonathan Foots</h1>
             <h2>Portfolio</h2>
@@ -34,7 +26,8 @@
                 </ul>
             </nav>
         </header>
-        
         <footer></footer>
     </body>
+    <!--Data-->
+    <iframe src="TXT/navigation.txt" onload='createNavigation(this.contentDocument.body.firstChild.innerHTML)'></iframe>
 </html>
