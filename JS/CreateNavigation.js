@@ -4,5 +4,5 @@ function createNavigation(data) {
         document.querySelector('nav').insertAdjacentHTML('beforeend', '\
             <label title="'+title+'" class="fas fa-'+icon+'"><input type="radio" name="menu" id="'+title+'" onclick="pages(this.id)"/></label>');
     });
-    document.querySelector('nav > label:first-child > input').checked = true;
+    document.querySelector('nav > label:first-child > input').click();
 }
