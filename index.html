@@ -32,8 +32,8 @@
         </main>
         <footer>
             <details>
-                <summary onload="function lastDate() {this.innerHTML += document.lastModified;} lastDate();">Last Updated: </summary>
-                <p> - by Refsnes Data. All Rights Reserved.</p>
+                <summary onload="function lastDate() {this.insertAdjacentHTML('beforeend', document.lastModified);} lastDate();">Last Updated: </summary>
+                <p>All Rights Reserved.</p>
             </details>
         </footer>
     </body>
