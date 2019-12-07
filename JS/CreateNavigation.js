@@ -1,3 +1,10 @@
+function waitForData(file){
+    var data = readData(file);
+    if (typeof data !== "undefined") {
+        return data;
+    } else setTimeout(waitForElement, 250);
+}
+
 function createNavigation(data) {
     var container = document.querySelectorAll('nav > ul');
     [].forEach.call(data.split("\n"), function(line) {
