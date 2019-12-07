@@ -107,10 +107,11 @@ label input[type=radio]{
 /*Footer*/
 details{
     padding: var(--LPad) var(--HPad);
+    transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
     list-style-type: none;
     font-size: var(--medium);
-} details[open=true]{
+} details[open]{
     background-color: var(--light);
 }
