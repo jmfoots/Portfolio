@@ -66,6 +66,10 @@ label input[type=radio]{
 } label{
     padding: var(--LPad) var(--HPad);
     cursor: pointer;
+    border-bottom: 3px var(--lightmint) solid;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
 } label::before{
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
@@ -74,10 +78,6 @@ label input[type=radio]{
     display: block;
     font-size: var(--normal);
     line-height: calc(var(--normal) * 1.6);
-    border-bottom: 3px var(--lightmint) solid;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s;
 } label:hover, label:focus {
     transform: scaleX(1);
     transform-origin: left;
