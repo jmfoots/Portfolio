@@ -41,6 +41,12 @@ html,body{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
     box-shadow: 0 1px var(--large) var(--lightmint);
+} header::before{
+    border-top: calc(var(--normal) / 4) var(--grey) solid;
+    border-right: calc(var(--normal) / 4) transparent solid;
+} header::after{
+    border-bottom: calc(var(--normal) / 4) var(--grey) solid;
+    border-left: calc(var(--normal) / 4) transparent solid;
 } footer{
     position: fixed;
     width: 100%;
