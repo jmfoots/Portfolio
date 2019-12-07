@@ -106,12 +106,11 @@ label input[type=radio]{
 }
 /*Footer*/
 details{
-    display: flex;
-    flex-direction: column;
-    padding: var(--LPad) var(--HPad);
+    margin: var(--LPad) var(--HPad);
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
+    padding: var(--LPad);
     list-style-type: none;
     font-size: var(--medium);
 } details[open]{
