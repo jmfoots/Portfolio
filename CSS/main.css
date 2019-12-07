@@ -68,19 +68,20 @@ h1,h2,h3{
 label input[type=radio]{
     display: none;
 } label{
-    padding: var(--LPad);
+    padding: var(--HPad);
     cursor: pointer;
     transition: opacity 2s;
 } label::before{
     font-size: var(--icon);
+    padding: var(--HPad);
 } label:after{ 
     content: attr(title);
     font-size: var(--normal);
     line-height: calc(var(--normal) * 1.6);
     display: block;
 } nav {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
 }
 
 iframe{
