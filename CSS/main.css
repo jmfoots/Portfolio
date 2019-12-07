@@ -106,6 +106,8 @@ label input[type=radio]{
 }
 /*Footer*/
 details{
+    display: flex;
+    flex-direction: column;
     padding: var(--LPad) var(--HPad);
     transition: background-color 0.5s ease;
     cursor: pointer;
