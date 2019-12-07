@@ -1,5 +1,5 @@
 function pages(id) { 
-    [].forEach.call(document.querySelectorAll('nav > ul > label'), function(label) {
+    [].forEach.call(document.querySelectorAll('nav > label'), function(label) {
         if (label != document.querySelector('label[title='+id+']')) {
             label.classList.remove('far'); label.classList.add('fas');
         } else {
