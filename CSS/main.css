@@ -65,7 +65,7 @@ label input[type=radio]{
     display: none;
 } label{
     padding: var(--LPad) var(--HPad);
-    border-top: 3px transparent solid;
+    border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
 } label::before{
     font-size: var(--icon);
@@ -76,7 +76,7 @@ label input[type=radio]{
     font-size: var(--normal);
     line-height: calc(var(--normal) * 1.6);
 } label:hover, label:focus {
-    border-color: var(--trout);
+    border-color: var(--coaltrout);
 } nav {
     display: flex;
     justify-content: space-around;
