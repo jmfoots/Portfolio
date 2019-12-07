@@ -57,9 +57,8 @@ html,body{
 } main{
     display: flex;
     flex-direction: column;
-    padding: var(--LPad) var(--HPad);
 } section{
-    background: var(--grey);
+    padding: var(--LPad) var(--HPad);
     box-shadow: 0 1px var(--large) var(--troutcoal);
 }
 /*Headers*/
