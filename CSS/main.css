@@ -65,9 +65,7 @@ label input[type=radio]{
     display: none;
 } label{
     padding: var(--LPad) var(--HPad);
-    border-width: 0 3px;
-    border: transparent solid;
-    border-radius: var(--LPad);
+    border-top: var(--LPad) transparent solid;
     cursor: pointer;
 } label::before{
     font-size: var(--icon);
