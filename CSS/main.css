@@ -76,7 +76,9 @@ label input[type=radio]{
     font-size: var(--normal);
     line-height: calc(var(--normal) * 1.6);
 } label:hover, label:focus {
-    border-color: var(--coaltrout);
+    border-color: var(--trout);
+} label:has(input[type=radio]:checked){
+    background: var(--lightmint);
 } nav {
     display: flex;
     justify-content: space-around;
