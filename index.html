@@ -18,12 +18,14 @@
         <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
         <script>
             window.onload = function(){
-                var data = readData("TXT/navigation.txt");
-                if (typeof data !== "undefined") {
-                    data = readData("TXT/navigation.txt");
-                } else setTimeout(waitForElement, 250);
+                var data = waitForElement(readData("TXT/navigation.txt"));
                 console.log(data);
                 //createNavigation('');
+            }
+            function waitForElement(data){
+                if (typeof data !== "undefined") {
+                    return data
+                } else setTimeout(waitForElement, 250);
             }
         </script>
     </head>
