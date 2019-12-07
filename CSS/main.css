@@ -16,7 +16,7 @@
     --light: rgba(238,239,240,1);
     --grey: rgba(220,222,225,1);
     --mint: rgba(207,214,211,1);
-    --trout: rgba(74,81,83,0.5);
+    --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
     /*Gradients*/
     --coaltrout: linear-gradient(to bottom, var(--coal) 0%, 85%, var(--trout) 90%, 95%, var(--coal) 100%);
@@ -39,7 +39,7 @@ html,body{
     height: 100vh;
 } header{
     padding: var(--LPad) var(--HPad);
-    background-color: var(--coal);
+    background-color: var(--grey);
     box-shadow: 0 1px var(--large) var(--lightmint);
 } footer{
     position: fixed;
@@ -49,15 +49,14 @@ html,body{
 } main{
     display: flex;
     height: 100%;
-    width: calc(100% - var(--large));
     padding: var(--LPad) var(--HPad);
-    background: var(--light);
+    background: var(--trout);
     box-shadow: 0 1px var(--large) var(--troutcoal);
 }
 /*Headers*/
 h1,h2,h3{
     font-family: var(--formal), sans-serif;
-    color: var(--grey);
+    color: var(--trout);
     padding: 0;
     margin: 0;
 } h1{
