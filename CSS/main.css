@@ -47,8 +47,14 @@ html,body{
     padding: 0;
     bottom: 0;
 } main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
     margin: 0 var(--normal);
     padding: var(--LPad) var(--HPad);
+} section{
+    flex: 1;
     background: var(--trout);
     box-shadow: 0 1px var(--large) var(--troutcoal);
 }
