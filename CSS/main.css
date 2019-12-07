@@ -25,6 +25,7 @@
 }
 /*Main*/
 html,body{
+    outline: none;
     padding: 0;
     margin: 0;
     font-family: var(--regular), sans-serif;
@@ -94,7 +95,7 @@ label input[type=radio]{
     text-transform: uppercase;
 } label:hover, label:focus {
     border-color: var(--mint);
-} label[class*='far']{
+} label[class*='far'], details[open]{
     border-color: var(--trout);
     background-color: var(--light);
 } nav {
@@ -117,6 +118,4 @@ details{
 } summary{
     list-style-type: none;
     font-size: var(--medium);
-} details[open]{
-    border-color: var(--trout);
 }
