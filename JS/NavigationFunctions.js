@@ -7,7 +7,7 @@ function pages(id) {
         }
     });
     while (document.querySelectorAll('main').firstChild) this.removeChild(this.firstChild);
-    document.querySelector('iframe[title='+id+']').click();
+    if (document.querySelector('iframe[title='+id+']')) this.click();
 }
 
 document.addEventListener('keydown', function(e) {
