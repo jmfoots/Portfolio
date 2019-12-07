@@ -7,7 +7,6 @@ function createNavigation(data) {
         var icon = fields[1];
         console.log(title);
         console.log(icon);
-        container.innerhtml +='\
-            <label title="'+title+'" class="fas fa-'+icon+'"><input type="radio" name="menu" id="'+title+'" onclick="pages(this.id)"/></label>';
+        container.insertAdjacentHTML('beforeend', '<label title="'+title+'" class="fas fa-'+icon+'"><input type="radio" name="menu" id="'+title+'" onclick="pages(this.id)"/></label>');
     });
 }
