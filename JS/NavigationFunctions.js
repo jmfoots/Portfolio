@@ -15,11 +15,11 @@ document.addEventListener('keydown', function(e) {
     if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next
         console.log(index);
         if (index < children.length) {
-            children[index+1].click();
+            children[index].click();
         } else children[0].click();
     } else if (([37, 8, 40].indexOf(e.keyCode) >= 0)){ //Prev
         if (index > 0) {
-            children[index-1].click();
+            children[index].click();
         } else children[(children.length-1)].click();
     }
 }); 
