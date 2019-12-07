@@ -48,11 +48,8 @@ html,body{
     bottom: 0;
 } main{
     display: flex;
-    flex-flow: column;
-    margin: calc(100% - var(--normal));
-    height: 100%;
     padding: var(--LPad) var(--HPad);
-    background-color: var(--coal);
+    background: border-box center/calc(100% - var(--large)) var(--troutcoal) no-repeat;
     box-shadow: 0 1px var(--large) var(--troutcoal);
 }
 /*Headers*/
