@@ -3,7 +3,6 @@ function readData(file) {
     req.open("GET", file, false);
     req.onreadystatechange = function() {
         if(req.readyState === 4 && req.status === 200) {
-            return req.responseText
-        } else return "";
-    }; req.send(null);
+        }
+    }; return req.send(req.responseText);
 }
