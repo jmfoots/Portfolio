@@ -35,6 +35,8 @@ html,body{
 } html{
     background: var(--coal);
 } body{
+    display: flex;
+    flex-direction: row;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     height: 100vh;
 } header{
