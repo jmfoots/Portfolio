@@ -1,6 +1,6 @@
 function createAboutPage(data) {
     var first = true;
-    var pre;
+    var pre='';
     [].forEach.call(data.split("\n"), function(line) {
         if (first){
             document.querySelector('main').insertAdjacentHTML('beforeend', '<section><h2>'+line+'</h2></section>');
