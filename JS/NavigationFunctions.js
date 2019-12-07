@@ -1,13 +1,13 @@
 function pages(id) {
-    while (document.querySelectorAll('main').firstChild) this.removeChild(this.firstChild);
     [].forEach.call(document.querySelectorAll('nav > label'), function(label) {
         if (label != document.querySelector('label[title='+id+']')) {
             label.classList.remove('far'); label.classList.add('fas');
-            document.querySelector('iframe[title='+id+']').click();
         } else {
             label.classList.add('far'); label.classList.remove('fas');
         }
     });
+    while (document.querySelectorAll('main').firstChild) this.removeChild(this.firstChild);
+    document.querySelector('iframe[title='+id+']').click();
 }
 
 document.addEventListener('keydown', function(e) {
