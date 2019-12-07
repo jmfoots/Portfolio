@@ -88,3 +88,7 @@ label input[type=checkbox], label input[type=radio]{
 } label[class*='fa-times'] ~ul > label {
     opacity: 1;
 }
+
+iframe{
+    display: none;
+}
