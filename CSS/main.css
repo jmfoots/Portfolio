@@ -68,12 +68,12 @@ h1,h2,h3{
 label input[type=radio]{
     display: none;
 } label{
-    padding: var(--HPad);
+    padding: var(--LPad) var(--HPad);
     cursor: pointer;
     transition: opacity 2s;
 } label::before{
     font-size: var(--icon);
-    padding: var(--HPad);
+    padding: var(--LPad) var(--HPad);
 } label:after{ 
     content: attr(title);
     font-size: var(--normal);
