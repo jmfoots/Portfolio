@@ -66,15 +66,29 @@ label input[type=radio]{
 } label{
     padding: var(--LPad) var(--HPad);
     cursor: pointer;
-    transition: opacity 2s;
 } label::before{
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
-} label:after{ 
+} label::after{ 
     content: attr(title);
     font-size: var(--normal);
     line-height: calc(var(--normal) * 1.6);
     display: block;
+    transition: 0.5s;
+} label::after::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--lightmint);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+} label::after::after:hover {
+    transform: scaleX(1);
+    transform-origin: left;
 } nav {
     display: flex;
     justify-content: space-around;
