@@ -106,7 +106,7 @@ label input[type=radio]{
 }
 /*Footer*/
 details{
-    margin: var(--LPad) var(--HPad);
+    margin: calc(var(--normal) / 2) var(--HPad);
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
