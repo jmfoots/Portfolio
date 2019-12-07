@@ -10,10 +10,10 @@
         <meta name="keywords" content="Jonathan Foots, Resume, Portfolio">
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
-        <!--Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/font.css">
         <!--JS-->
         <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
+        <script src="JS/ReadData.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -34,17 +34,8 @@
                             }
                         });
                     }
-                    function readTextFile(file) {
-                        var rawFile = new XMLHttpRequest();
-                        rawFile.open("GET", file, false);
-                        rawFile.onreadystatechange = function() {
-                            if(rawFile.readyState === 4 && rawFile.status === 200) {
-                                console.log(rawFile.responseText);
-                            }
-                        }; rawFile.send(null);
-                    }
                     function createNavigation() {
-                        readTextFile("file.txt");
+                        readData("file.txt");
                     }
                     window.onload = createNavigation;
                 </script>
