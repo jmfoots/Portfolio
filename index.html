@@ -18,7 +18,9 @@
         <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
         <script>
             window.onload = function(){
-                createNavigation(readData("TXT/navigation.txt"));
+                navigationData = readData("TXT/navigation.txt");
+                console.log(navigationData);
+                createNavigation(navigationData);
             }
         </script>
     </head>

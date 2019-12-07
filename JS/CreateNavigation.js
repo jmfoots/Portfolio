@@ -1,4 +1,4 @@
-function createNavigation(data){
+function createNavigation(data) {
     var container = document.querySelectorAll('nav > ul');
     [].forEach.call(data.split("\n"), function(line) {
         fields = line.split(",");
