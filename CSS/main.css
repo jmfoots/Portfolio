@@ -110,11 +110,11 @@ details{
     align-self: flex-end;
     flex: 1;
     margin: 0 calc(var(--normal) / 2);
+    padding: var(--LPad);
     border-top: calc(var(--normal) / 4) transparent solid;
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
-    padding: var(--LPad);
     list-style-type: none;
     font-size: var(--medium);
 } details[open]{
