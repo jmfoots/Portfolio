@@ -14,12 +14,11 @@ document.addEventListener('keydown', function(e) {
     var index = Array.prototype.indexOf.call(children, current);
     if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next
         console.log(index);
-        if (index < children.length) {
-            children[index].click();
-        } else children[0].click();
+        if (index < children.length) index+=1;
+            else index=0;
     } else if (([37, 8, 40].indexOf(e.keyCode) >= 0)){ //Prev
-        if (index > 0) {
-            children[index].click();
-        } else children[(children.length-1)].click();
+        if (index > 0) index-=1;
+            else index=(children.length-1);
     }
+    children.item.indexOf(index).click();
 }); 
