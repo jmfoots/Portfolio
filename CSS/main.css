@@ -31,7 +31,7 @@ html,body{
     font-size: var(--normal);
     font-weight: normal;
     text-align: left;
-    color: var(--coal);
+    color: var(--grey);
 } html{
     background: var(--coal);
 } body{
@@ -39,7 +39,7 @@ html,body{
     height: 100vh;
 } header{
     padding: var(--LPad) var(--HPad);
-    background-color: var(--light);
+    background-color: var(--coal);
     box-shadow: 0 1px var(--large) var(--lightmint);
 } footer{
     position: fixed;
@@ -50,12 +50,13 @@ html,body{
     display: flex;
     height: calc(100% - var(--large));
     padding: var(--LPad) var(--HPad);
-    background: border-box center/calc(100% - var(--large)) var(--troutcoal) no-repeat;
+    background: var(--light);
     box-shadow: 0 1px var(--large) var(--troutcoal);
 }
 /*Headers*/
 h1,h2,h3{
     font-family: var(--formal), sans-serif;
+    color: var(--grey);
     padding: 0;
     margin: 0;
 } h1{
