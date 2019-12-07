@@ -14,6 +14,7 @@
         <!--JS-->
         <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="JS/CreateNavigation.js"></script>
+        <script type="text/javascript" src="JS/CreatePages.js"></script>
         <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
     </head>
     <body onload="document.querySelector('summary[title=\'Page Details\']').insertAdjacentText('beforeend', document.lastModified);">
@@ -23,12 +24,6 @@
             <h2>Portfolio</h2>
         </header>
         <main>
-            <section>
-                <h2>Head</h2>
-                <p>Test
-                    text
-                </p>
-            </section>
         </main>
         <footer>
             <details>
@@ -39,4 +34,5 @@
     </body>
     <!--Data-->
     <iframe src="TXT/navigation.txt" onload='createNavigation(this.contentDocument.body.firstChild.innerHTML)'></iframe>
+    <iframe src="TXT/bio.txt" onload='createAboutPage(this.contentDocument.body.firstChild.innerHTML)'></iframe>
 </html>
