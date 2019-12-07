@@ -13,17 +13,10 @@
         <link rel="stylesheet" type="text/css" href="CSS/font.css">
         <!--JS-->
         <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="JS/ReadData.js"></script>
         <script type="text/javascript" src="JS/CreateNavigation.js"></script>
         <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
-        <script>
-            window.onload = function(){
-                var data = waitForData("TXT/navigation.txt");
-                console.log(data);
-                //createNavigation('');
-            }
-            
-        </script>
+        <!--Data-->
+        <iframe id='data-navigation' src="TXT/navigation.txt" onload='CreateNavigation(this.contentDocument.body.firstChild.innerHTML)'></iframe>
     </head>
     <body>
         <header>
