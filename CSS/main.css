@@ -35,8 +35,6 @@ html,body{
 } html{
     background: var(--coal);
 } body{
-    display: flex;
-    flex-direction: row;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     height: 100vh;
 } header{
@@ -49,7 +47,7 @@ html,body{
     padding: 0;
     bottom: 0;
 } main{
-    margin: 0 var(--LPad);
+    margin: 0 var(--normal);
     padding: var(--LPad) var(--HPad);
     background: var(--trout);
     box-shadow: 0 1px var(--large) var(--troutcoal);
