@@ -49,6 +49,7 @@ html,body{
 } main{
     display: flex;
     height: 100%;
+    margin: 0 var(--large);
     padding: var(--LPad) var(--HPad);
     background: var(--trout);
     box-shadow: 0 1px var(--large) var(--troutcoal);
