@@ -109,9 +109,10 @@ details{
     padding: var(--LPad) var(--HPad);
     cursor: pointer;
 } summary{
-    font-size: var(--medium);
-} summary::before{
+    display: flex;
     border-top: calc(var(--normal) / 4) transparent solid;
+    list-style-type: none;
+    font-size: var(--medium);
 } summary:hover, summary:focus{
     border-color: var(--mint);
 }
