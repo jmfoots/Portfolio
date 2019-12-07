@@ -32,12 +32,7 @@
         </main>
         <footer>
             <details>
-                <script>
-                    function lastDate(Element) {
-                        Element.insertAdjacentHTML('beforeend', document.lastModified);
-                    }
-                </script>
-                <summary onload='lastDate(this.Element)'>Last Updated: </summary>
+                <summary onload="this.insertAdjacentHTML('beforeend', document.lastModified);">Last Updated: </summary>
                 <p>All Rights Reserved.</p>
             </details>
         </footer>
