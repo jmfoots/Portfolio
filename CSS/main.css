@@ -23,7 +23,7 @@
     --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);;
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
 }
-
+/*Main*/
 html,body{
     padding: 0;
     margin: 0;
@@ -36,21 +36,19 @@ html,body{
     background: var(--coal);
 } body{
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
-    width: 100vw;
     height: 100vh;
-}
-
-header{
+} header{
     font-size: var(--large);
     text-align: center;
-}
-footer{
+} footer{
     position: fixed;
     width: 100%;
     padding: 0;
     bottom: 0;
+} section{
+    padding: var(--MPad);
 }
-
+/*Headers*/
 h1,h2,h3{
     font-family: var(--formal), sans-serif;
     padding: 0;
@@ -62,7 +60,7 @@ h1,h2,h3{
 } h3{
     font-size: var(--medium);
 }
-
+/*Nav*/
 label input[type=radio]{
     display: none;
 } label{
@@ -80,8 +78,6 @@ label input[type=radio]{
 } nav {
     display: flex;
     justify-content: space-around;
-}
-
-iframe{
+} iframe{
     display: none;
 }
