@@ -104,3 +104,14 @@ label input[type=radio]{
 } iframe{
     display: none;
 }
+/*Footer*/
+details{
+    padding: var(--LPad) var(--HPad);
+    cursor: pointer;
+} summary{
+    font-size: var(--medium);
+} summary::before{
+    border-top: calc(var(--normal) / 4) transparent solid;
+} summary:hover, summary:focus{
+    border-color: var(--mint);
+}
