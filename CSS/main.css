@@ -81,6 +81,7 @@ label input[type=radio]{
     display: block;
     font-size: var(--medium);
     line-height: calc(var(--normal) * 1.6);
+    text-transform: uppercase;
 } label:hover, label:focus {
     border-color: var(--mint);
 } label[class*='far']{
