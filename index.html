@@ -18,7 +18,11 @@
         <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
         <script>
             window.onload = function(){
-                console.log(readData("TXT/navigation.txt"));
+                var data = readData("TXT/navigation.txt");
+                if (typeof data !== "undefined") {
+                    data = readData("TXT/navigation.txt");
+                } else setTimeout(waitForElement, 250);
+                console.log(data);
                 //createNavigation('');
             }
         </script>
