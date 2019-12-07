@@ -31,7 +31,7 @@ html,body{
     font-size: var(--normal);
     font-weight: normal;
     text-align: left;
-    color: var(--grey);
+    color: var(--coal);
 } html{
     background: var(--coal);
 } body{
@@ -48,7 +48,8 @@ html,body{
     bottom: 0;
 } main{
     display: flex;
-    height: calc(100% - var(--large));
+    height: 100%;
+    width: calc(100% - var(--large));
     padding: var(--LPad) var(--HPad);
     background: var(--light);
     box-shadow: 0 1px var(--large) var(--troutcoal);
