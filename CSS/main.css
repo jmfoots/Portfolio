@@ -9,9 +9,9 @@
     --icon: 36px;
     --title: 42px;
     /*Padding*/
-    --LPad: 0.5%;
-    --MPad: 1%;
-    --HPad: 2%;
+    --LPad: 20px;
+    --MPad: 25px;
+    --HPad: 30px;
     /*Colors*/
     --light: rgba(238,239,240,1);
     --grey: rgba(220,222,225,1);
