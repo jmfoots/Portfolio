@@ -76,9 +76,9 @@ label input[type=radio]{
     font-size: var(--normal);
     line-height: calc(var(--normal) * 1.6);
 } label:hover, label:focus {
-    border-color: var(--trout);
+    border-color: var(--mint);
 } label[class*='far']{
-    border-color: var(--lightmint);
+    border-color: var(--trout);
 } nav {
     display: flex;
     justify-content: space-around;
