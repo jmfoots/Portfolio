@@ -33,11 +33,11 @@
         <footer>
             <details>
                 <script>
-                    function lastDate() {
-                        this.insertAdjacentHTML('beforeend', document.lastModified);
+                    function lastDate(Element) {
+                        Element.insertAdjacentHTML('beforeend', document.lastModified);
                     }
                 </script>
-                <summary onload='lastDate()'>Last Updated: </summary>
+                <summary onload='lastDate(this.Element)'>Last Updated: </summary>
                 <p>All Rights Reserved.</p>
             </details>
         </footer>
