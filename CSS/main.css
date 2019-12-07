@@ -13,9 +13,9 @@
     --MPad: 1%;
     --HPad: 2%;
     /*Colors*/
-    --light: rgba(238,239,240,1);
+    --light: rgba(238,239,240,0.2);
     --grey: rgba(220,222,225,1);
-    --mint: rgba(207,214,211,1);
+    --mint: rgba(207,214,211,0.5);
     --trout: rgba(74,81,83,0.5);
     --coal: rgba(58,58,58,1);
     /*Gradients*/
