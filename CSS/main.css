@@ -49,8 +49,6 @@ html,body{
 } main{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
     margin: 0 var(--normal);
     padding: var(--LPad) var(--HPad);
 } section{
