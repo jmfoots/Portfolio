@@ -81,6 +81,7 @@ label input[type=radio]{
     padding: var(--LPad) var(--HPad);
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
+    transition: background-color 0.5s ease;
 } label::before{
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
@@ -94,6 +95,7 @@ label input[type=radio]{
     border-color: var(--mint);
 } label[class*='far']{
     border-color: var(--trout);
+    background-color: var(--light);
 } nav {
     display: flex;
     font-size: var(--large);
