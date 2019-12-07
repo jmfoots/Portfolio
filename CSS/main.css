@@ -41,10 +41,8 @@ html,body{
 }
 
 header{
-    display: fixed;
     font-size: var(--large);
     text-align: center;
-    padding: var(--MPad);
 }
 footer{
     position: fixed;
