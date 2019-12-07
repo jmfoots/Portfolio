@@ -78,7 +78,7 @@ label input[type=radio]{
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;
-} label::after:hover {
+} label:hover, label:focus {
     transform: scaleX(1);
     transform-origin: left;
 } nav {
