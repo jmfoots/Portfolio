@@ -79,6 +79,7 @@ h1,h2,h3{
 label input[type=radio]{
     display: none;
 } label{
+    padding: var(--LPad) calc(var(--LPad) / 2);
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
     transition: background-color 0.5s ease;
