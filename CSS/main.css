@@ -38,15 +38,16 @@ html,body{
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     height: 100vh;
 } header{
-    font-size: var(--large);
-    text-align: center;
+    padding: var(--LPad) var(--HPad);
+    background-color: var(--light);
+    box-shadow: 0 1px var(--large) var(--lightmint);
 } footer{
     position: fixed;
     width: 100%;
     padding: 0;
     bottom: 0;
-} section{
-    padding: var(--MPad);
+} main{
+    padding: var(--LPad) var(--HPad);
     background-color: var(--light);
     box-shadow: 0 1px var(--large) var(--lightmint);
 }
@@ -83,6 +84,8 @@ label input[type=radio]{
     border-color: var(--trout);
 } nav {
     display: flex;
+    font-size: var(--large);
+    text-align: center;
     justify-content: space-around;
 } iframe{
     display: none;
