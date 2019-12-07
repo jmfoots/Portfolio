@@ -1,0 +1,90 @@
+:root{
+    /*FontStyles*/
+    --regular: 'Roboto';
+    --formal: 'Open Sans';
+    /*FontSize*/
+    --normal: 16px;
+    --medium: 18px;
+    --large: 20px;
+    --icon: 36px;
+    --title: 42px;
+    /*Padding*/
+    --LPad: 0.5%;
+    --MPad: 1%;
+    --HPad: 2%;
+    /*Colors*/
+    --light: rgba(238,239,240,1);
+    --grey: rgba(220,222,225,1);
+    --mint: rgba(207,214,211,1);
+    --trout: rgba(74,81,83,0.5);
+    --coal: rgba(58,58,58,1);
+    /*Gradients*/
+    --coaltrout: linear-gradient(to bottom, var(--coal) 0%, 85%, var(--trout) 90%, 95%, var(--coal) 100%);
+    --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);;
+    --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--regular), sans-serif;
+    font-size: var(--normal);
+    font-weight: normal;
+    text-align: left;
+    color: var(--coal);
+} html{
+    background: var(--coal);
+} body{
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    font-size: var(--large);
+    text-align: center;
+    padding: var(--MPad);
+}
+footer{
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+}
+h1,h2,h3{
+    font-family: var(--formal), sans-serif;
+    padding: 0;
+    margin: 0;
+} h1{
+    font-size: var(--title);
+} h2{
+    font-size: var(--large);
+} h3{
+    font-size: var(--medium);
+}
+
+label input[type=checkbox], label input[type=radio]{
+    display: none;
+} label{
+    padding: var(--LPad);
+    cursor: pointer;
+    transition: opacity 2s;
+} label::before{
+    font-size: var(--icon);
+} label:after{ 
+    content: attr(title);
+    font-size: var(--normal);
+    line-height: calc(var(--normal) * 1.6);
+    display: block;
+} label[class*='fa-bars'] ~ul {
+    display: none;
+} label[class*='fa-times'] ~ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+} label[class*='fa-bars'] ~ul > label {
+    opacity: 0;
+    
+} label[class*='fa-times'] ~ul > label {
+    opacity: 1;
+}

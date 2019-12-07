@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Website Details-->
+        <title>Portfolio Website</title>
+        <meta name="author" content="Jonathan Foots">
+        <meta name="description" content="Jonathan Foots's Resume Website">
+        <meta name="keywords" content="Jonathan Foots, Resume, Portfolio">
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
+        <!--JS-->
+        <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Jonathan Foots</h1>
+            <h2>Portfolio</h2>
+            <nav>
+                <script id='nav'>
+                    function menu() { 
+                        var classes = document.querySelector('label[for=menu]').classList;
+                        classes.toggle('fa-times'); classes.toggle('fa-bars');
+                    }
+                    function pages(id) { 
+                        [].forEach.call(document.querySelectorAll('nav > ul > label'), function(label) {
+                            if (label != document.querySelector('label[title='+id+']')) {
+                                label.classList.remove('far'); label.classList.add('fas');
+                            } else {
+                                label.classList.add('far'); label.classList.remove('fas');
+                            }
+                        });
+                    }
+                    function readTextFile(file) {
+                        var rawFile = new XMLHttpRequest();
+                        rawFile.open("GET", file, false);
+                        rawFile.onreadystatechange = function() {
+                            if(rawFile.readyState === 4 && rawFile.status === 200) {
+                                console.log(rawFile.responseText);
+                            }
+                        }; rawFile.send(null);
+                    }
+                    function createNavigation() {
+                        readTextFile("file.txt");
+                    }
+                    window.onload = createNavigation;
+                </script>
+                <label for="menu" class='fas fa-bars'><input type="checkbox" id="menu" onclick="menu()"/></label>
+                <ul>
+                    <label title="about" class='fas fa-user'><input type="radio" name="menu" id="about" onclick="pages(this.id)"/></label>
+                    <label title="work" class='fas fa-building'><input type="radio" name="menu" id="work" onclick="pages(this.id)"/></label>
+                    <label title="education" class='fas fa-address-card'><input type="radio" name="menu" id="education" onclick="pages(this.id)"/></label>
+                    <label title="projects" class='fas fa-folder-open'><input type="radio" name="menu" id="projects" onclick="pages(this.id)"/></label>
+                </ul>
+            </nav>
+        </header>
+        
+        <footer></footer>
+    </body>
+</html>
