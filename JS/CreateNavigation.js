@@ -1,7 +1,7 @@
 function waitForData(file){
     var data = readData(file);
     if (typeof data !== "undefined") {
-        return data;
+        return data.toString();
     } else setTimeout(waitForData, 250);
 }
 
