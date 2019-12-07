@@ -77,7 +77,7 @@ label input[type=radio]{
     line-height: calc(var(--normal) * 1.6);
 } label:hover, label:focus {
     border-color: var(--trout);
-} label:has(input[type=radio]:checked){
+} label[class*='far']{
     background: var(--lightmint);
 } nav {
     display: flex;
