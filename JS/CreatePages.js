@@ -7,5 +7,5 @@ function createAboutPage(data) {
             first=false;
         } else pre +=line+' ';
     });
-    document.querySelector('main > section').insertAdjacentHTML('beforeend', '<pre>'+pre+'</pre>');
+    document.querySelector('main > section').insertAdjacentHTML('beforeend', '<p>'+pre+'</p>');
 }
