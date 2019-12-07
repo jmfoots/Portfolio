@@ -12,7 +12,8 @@ document.addEventListener('keydown', function(e) {
     var children = document.querySelectorAll('nav > label');
     var current = document.querySelectorAll('nav > label[class*=far]')
     var index = Array.prototype.indexOf.call(children, current);
-    if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next 
+    if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next
+        console.log(index);
         if (index < children.length) {
             children[index+1].click();
         } else children[0].click();
