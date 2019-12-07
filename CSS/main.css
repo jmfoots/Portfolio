@@ -51,7 +51,7 @@ html,body{
     border-left: calc(var(--normal) / 4) transparent solid;
 } footer{
     position: fixed;
-    vertical-align: bottom;
+    display: flex;
     width: 100%;
     padding: 0;
     bottom: 0;
@@ -107,6 +107,7 @@ label input[type=radio]{
 }
 /*Footer*/
 details{
+    align-self: flex-end;
     margin: 0 calc(var(--normal) / 2);
     transition: background-color 0.5s ease;
     cursor: pointer;
