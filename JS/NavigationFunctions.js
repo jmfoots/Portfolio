@@ -9,5 +9,17 @@ function pages(id) {
 }
 
 document.addEventListener('keydown', function(e) {
-    alert(e.keyCode);
+    if (!document.querySelector('nav').hasFocus()) return;
+    var children = document.querySelectorAll('nav > label');
+    var current = document.querySelectorAll('nav > label[class*=far]')
+    var index = Array.prototype.indexOf.call(children, current);
+    if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next 
+        if (index < children.length) {
+            children[index+1].click();
+        } else children[0].click();
+    } else if (([37, 8, 40].indexOf(e.keyCode) >= 0)){ //Prev
+        if (index > 0) {
+            children[index-1].click();
+        } else children[(children.length-1)].click();
+    }
 }); 
