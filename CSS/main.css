@@ -42,9 +42,11 @@ html,body{
     background-color: var(--grey);
     box-shadow: 0 1px var(--large) var(--lightmint);
 } header::before{
+    content: '';
     border-top: calc(var(--normal) / 4) var(--grey) solid;
     border-right: calc(var(--normal) / 4) transparent solid;
 } header::after{
+    content: '';
     border-bottom: calc(var(--normal) / 4) var(--grey) solid;
     border-left: calc(var(--normal) / 4) transparent solid;
 } footer{
@@ -54,12 +56,10 @@ html,body{
     bottom: 0;
 } main{
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    margin: 0 var(--normal);
+    flex-direction: column;
     padding: var(--LPad) var(--HPad);
 } section{
-    background: var(--trout);
+    background: var(--grey);
     box-shadow: 0 1px var(--large) var(--troutcoal);
 }
 /*Headers*/
