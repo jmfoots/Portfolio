@@ -3,7 +3,7 @@ function createAboutPage(data) {
     var pre='';
     [].forEach.call(data.split("\n"), function(line) {
         if (first){
-            document.querySelector('main').insertAdjacentHTML('beforeend', '<section><h2>'+line+'</h2></section>');
+            document.querySelector('main').insertAdjacentHTML('beforeend', '<section><h2 onclick="document.querySelector(\'details[title=lightbox] > summary\').click()">'+line+'</h2></section>');
             first=false;
         } else pre +=line+' ';
     });
