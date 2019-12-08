@@ -6,7 +6,7 @@ function pages(id) {
             label.classList.add('far'); label.classList.remove('fas');
         }
     });
-    var main = document.querySelectorAll('main');
+    var main = document.querySelector('main');
     while (main.firstChild) main.removeChild(main.firstChild);
     document.querySelector('iframe[title='+id+']').click() || console.log('Missing');
 }
