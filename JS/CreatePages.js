@@ -14,8 +14,10 @@ function createAboutPage(data) {
         } else pre+=line+' ';
     });
     document.querySelector('details[title=lightbox]').insertAdjacentHTML('beforeend', `
-        <header title='content'><h2>${title}</h2></header>
-        <section title='content'>
-            <p>${pre}</p>
-        <section>`);
+        <div title='content'>
+            <header title='content'><h2>${title}</h2></header>
+            <section title='content'>
+                <p>${pre}</p>
+            <section>
+        </div>`);
 }
