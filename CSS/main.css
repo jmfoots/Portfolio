@@ -18,7 +18,6 @@
     --mint: rgba(207,214,211,1);
     --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
-    --dust: rgba(58,58,58,0.75);
     /*Gradients*/
     --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
@@ -46,7 +45,7 @@ html,body{
 } header{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
-    box-shadow: 0 1px var(--large) var(--lightmint);
+    box-shadow: var(--normal) var(--medium) var(--icon) var(--large) var(--lightmint);
 } footer{
     display: flex;
     width: 100%;
@@ -54,11 +53,10 @@ html,body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    border-bottom: calc(var(--normal) / 4) var(--trout) solid;
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
-    box-shadow: 0 calc(var(--normal) / 4) var(--icon) var(--troutcoal);
+    box-shadow: var(--normal) var(--medium) var(--icon) var(--large) var(--troutcoal);
 }
 /*Headers*/
 h1,h2,h3{
