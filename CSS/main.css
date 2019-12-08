@@ -53,7 +53,7 @@ html,body{
     flex-direction: column;
 } section{
     padding: var(--LPad) var(--HPad);
-    box-shadow: 0 calc(var(--normal) / 4) var(--large) var(--troutcoal);
+    box-shadow: 0 calc(var(--normal) / 4) var(--icon) var(--troutcoal);
 }
 /*Headers*/
 h1,h2,h3{
@@ -164,4 +164,6 @@ details[title=lightbox]{
     border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
+} header[title='content']{
+    line-height: 2;
 }
