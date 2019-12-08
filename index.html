@@ -13,12 +13,8 @@
         <link rel="stylesheet" type="text/css" href="CSS/font.css">
         <!--JS-->
         <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="JS/CreateNavigation.js"></script>
-        <script type="text/javascript" src="JS/CreatePages.js"></script>
-        <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
-        <script type="text/javascript" src="JS/ContentFunctions.js"></script>
     </head>
-    <body onload="document.querySelector('summary[title=\'Page Details\']').insertAdjacentText('beforeend', document.lastModified);">
+    <body>
         <nav></nav>
         <header>
             <h1>Jonathan Foots</h1>
@@ -29,7 +25,7 @@
         <details title='lightbox'>
             <summary class='fas fa-times'></summary>
         </details>
-        <footer>
+        <footer onload="document.querySelector('summary[title=\'Page Details\']').insertAdjacentText('beforeend', document.lastModified);">
             <details title='footer'>
                 <summary title='Page Details'>Last Updated: </summary>
                 <p>All Rights Reserved.</p>
@@ -39,4 +35,9 @@
     <!--Data-->
     <iframe src="TXT/navigation.txt" onload='createNavigation(this.contentDocument.body.firstChild.innerHTML)'></iframe>
     <iframe title='about' src="TXT/bio.txt" onclick='createAboutPage(this.contentDocument.body.firstChild.innerHTML)'></iframe>
+    <!--Scripts-->
+    <script type="text/javascript" src="JS/CreateNavigation.js"></script>
+    <script type="text/javascript" src="JS/CreatePages.js"></script>
+    <script type="text/javascript" src="JS/NavigationFunctions.js"></script>
+    <script type="text/javascript" src="JS/ContentFunctions.js"></script>
 </html>
