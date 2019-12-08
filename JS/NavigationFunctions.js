@@ -10,7 +10,7 @@ function pages(id) {
     var data = document.querySelector('iframe[title='+id+']');
     var lightbox = document.querySelector('div[title=content]');
     while (main.firstChild) main.removeChild(main.firstChild);
-    while (lightbox) lightbox.remove();
+    if (lightbox) lightbox.remove();
     if (data) data.click();
 }
 
