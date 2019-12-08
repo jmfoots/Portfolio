@@ -6,7 +6,7 @@ function createAboutPage(data) {
             var script = "document.querySelector(\'details[title=lightbox] > summary\').click()";
             document.querySelector('main').insertAdjacentHTML('beforeend', `
                 <section>
-                    <h2 title="Show ${line}" class="fas fa-expand" onclick="${script}">${line}</h2>
+                    <h2 title="Show ${line}" onclick="${script}">${line}</h2>
                 </section>`);
             first=false;
         } else pre+=line+' ';
