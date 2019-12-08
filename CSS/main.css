@@ -121,10 +121,7 @@ details[title=lightbox]{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--lightmint);
-    box-sizing: border-box;
-    border: var(--trout) solid;
-    border-width: 0 calc(var(--normal) / 2);
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
