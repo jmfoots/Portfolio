@@ -8,7 +8,7 @@ function pages(id) {
     });
     var main = document.querySelectorAll('main');
     while (main.firstChild) main.removeChild(main.firstChild);
-    var data = document.querySelector('iframe[title='+id+']') ? data.click() : console.log('Missing');
+    document.querySelector('iframe[title='+id+']').click() || console.log('Missing');
 }
 
 document.addEventListener('keydown', function(e) {
