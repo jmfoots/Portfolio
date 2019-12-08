@@ -142,11 +142,14 @@ details[title=lightbox]{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
     display: inherit;
-} section > h2{
+} section[title='grid'] > h2{
     cursor: pointer;
     line-height: calc(var(--normal) * 1.6);
     padding: var(--HPad);
     background: var(--lightmint);
     border: var(--trout) solid;
     border-width: 0 calc(var(--normal) / 4);
+} section[title='grid'] {
+    display: grid;
+    grid-template: auto auto auto auto;
 }
