@@ -163,7 +163,6 @@ details[title=lightbox]{
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
     border: calc(var(--normal) / 4) transparent solid;
-    overflow: hidden;
     transition: border-color 0.5s ease;
 } section[title=grid] {
     display: flex;
