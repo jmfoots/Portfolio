@@ -4,7 +4,7 @@ function createNavigation(data) {
         var [title, icon] = line.split(",");
         document.querySelector('nav').insertAdjacentHTML('beforeend', `
             <label title="${title}" class="fas fa-${icon}">
-                <input type="radio" onclick="pages(${title})"/>
+                <input type="radio" onclick="pages('${title}')"/>
             </label>`);
     });
 }
