@@ -16,7 +16,6 @@ function createAboutPage(data) {
     document.querySelector('details[title=lightbox]').insertAdjacentHTML('beforeend', `
         <header><h2>${title}</h2></header>
         <section title='content'>
-            
             <p>${pre}</p>
         <section>`);
 }
