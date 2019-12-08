@@ -141,7 +141,9 @@ details[title=lightbox]{
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
-    display: block;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
 } section[title=grid] > h2{
     cursor: pointer;
     padding: var(--HPad);
@@ -166,4 +168,7 @@ details[title=lightbox]{
     border-top-left-radius: var(--large);
 } header[title='content']{
     line-height: 2;
+} div[title='content']{
+    display: flex;
+    justify-content: flex-start;
 }
