@@ -134,15 +134,19 @@ details[title=lightbox]{
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
 } details[title=lightbox] > summary::before{
+    flex: 2;
     color: var(--coal);
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
+}details[title=lightbox] > summary::after{
+    content:'';
+    flex: 1;
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
     display: flex;
     list-style-type: none;
-    justify-content: flex-end;
+    justify-content: space-between;
 } section[title=grid] > h2{
     cursor: pointer;
     padding: var(--HPad);
