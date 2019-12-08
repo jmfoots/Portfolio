@@ -146,10 +146,8 @@ details[title=lightbox]{
     cursor: pointer;
     padding: var(--HPad);
     background-color: var(--light);
-    padding: var(--LPad);
     margin: 0 var(--LPad);
-    border-top: calc(var(--normal) / 4) transparent solid;
-    border-radius: 50%;
+    border: calc(var(--normal) / 4) transparent solid;
     transition: background-color 0.5s ease;
 } section[title='grid'] {
     display: grid;
