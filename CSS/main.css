@@ -164,8 +164,4 @@ details[title=lightbox]{
     border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
-} header[title='content']{
-    line-height: 2;
-} div[title='content']{
-
 }

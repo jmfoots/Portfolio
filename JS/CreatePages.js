@@ -4,7 +4,7 @@ function createAboutPage(data) {
     var pre='';
     [].forEach.call(data.split("\n"), function(line) {
         if (first){
-            title=line;
+            var [title, subtitle]=line.split(",");
             var script = "document.querySelector(\'details[title=lightbox] > summary\').click()";
             document.querySelector('main').insertAdjacentHTML('beforeend', `
                 <section title=grid>
@@ -15,7 +15,10 @@ function createAboutPage(data) {
     });
     document.querySelector('details[title=lightbox]').insertAdjacentHTML('beforeend', `
         <div title='content'>
-            <header title='content'><h2>${title}</h2></header>
+            <header title='content'>
+                <h1>${title}</h1>
+                <h2>${subtitle}</h2>
+            </header>
             <section title='content'>
                 <p>${pre}</p>
             <section>
