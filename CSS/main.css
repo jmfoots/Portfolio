@@ -18,7 +18,7 @@
     --mint: rgba(207,214,211,1);
     --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
-    --dust: rgba(58,58,58,0.25);
+    --dust: rgba(58,58,58,0.75);
     /*Gradients*/
     --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
@@ -114,7 +114,7 @@ details[title=footer]{
 /*Content*/
 details[title=lightbox]{
     position:fixed;
-    z-index:501;
+    z-index:9;
     top:0;
     left:0;
     width: 100vw;
