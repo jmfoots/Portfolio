@@ -112,3 +112,13 @@ details{
     font-size: var(--medium);
 }
 /*Content*/
+article{
+    position:fixed;
+    z-index:501;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--coaltrout);
+    opacity:0.5;
+}
