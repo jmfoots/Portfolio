@@ -141,6 +141,7 @@ details[title=lightbox]{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
     display: block;
+    appearance: none;
     list-style-type: none;
 } section[title=grid] > h2{
     cursor: pointer;
