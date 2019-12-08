@@ -144,9 +144,9 @@ details[title=lightbox]{
     display: inherit;
 } section > h2{
     cursor: pointer;
-    padding: var(--HPad);
     line-height: calc(var(--normal) * 1.6);
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
+    padding: var(--HPad);
+    background: var(--lightmint);
     border: var(--trout) solid;
     border-width: 0 calc(var(--normal) / 4);
 }
