@@ -42,11 +42,6 @@ html,body{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
     box-shadow: 0 1px var(--large) var(--lightmint);
-    border-bottom: calc(var(--normal) / 4) var(--grey) solid;
-    border-left: calc(var(--normal) / 4) transparent solid;
-    
-    border-top: calc(var(--normal) / 4) var(--grey) solid;
-    border-right: calc(var(--normal) / 4) transparent solid;
 } footer{
     position: fixed;
     display: flex;
