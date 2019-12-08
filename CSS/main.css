@@ -138,6 +138,12 @@ details[title=lightbox]{
     color: var(--coal);
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
+} details[title=lightbox] > summary::after{ 
+    content: attr(title);
+    display: block;
+    font-size: var(--medium);
+    line-height: calc(var(--normal) * 1.6);
+    text-transform: uppercase;
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
