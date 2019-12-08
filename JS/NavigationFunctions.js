@@ -8,9 +8,9 @@ function pages(id) {
     });
     var main = document.querySelector('main');
     var data = document.querySelector('iframe[title='+id+']');
-    var lightbox = document.querySelector('details[title=lightbox] > section');
+    var lightbox = document.querySelector('details[title=lightbox] > [title=content]');
     while (main.firstChild) main.removeChild(main.firstChild);
-    if (lightbox) lightbox.remove();
+    while (lightbox) lightbox.remove();
     if (data) data.click();
 }
 
