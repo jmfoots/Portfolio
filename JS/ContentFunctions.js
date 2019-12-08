@@ -1,5 +1,4 @@
 document.onload(function() {
-    document.querySelector('summary[title=\'Page Details\']').insertAdjacentText('beforeend', document.lastModified);
     document.querySelector('iframe[title=navigation]');
     document.querySelector('nav > label:first-child > input').click();
 });
