@@ -18,9 +18,9 @@
     --mint: rgba(207,214,211,1);
     --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
+    --dust: rgba(58,58,58,0.25);
     /*Gradients*/
-    --coaltrout: linear-gradient(to bottom, var(--coal) 0%, 85%, var(--trout) 90%, 95%, var(--coal) 100%);
-    --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);;
+    --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
 }
 /*Main*/
@@ -108,7 +108,7 @@ details[title=footer]{
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
-    display: block
+    display: block;
     font-size: var(--medium);
 }
 /*Content*/
@@ -119,7 +119,7 @@ details[title=lightbox]{
     left:0;
     width: 100vw;
     height: 100vh;
-    background: var(--coaltrout);
+    background: var(--dust);
     opacity:0;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open] {
