@@ -133,11 +133,11 @@ details[title=lightbox]{
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
 } details[title=lightbox] > summary::before{
-    color: var(--grey);
+    color: var(--coal);
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
-    border-color: var(--mint);
+    border-color: var(--trout);
 } details[title=lightbox][open] > summary{
     display: inherit;
 } section > h2{
