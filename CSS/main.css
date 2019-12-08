@@ -151,5 +151,5 @@ details[title=lightbox]{
     border-width: 0 calc(var(--normal) / 4);
 } section[title='grid'] {
     display: grid;
-    grid-template: calc(var(--icon)*2) auto auto / calc(var(--icon)*2) auto auto;
+    grid-template: auto auto auto / auto auto auto;
 }
