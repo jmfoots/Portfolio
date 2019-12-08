@@ -108,8 +108,7 @@ details{
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
+    display: block
     font-size: var(--medium);
-} summary::marker{
-    display: none;
 }
 /*Content*/
