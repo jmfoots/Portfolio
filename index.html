@@ -15,7 +15,7 @@
         <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
         <!--Scripts-->
         <script type="text/javascript" src="JS/CreateContent.js"></script>
-        <script type="text/javascript" src="JS/ManageContent.js"></script>
+        <script type="text/javascript" src="JS/ManageContent.js" async></script>
     </head>
     <body onload="init()">
         <nav></nav>
@@ -24,9 +24,11 @@
             <h2>Portfolio</h2>
         </header>
         <main>
+            <section title=grid></section>
         </main>
         <details title='lightbox'>
             <summary title='return' class='fas fa-times'></summary>
+            <div title='content'></div>
         </details>
         <footer>
             <details title='footer'>
@@ -38,5 +40,8 @@
     </body>
     <!--Data-->
     <iframe title='navigation' src="TXT/navigation.txt" onclick='createNavigation(this.contentDocument.body.firstChild.innerHTML)'></iframe>
-    <iframe title='about' src="TXT/bio.txt" onclick='createAboutPage(this.contentDocument.body.firstChild.innerHTML)'></iframe>
+    <div title='pages'>
+        <iframe title='about' src="TXT/about.txt" onclick='loadData(this.contentDocument.body.firstChild.innerHTML)'></iframe>
+    </div>
+    <div title='data'></div>
 </html>

@@ -1,0 +1,4 @@
+bio,TXT/About/bio.txt,Story
+hobbies,TXT/About/hobbies.txt,Hobbies
+awards,TXT/About/awards.txt,Accomplishments
+certs,TXT/About/certs.txt,Certifications

@@ -20,9 +20,13 @@ function init(){
         } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
     });
 }
-
 /*Navigation*/
 function pages(id) {
+    var grid = document.querySelector('section[title=grid]');
+    var data = document.querySelector('div[title=data]');
+    var content = document.querySelector('div[title=content]');
+    var page = document.querySelector(`iframe[title=${id}]`);
+    /*Current Page*/
     [].forEach.call(document.querySelectorAll('nav > label'), function(label) {
         if (label != document.querySelector('label[title='+id+']')) {
             label.classList.remove('far'); label.classList.add('fas');
@@ -30,11 +34,10 @@ function pages(id) {
             label.classList.add('far'); label.classList.remove('fas');
         }
     });
-    var main = document.querySelector('main');
-    var data = document.querySelector('iframe[title='+id+']');
-    var lightbox = document.querySelector('div[title=content]');
-    while (main.firstChild) main.removeChild(main.firstChild);
-    if (lightbox) lightbox.remove();
-    if (data) data.dispatchEvent(new Event('click'), new Event('touchend'));
+    /*Clear Content*/
+    while (data.firstChild) data.removeChild(data.firstChild);
+    while (grid.firstChild) grid.removeChild(grid.firstChild);
+    while (content.firstChild) content.removeChild(content.firstChild);
+    /*Set Content*/
+    if (page) page.dispatchEvent(new Event('click'), new Event('touchend'));
 }
-
