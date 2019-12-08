@@ -8,7 +8,8 @@ function pages(id) {
     });
     var main = document.querySelector('main');
     while (main.firstChild) main.removeChild(main.firstChild);
-    document.querySelector('iframe[title='+id+']').click() || console.log('Missing');
+    var data = document.querySelector('iframe[title='+id+']')
+    if (data) data.click();
 }
 
 document.addEventListener('keydown', function(e) {
@@ -21,6 +22,5 @@ document.addEventListener('keydown', function(e) {
         if (index > 0) index-=1;
             else index=children.length-1;
     }
-    console.log(index);
     document.querySelectorAll('nav > label')[index].click();
 });
