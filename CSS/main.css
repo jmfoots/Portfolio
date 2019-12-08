@@ -37,10 +37,11 @@ html,body{
     display: flex;
     flex-direction: column;
     background: var(--coal);
+    height: 100%;
 } body{
     display: flex;
     flex-direction: column;
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint);
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     flex: 1;
 } header{
     padding: var(--LPad) var(--HPad);
