@@ -124,6 +124,7 @@ details[title=lightbox]{
     z-index:9;
     opacity: 1;
 } details[title=lightbox] > summary {
+    display: flex;
     justify-content: right;
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
