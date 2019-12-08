@@ -117,11 +117,12 @@ details[title=footer]{
 }
 /*Content*/
 details[title=lightbox]{
-    position:absolute;
+    position:fixed;
     display: none;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
     transition: opacity 0.5s ease;
