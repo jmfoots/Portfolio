@@ -117,7 +117,7 @@ details[title=footer]{
 }
 /*Content*/
 details[title=lightbox]{
-    position:fixed;
+    position:absolute;
     display: none;
     top: 0;
     width: 100vw;
@@ -169,4 +169,5 @@ details[title=lightbox]{
     border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
+    overflow: visible;
 }
