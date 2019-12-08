@@ -134,19 +134,14 @@ details[title=lightbox]{
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
 } details[title=lightbox] > summary::before{
-    flex: 2;
     color: var(--coal);
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
-}details[title=lightbox] > summary::after{
-    content:'';
-    flex: 1;
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
-    display: flex;
+    display: block;
     list-style-type: none;
-    justify-content: space-between;
 } section[title=grid] > h2{
     cursor: pointer;
     padding: var(--HPad);
@@ -172,6 +167,5 @@ details[title=lightbox]{
 } header[title='content']{
     line-height: 2;
 } div[title='content']{
-    display: flex;
-    justify-content: flex-start;
+
 }
