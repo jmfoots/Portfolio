@@ -110,9 +110,9 @@ details[title=footer]{
 } summary{
     display: block;
     font-size: var(--medium);
-    list-style-type: none;
+    list-style-image: url('');
 } details > summary::-webkit-details-marker{
-    display: none;
+    list-style-image: url('');
 }
 /*Content*/
 details[title=lightbox]{
