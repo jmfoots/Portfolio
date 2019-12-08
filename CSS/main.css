@@ -112,8 +112,11 @@ details[title=footer]{
     list-style-type: none;
     appearance: none;
     font-size: var(--medium);
-} summary::marker {
+} summary::marker, summary::-moz-list-bullet {
     display: none;
+} summary::before{
+    list-style-type: none;
+    appearance: none;
 }
 /*Content*/
 details[title=lightbox]{
