@@ -148,7 +148,7 @@ details[title=lightbox]{
     background-color: var(--light);
     margin: 0 var(--LPad);
     border: calc(var(--normal) / 4) transparent solid;
-    transition: background-color 0.5s ease;
+    transition: border-color 0.5s ease;
 } section[title='grid'] {
     display: grid;
     margin: var(--LPad);
@@ -157,6 +157,11 @@ details[title=lightbox]{
     border-top-left-radius: 30px;
     grid-template: auto auto / auto auto;
     grid-gap: var(--icon);
+} section[title='grid']::after {
+    content:'';
+    border: var(--coal) solid;
+    border-width: var(--normal) 0 0 var(--normal);
+    border-top-left-radius: 30px;
 } section[title='grid'] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 }
