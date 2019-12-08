@@ -168,13 +168,11 @@ details[title=lightbox]{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
 } section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 } section[title=content]{
-    border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
     overflow: visible;
