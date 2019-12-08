@@ -109,7 +109,11 @@ details[title=footer]{
     cursor: pointer;
 } summary{
     display: block;
+    list-style-type: none;
+    appearance: none;
     font-size: var(--medium);
+} summary::marker {
+    display: none;
 }
 /*Content*/
 details[title=lightbox]{
@@ -141,10 +145,6 @@ details[title=lightbox]{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
     display: block;
-    appearance: none;
-    list-style-type: none;
-} details[title=lightbox][open] > summary::marker {
-    display: none;
 } section[title=grid] > h2{
     cursor: pointer;
     padding: var(--HPad);
