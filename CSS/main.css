@@ -52,6 +52,7 @@ html,body{
     display: flex;
     flex-direction: column;
 } section{
+    margin: calc(var(--LPad));
     padding: var(--LPad) var(--HPad);
     box-shadow: 0 calc(var(--normal) / 4) var(--icon) var(--troutcoal);
 }
@@ -157,7 +158,6 @@ details[title=lightbox]{
     transition: border-color 0.5s ease;
 } section[title=grid] {
     display: grid;
-    margin: var(--LPad);
     border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
@@ -166,7 +166,6 @@ details[title=lightbox]{
 } section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 } section[title=content]{
-    margin: calc(var(--HPad));
     border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
