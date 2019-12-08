@@ -87,7 +87,7 @@ label input[type=radio]{
     text-transform: uppercase;
 } label:hover, label:focus {
     border-color: var(--mint);
-} label[class*='far'], details[open]{
+} label[class*='far'], details[title=footer][open]{
     border-color: var(--trout);
     background-color: var(--light);
 } nav {
@@ -114,7 +114,6 @@ details[title=footer]{
 /*Content*/
 details[title=lightbox]{
     position:fixed;
-    z-index:9;
     top:0;
     left:0;
     width: 100vw;
@@ -123,5 +122,6 @@ details[title=lightbox]{
     opacity:0;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open] {
+    z-index:9;
     opacity: 1;
 }
