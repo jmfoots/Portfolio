@@ -114,10 +114,8 @@ details[title=footer]{
 /*Content*/
 details[title=lightbox]{
     position:fixed;
-    top:-100%;
-    bottom:100%;
-    left:0;
-    right:0;
+    width: 100vw;
+    height: 100vh;
     background: var(--dust);
     opacity:0;
     transition: opacity 0.5s ease;
