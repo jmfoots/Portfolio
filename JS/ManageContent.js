@@ -27,7 +27,7 @@ function init(){
 function pages(id) {
     var grid = document.querySelector('section[title=grid]');
     var data = document.querySelector('div[title=data]');
-    var content = document.querySelector('div[title=content]');
+    
     var page = document.querySelector(`iframe[title=${id}]`);
     /*Current Page*/
     [].forEach.call(document.querySelectorAll('nav > label'), function(label) {
@@ -40,7 +40,6 @@ function pages(id) {
     /*Clear Content*/
     while (data.firstChild) data.removeChild(data.firstChild);
     while (grid.firstChild) grid.removeChild(grid.firstChild);
-    while (content.firstChild) content.removeChild(content.firstChild);
     /*Set Content*/
     if (page) page.dispatchEvent(new Event('click'), new Event('touchend'));
 }

@@ -24,10 +24,13 @@ function loadData(data) {
 /*Pages*/
 function createbio(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
+    var content = document.querySelector('div[title=content]');
     var first = true;
     var [title, subtitle] = '';
     var pre='';
-    /*Read Data*/
+    /*Clear Content*/
+    while (content.firstChild) content.removeChild(content.firstChild);
+    /*Read Content*/
     [].forEach.call(data.split("\n"), function(line) {
         if (first){
             [title, subtitle]=line.split(",");
@@ -35,7 +38,7 @@ function createbio(data) {
         } else pre+=line+' ';
     });
     /*Create Content*/
-    document.querySelector('div[title=content]').insertAdjacentHTML('beforeend', `
+    content.insertAdjacentHTML('beforeend', `
             <header title='content'>
                 <h1>${title}</h1>
                 <h2>${subtitle}</h2>
