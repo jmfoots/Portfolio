@@ -1,4 +1,4 @@
-document.onload(function() {
+window.onload(function() {
     document.querySelector('iframe[title=navigation]').click();
     document.querySelector('nav > label:first-child > input').click();
 });
