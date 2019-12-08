@@ -99,7 +99,7 @@ label input[type=radio]{
     display: none;
 }
 /*Footer*/
-details{
+details[title=footer]{
     align-self: flex-end;
     flex: 1;
     margin: 0 calc(var(--normal) / 2);
@@ -112,7 +112,7 @@ details{
     font-size: var(--medium);
 }
 /*Content*/
-article{
+details[title=lightbox]{
     position:fixed;
     z-index:501;
     top:0;
@@ -120,5 +120,8 @@ article{
     width: 100vw;
     height: 100vh;
     background: var(--coaltrout);
-    opacity:0.5;
+    opacity:0;
+    transition: opacity 0.5s ease;
+} details[title=lightbox][open] {
+    opacity: 1;
 }
