@@ -116,10 +116,10 @@ details[title=lightbox]{
     position:fixed;
     display: none;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - var(--normal));
+    height: calc(100vh - var(--normal));
     background: var(--lightmint);
-    border: 0 var(--normal) var(--trout) solid;
+    border: var(--normal) var(--trout) solid;
     opacity:0;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
