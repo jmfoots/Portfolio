@@ -19,11 +19,13 @@
     --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
     --dust: rgba(58,58,58,0.5);
+    --thinmint: rgba(207,214,211,0.35);
     /*Gradients*/
     --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
     /*Box Shadows*/
-    --shadow: var(--normal) var(--medium) var(--icon) var(--large) var(--dust);
+    --thickshadow: var(--normal) var(--medium) var(--icon) var(--large) var(--dust);
+    --thinshadow: calc(var(--normal) / 4) calc(var(--medium)  / 4) calc(var(--icon)  / 2) calc(var(--large) / 2) var(--thinmint);
 }
 /*Main*/
 html,body{
@@ -56,10 +58,10 @@ html,body{
     display: flex;
     flex-direction: column;
     flex: 1;
+    box-shadow: var(--thinmint);
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
-    box-shadow: var(--shadow);
 }
 /*Headers*/
 h1,h2,h3{
@@ -170,8 +172,6 @@ details[title=lightbox]{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-width: var(--normal) 0 0 var(--normal);
-    border-top-left-radius: var(--large);
 } section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 } section[title=content]{
