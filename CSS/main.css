@@ -142,14 +142,14 @@ details[title=lightbox]{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
     display: inherit;
-} section[title='grid'] > h2{
+} section[title=grid] > h2{
     cursor: pointer;
     padding: var(--HPad);
     background-color: var(--light);
     margin: 0 var(--LPad);
     border: calc(var(--normal) / 4) transparent solid;
     transition: border-color 0.5s ease;
-} section[title='grid'] {
+} section[title=grid] {
     display: grid;
     margin: var(--LPad);
     border: var(--trout) double;
@@ -157,6 +157,11 @@ details[title=lightbox]{
     border-top-left-radius: var(--large);
     grid-template: auto auto / auto auto;
     grid-gap: var(--icon);
-} section[title='grid'] > h2:hover, section[title='grid'] > h2:focus{
+} section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
+} section[title=content]{
+    margin: var(--LPad);
+    border-width: var(--normal) 0 0 var(--normal);
+    border-top-left-radius: var(--large);
+    border-top-left-radius: var(--large);
 }
