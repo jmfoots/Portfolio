@@ -3,7 +3,7 @@ function createAboutPage(data) {
     var pre='';
     [].forEach.call(data.split("\n"), function(line) {
         if (first){
-            var script = "document.querySelector('details[title=lightbox] > summary').click()";
+            var script = "document.querySelector(\'details[title=lightbox] > summary\').click()";
             document.querySelector('main').insertAdjacentHTML('beforeend', `
                 <section>
                     <h2 title="Show ${line}" class="fas fa-expand" onclick=${script}>${line}</h2>
