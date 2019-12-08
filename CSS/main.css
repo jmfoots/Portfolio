@@ -160,8 +160,8 @@ details[title=lightbox]{
 } section[title='grid']::after {
     content:'';
     border: var(--coal) solid;
-    border-width: var(--normal) 0 0 var(--normal);
-    border-top-left-radius: 30px;
+    border-width: 0 var(--normal) var(--normal) 0;
+    border-bottom-right-radius: 30px;
 } section[title='grid'] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 }
