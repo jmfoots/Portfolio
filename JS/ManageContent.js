@@ -4,20 +4,19 @@ function init(){
     document.querySelector('nav > label:first-child > input').dispatchEvent(new Event('click'), new Event('touchend'));
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
+        var lightbox = document.querySelector('details[title=lightbox][open] > summary');
         var children = document.querySelectorAll('nav > label');
         var index = Array.prototype.indexOf.call(children, document.querySelector('label[class*=far]'));
-        if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next
-            if (index < (children.length-1)) index+=1;
-                else index=0;
-        } else if (([37, 8, 40].indexOf(e.keyCode) >= 0)){ //Prev
-            if (index > 0) index-=1;
-                else index=children.length-1;
-        }
-        document.querySelectorAll('nav > label')[index].dispatchEvent(new Event('click'), new Event('touchend'));
-    });
-    document.addEventListener('keyup', function(e) {
-        var lightbox = document.querySelector('details[title=lightbox][open] > summary');
-        if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.dispatchEvent(new Event('click'), new Event('touchend'));
+        if ([39, 9, 38, 37, 8, 40].indexOf(e.keyCode) >= 0) {
+            if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next
+                if (index < (children.length-1)) index+=1;
+                    else index=0;
+            } else if (([37, 8, 40].indexOf(e.keyCode) >= 0)){ //Prev
+                if (index > 0) index-=1;
+                    else index=children.length-1;
+            }
+            document.querySelectorAll('nav > label')[index].dispatchEvent(new Event('click'), new Event('touchend'));
+        } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.dispatchEvent(new Event('click'), new Event('touchend'));
     });
 }
 
