@@ -117,7 +117,6 @@ details[title=footer]{
 }
 /*Content*/
 details[title=lightbox]{
-    position:fixed;
     display: none;
     top: 0;
     width: 100vw;
