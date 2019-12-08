@@ -159,7 +159,7 @@ details[title=lightbox]{
     flex: 1;
     padding: var(--HPad);
     background-color: var(--light);
-    margin: 0 0 var(--normal) var(--normal);
+    margin: calc(var(--normal) / 4);
     border: calc(var(--normal) / 4) transparent solid;
     transition: border-color 0.5s ease;
 } section[title=grid] {
