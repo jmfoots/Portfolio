@@ -119,8 +119,8 @@ details[title=lightbox]{
     width: 100vw;
     height: 100vh;
     background: var(--lightmint);
-    border-left: var(--normal) var(--trout) solid;
-    border-right: var(--normal) var(--trout) solid;
+    box-sizing: border-box;
+    border: 0 calc(var(--normal) / 2) var(--trout) solid;
     opacity:0;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
