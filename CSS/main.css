@@ -124,11 +124,11 @@ details[title=lightbox]{
     z-index:9;
     opacity: 1;
 } details[title=lightbox] > summary {
-    padding: var(--LPad) calc(var(--LPad) / 2);
+    justify-content: right;
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
-    text-align: right;
 } details[title=lightbox] > summary::before{
+    color: var(--grey);
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus {
