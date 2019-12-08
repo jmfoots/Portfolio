@@ -124,6 +124,7 @@ details[title=lightbox]{
     z-index: 9;
     opacity: 1;
 } details[title=lightbox] > summary {
+    display: none;
     float: right;
     padding: var(--LPad) calc(var(--LPad) / 2);
     border-top: calc(var(--normal) / 4) transparent solid;
@@ -134,4 +135,6 @@ details[title=lightbox]{
     padding: var(--LPad) var(--HPad);
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus {
     border-color: var(--mint);
-} 
+} details[title=lightbox][open] > summary {
+    display: inherit;
+}
