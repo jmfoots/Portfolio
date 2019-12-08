@@ -99,6 +99,7 @@ label input[type=radio]{
     font-size: var(--large);
     text-align: center;
     justify-content: space-around;
+    margin: 0 calc(var(--normal) / 2);
 } iframe{
     display: none;
 }
@@ -158,8 +159,7 @@ details[title=lightbox]{
     flex: 1;
     padding: var(--HPad);
     background-color: var(--light);
-    margin: 0 0 var(--LPad) var(--LPad);
-    margin-left: 0;
+    margin: 0 0 var(--normal) var(--normal);
     border: calc(var(--normal) / 4) transparent solid;
     transition: border-color 0.5s ease;
 } section[title=grid] {
