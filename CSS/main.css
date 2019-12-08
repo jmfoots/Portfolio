@@ -109,10 +109,7 @@ details[title=footer]{
     cursor: pointer;
 } summary{
     display: block;
-    list-style-type: none;
     font-size: var(--medium);
-} summary::marker, summary::-moz-list-bullet {
-    display: none;
 }
 /*Content*/
 details[title=lightbox]{
