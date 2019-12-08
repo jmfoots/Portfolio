@@ -130,7 +130,6 @@ details[title=lightbox]{
     opacity: 1;
 } details[title=lightbox] > summary{
     display: none;
-    float: right;
     padding: var(--LPad) calc(var(--LPad) / 2);
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
