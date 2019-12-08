@@ -159,10 +159,9 @@ details[title=lightbox]{
     padding: var(--HPad);
     background-color: var(--light);
     margin: 0 0 var(--LPad) var(--LPad);
+    margin-left: 0;
     border: calc(var(--normal) / 4) transparent solid;
     transition: border-color 0.5s ease;
-} section[title=grid] > h2:first-of-type{
-    margin-left: 0;
 } section[title=grid] {
     display: flex;
     justify-content: space-between;
