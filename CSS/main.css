@@ -110,13 +110,9 @@ details[title=footer]{
 } summary{
     display: block;
     list-style-type: none;
-    appearance: none;
     font-size: var(--medium);
 } summary::marker, summary::-moz-list-bullet {
     display: none;
-} summary::before{
-    list-style-type: none;
-    appearance: none;
 }
 /*Content*/
 details[title=lightbox]{
