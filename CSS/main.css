@@ -144,8 +144,11 @@ details[title=lightbox]{
     display: inherit;
 } section > h2{
     cursor: pointer;
+    line-height: calc(var(--normal) * 1.6);
     text-transform: uppercase;
-} section > h2::before{
-    font-size: var(--icon);
-    padding: var(--LPad) var(--HPad);
+    padding: var(--HPad);
+    background: var(--lightmint);
+    box-sizing: border-box;
+    border: var(--trout) solid;
+    border-width: 0 calc(var(--normal) / 2);
 }
