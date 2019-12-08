@@ -55,8 +55,8 @@ html,body{
     flex-direction: column;
     flex: 1;
 } section{
-    margin: calc(var(--LPad));
-    padding: var(--LPad) var(--HPad);
+    margin: calc(var(--LPad)/2);
+    padding: calc(var(--LPad) / 2) var(--MPad);
     box-shadow: 0 calc(var(--normal) / 4) var(--icon) var(--troutcoal);
 }
 /*Headers*/
@@ -161,6 +161,8 @@ details[title=lightbox]{
     margin: 0 0 var(--LPad) var(--LPad);
     border: calc(var(--normal) / 4) transparent solid;
     transition: border-color 0.5s ease;
+} section[title=grid] > h2:first-of-type{
+    margin: 0 0 0 var(--LPad);
 } section[title=grid] {
     display: flex;
     justify-content: space-between;
