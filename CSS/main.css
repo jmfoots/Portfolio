@@ -24,6 +24,8 @@
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
     /*Box Shadows*/
     --shadow: calc(var(--normal) / 4) calc(var(--medium)  / 4) calc(var(--icon)  / 2) calc(var(--large) / 2) var(--dust);
+    --box: 0 0 calc(var(--icon)  / 4) calc(var(--large) / 4) var(--dust),
+        inset 0 0 calc(var(--icon)  / 2) calc(var(--large) / 2) var(--dust);
 }
 /*Main*/
 html,body{
@@ -164,6 +166,7 @@ details[title=lightbox]{
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
     border: calc(var(--normal) / 4) transparent solid;
+    box-shadow: var(--box);
     transition: border-color 0.5s ease;
 } section[title=grid] {
     display: flex;
