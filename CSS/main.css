@@ -154,14 +154,13 @@ details[title=lightbox]{
     margin: var(--LPad);
     border: var(--coal) solid;
     border-width: var(--normal) 0 0 var(--normal);
-    border-top-left-radius: 30px;
+    border-top-left-radius: 15px;
     grid-template: auto auto / auto auto;
     grid-gap: var(--icon);
-} section[title='grid']::after {
-    content:'';
+} section[title='grid']::before{
     border: var(--coal) solid;
-    border-width: 0 var(--normal) var(--normal) 0;
-    border-bottom-right-radius: 30px;
+    border-width: calc(var(--normal) / 2) 0 0 calc(var(--normal) / 2);
+    border-top-left-radius: 30px;
 } section[title='grid'] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 }
