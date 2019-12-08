@@ -13,8 +13,13 @@
         <link rel="stylesheet" type="text/css" href="CSS/font.css">
         <!--JS-->
         <script src="https://kit.fontawesome.com/023aa0f058.js" crossorigin="anonymous"></script>
+        <!--Scripts-->
+        <script type="text/javascript" src="JS/CreateNavigation.js"></script>
+        <script type="text/javascript" src="JS/CreatePages.js"></script>
+        <script type="text/javascript" src="JS/NavigationFunctions.js" async></script>
+        <script type="text/javascript" src="JS/ContentFunctions.js" async></script>
     </head>
-    <body onload="document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);">
+    <body onload="init()">
         <nav></nav>
         <header>
             <h1>Jonathan Foots</h1>
@@ -35,9 +40,4 @@
     <!--Data-->
     <iframe title='navigation' src="TXT/navigation.txt" onclick='createNavigation(this.contentDocument.body.firstChild.innerHTML)'></iframe>
     <iframe title='about' src="TXT/bio.txt" onclick='createAboutPage(this.contentDocument.body.firstChild.innerHTML)'></iframe>
-    <!--Scripts-->
-    <script type="text/javascript" src="JS/CreateNavigation.js"></script>
-    <script type="text/javascript" src="JS/CreatePages.js"></script>
-    <script type="text/javascript" src="JS/NavigationFunctions.js" async></script>
-    <script type="text/javascript" src="JS/ContentFunctions.js" async></script>
 </html>
