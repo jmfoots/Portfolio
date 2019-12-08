@@ -110,7 +110,8 @@ details[title=footer]{
 } summary{
     display: block;
     font-size: var(--medium);
-} summary::-webkit-details-marker{
+    list-style-type: none;
+} details > summary::-webkit-details-marker{
     display: none;
 }
 /*Content*/
