@@ -147,12 +147,17 @@ details[title=lightbox]{
     padding: var(--HPad);
     background-color: var(--light);
     padding: var(--LPad);
+    margin: 0 var(--LPad);
     border-top: calc(var(--normal) / 4) transparent solid;
+    border-radius: 50%;
     transition: background-color 0.5s ease;
 } section[title='grid'] {
     display: grid;
-    background-color: var(--coal);
-    grid-template: auto auto auto / auto auto auto;
+    margin: var(--LPad);
+    border: var(--coal) solid;
+    border-width: var(--normal) 0 0 var(--normal);
+    border-top-left-radius: 30px;
+    grid-template: auto auto / auto auto;
     grid-gap: var(--icon);
 } section[title='grid'] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
