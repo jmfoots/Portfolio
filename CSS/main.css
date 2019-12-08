@@ -126,6 +126,7 @@ details[title=lightbox]{
 } details[title=lightbox] > summary {
     display: flex;
     justify-content: right;
+    padding: var(--LPad) calc(var(--LPad) / 2);
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
 } details[title=lightbox] > summary::before{
