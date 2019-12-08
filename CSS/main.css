@@ -114,6 +114,7 @@ details[title=footer]{
 /*Content*/
 details[title=lightbox]{
     position:fixed;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background: var(--dust);
@@ -122,4 +123,6 @@ details[title=lightbox]{
 } details[title=lightbox][open] {
     z-index:9;
     opacity: 1;
+} details[title=lightbox]::before{
+    content:'\f00d';
 }
