@@ -25,7 +25,7 @@
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
     /*Box Shadows*/
     --thickshadow: var(--normal) var(--medium) var(--icon) var(--large) var(--dust);
-    --thinshadow: calc(var(--normal) / 4) calc(var(--medium)  / 4) calc(var(--icon)  / 2) calc(var(--large) / 2) var(--thinmint);
+    --thinshadow: inset calc(var(--normal) / 4) calc(var(--medium)  / 4) calc(var(--icon)  / 2) calc(var(--large) / 2) var(--thinmint);
 }
 /*Main*/
 html,body{
@@ -58,7 +58,7 @@ html,body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    box-shadow: var(--thinmint);
+    box-shadow: var(--thinshadow);
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
