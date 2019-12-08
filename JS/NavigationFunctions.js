@@ -11,7 +11,7 @@ function pages(id) {
     var lightbox = document.querySelector('div[title=content]');
     while (main.firstChild) main.removeChild(main.firstChild);
     if (lightbox) lightbox.remove();
-    if (data) data.click();
+    if (data) data.initTouchEvent();
 }
 
 document.addEventListener('keydown', function(e) {
@@ -24,5 +24,5 @@ document.addEventListener('keydown', function(e) {
         if (index > 0) index-=1;
             else index=children.length-1;
     }
-    document.querySelectorAll('nav > label')[index].click();
+    document.querySelectorAll('nav > label')[index].initTouchEvent();
 });
