@@ -1,8 +1,10 @@
 function createAboutPage(data) {
     var first = true;
+    var title = '';
     var pre='';
     [].forEach.call(data.split("\n"), function(line) {
         if (first){
+            title=line;
             var script = "document.querySelector(\'details[title=lightbox] > summary\').click()";
             document.querySelector('main').insertAdjacentHTML('beforeend', `
                 <section title=grid>
@@ -11,5 +13,9 @@ function createAboutPage(data) {
             first=false;
         } else pre+=line+' ';
     });
-    document.querySelector('main > section').insertAdjacentHTML('beforeend', `<p>${pre}</p>`);
+    document.querySelector('details[title=lightbox]').insertAdjacentHTML('beforeend', `
+        <section>
+            <h2>${title}</h2>
+            <p>${pre}</p>
+        <section>`);
 }
