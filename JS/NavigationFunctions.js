@@ -8,7 +8,7 @@ function pages(id) {
     });
     var main = document.querySelector('main');
     var data = document.querySelector('iframe[title='+id+']');
-    var lightbox = document.querySelector('details[title=lightbox] > [title=content]');
+    var lightbox = document.querySelector('details[title=lightbox] > *[title=content]');
     while (main.firstChild) main.removeChild(main.firstChild);
     while (lightbox) lightbox.remove();
     if (data) data.click();
