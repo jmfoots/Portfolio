@@ -76,6 +76,7 @@ h1,h2,h3{
 label input[type=radio]{
     display: none;
 } label{
+    flex: 1;
     padding: var(--LPad) calc(var(--LPad) / 2);
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
@@ -96,6 +97,7 @@ label input[type=radio]{
     background-color: var(--light);
 } nav {
     display: flex;
+    flex-wrap: wrap;
     font-size: var(--large);
     text-align: center;
     justify-content: space-around;
@@ -161,6 +163,7 @@ details[title=lightbox]{
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
     border: calc(var(--normal) / 4) transparent solid;
+    overflow: hidden;
     transition: border-color 0.5s ease;
 } section[title=grid] {
     display: flex;
