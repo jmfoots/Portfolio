@@ -6,5 +6,4 @@ function createNavigation(data) {
                 <input type="radio" name="menu" id="${title}" onclick="pages(this.id)"/>
             </label>`);
     });
-    document.querySelector('nav > label:first-child > input').click();
 }
