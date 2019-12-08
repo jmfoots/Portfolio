@@ -54,8 +54,6 @@ html,body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: border-box var(--normal) url("../IMG/background.png") repeat;
-    background-size: var(--icon);
     border-bottom: calc(var(--normal) / 4) var(--trout) solid;
 } section{
     margin: calc(var(--LPad)/2);
