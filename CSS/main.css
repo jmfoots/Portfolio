@@ -141,7 +141,7 @@ details[title=lightbox]{
 } details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
     border-color: var(--trout);
 } details[title=lightbox][open] > summary{
-    display: inherit;
+    display: block;
 } section[title=grid] > h2{
     cursor: pointer;
     padding: var(--HPad);
@@ -160,7 +160,7 @@ details[title=lightbox]{
 } section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 } section[title=content]{
-    margin: calc(var(--icon)) calc(var(--icon) * 3) 0 var(--icon);
+    margin: calc(var(--HPad));
     border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
