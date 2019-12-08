@@ -144,4 +144,7 @@ details[title=lightbox]{
     display: inherit;
 } section > h2{
     cursor: pointer;
+} section > h2::before{
+    font-size: var(--icon);
+    padding: var(--LPad) var(--HPad);
 }
