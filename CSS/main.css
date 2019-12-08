@@ -152,16 +152,11 @@ details[title=lightbox]{
 } section[title='grid'] {
     display: grid;
     margin: var(--LPad);
-    border: var(--coal) solid;
+    border: var(--trout) double;
     border-width: var(--normal) 0 0 var(--normal);
-    border-top-left-radius: 15px;
+    border-top-left-radius: var(--large);
     grid-template: auto auto / auto auto;
     grid-gap: var(--icon);
-} section[title='grid']::before{
-    content:'';
-    border: var(--coal) solid;
-    border-width: calc(var(--normal) / 2) 0 0 calc(var(--normal) / 2);
-    border-top-left-radius: 30px;
 } section[title='grid'] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 }
