@@ -19,13 +19,11 @@
     --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
     --dust: rgba(58,58,58,0.5);
-    --thinmint: rgba(207,214,211,0.35);
     /*Gradients*/
     --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
     /*Box Shadows*/
-    --thickshadow: var(--normal) var(--medium) var(--icon) var(--large) var(--dust);
-    --thinshadow: inset calc(var(--normal) / 4) calc(var(--medium)  / 4) calc(var(--icon)  / 2) calc(var(--large) / 2) var(--thinmint);
+    --shadow: calc(var(--normal) / 4) calc(var(--medium)  / 4) calc(var(--icon)  / 2) calc(var(--large) / 2) var(--dust);
 }
 /*Main*/
 html,body{
@@ -50,7 +48,7 @@ html,body{
 } header{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
-    box-shadow: var(--thickshadow);
+    box-shadow: var(--shadow);
 } footer{
     display: flex;
     width: 100%;
@@ -58,7 +56,6 @@ html,body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    box-shadow: var(--thinshadow);
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
