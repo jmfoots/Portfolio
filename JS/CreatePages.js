@@ -3,11 +3,13 @@ function createAboutPage(data) {
     var pre='';
     [].forEach.call(data.split("\n"), function(line) {
         if (first){
-            var script = "document.querySelector(\'details[title=lightbox] > summary\').click()";
-            document.querySelector('main').insertAdjacentHTML('beforeend', '\
-                <section><h2 title="Show '+line+'" onclick='+script+'>'+line+'</h2></section>');
+            var script = "document.querySelector('details[title=lightbox] > summary').click()";
+            document.querySelector('main').insertAdjacentHTML('beforeend', `
+                <section>
+                    <h2 title="Show ${line}" onclick=${script}>${line}</h2>
+                </section>`);
             first=false;
-        } else pre +=line+' ';
+        } else pre+=line+' ';
     });
-    document.querySelector('main > section').insertAdjacentHTML('beforeend', '<p>'+pre+'</p>');
+    document.querySelector('main > section').insertAdjacentHTML('beforeend', `<p>${pre}</p>`);
 }
