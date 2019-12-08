@@ -44,6 +44,5 @@ function createbio(data) {
                 <p>${pre}</p>
             <section>`);
     /*Display Content*/
-    
-    lightbox.dispatchEvent(new Event('click'), new Event('touchend'));
+    lightbox.click();
 }
