@@ -18,9 +18,12 @@
     --mint: rgba(207,214,211,1);
     --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
+    --dust: rgba(58,58,58,0.5);
     /*Gradients*/
     --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
+    /*Box Shadows*/
+    --shadow: var(--normal) var(--medium) var(--icon) var(--large) var(--dust);
 }
 /*Main*/
 html,body{
@@ -45,7 +48,7 @@ html,body{
 } header{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
-    box-shadow: var(--normal) var(--medium) var(--icon) var(--large) var(--lightmint);
+    box-shadow: var(--shadow);
 } footer{
     display: flex;
     width: 100%;
@@ -56,7 +59,7 @@ html,body{
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
-    box-shadow: var(--normal) var(--medium) var(--icon) var(--large) var(--troutcoal);
+    box-shadow: var(--shadow);
 }
 /*Headers*/
 h1,h2,h3{
