@@ -50,7 +50,7 @@ html,body{
 } header{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
-    box-shadow: var(--shadow);
+    box-shadow: var(--thickshadow);
 } footer{
     display: flex;
     width: 100%;
