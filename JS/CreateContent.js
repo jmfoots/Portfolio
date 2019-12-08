@@ -16,13 +16,14 @@ function loadData(data) {
         document.querySelector('div[title=data]').insertAdjacentHTML('beforeend', `
             <iframe title=${title} src="${src}" onclick="create${title}(${html})"></iframe>`);
         /*Create Section*/
-        var script = "document.querySelector(\'details[title=lightbox] > summary\').click()";
+        var section = `document.querySelector('iframe[title=${title}]').click()`;
         document.querySelector('section[title=grid]').insertAdjacentHTML('beforeend', `
-            <h2 title="Open ${alt}" onclick="${script}">${alt}</h2>`);
+            <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
 }
 /*Pages*/
 function createbio(data) {
+    var lightbox = document.querySelector('details[title=lightbox] > summary');
     var first = true;
     var [title, subtitle] = '';
     var pre='';
@@ -42,4 +43,7 @@ function createbio(data) {
             <section title='content'>
                 <p>${pre}</p>
             <section>`);
+    /*Display Content*/
+    
+    lightbox.dispatchEvent(new Event('click'), new Event('touchend'));
 }
