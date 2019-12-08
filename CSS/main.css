@@ -118,14 +118,15 @@ details[title=lightbox]{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--dust);
+    background: var(--lightmint);
+    border: calc(var(--normal) / 4) var(--coal) solid;
     opacity:0;
     transition: opacity 0.5s ease;
-} details[title=lightbox][open] {
+} details[title=lightbox][open]{
     display: inherit;
     z-index: 9;
     opacity: 1;
-} details[title=lightbox] > summary {
+} details[title=lightbox] > summary{
     display: none;
     float: right;
     padding: var(--LPad) calc(var(--LPad) / 2);
@@ -135,10 +136,10 @@ details[title=lightbox]{
     color: var(--grey);
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
-} details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus {
+} details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
     border-color: var(--mint);
-} details[title=lightbox][open] > summary {
+} details[title=lightbox][open] > summary{
     display: inherit;
-} section > h2 {
+} section > h2{
     cursor: pointer;
 }
