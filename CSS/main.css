@@ -145,10 +145,15 @@ details[title=lightbox]{
 } section[title='grid'] > h2{
     cursor: pointer;
     padding: var(--HPad);
-    border: var(--trout) solid;
-    border-width: calc(var(--normal) / 2) calc(var(--normal) / 4);
+    background-color: var(--light);
+    padding: var(--LPad);
+    border-top: calc(var(--normal) / 4) transparent solid;
+    transition: background-color 0.5s ease;
 } section[title='grid'] {
     display: grid;
+    background-color: var(--coal);
     grid-template: auto auto auto / auto auto auto;
     grid-gap: var(--icon);
+} section[title='grid'] > h2:hover, section[title='grid'] > h2:focus{
+    border-color: var(--trout);
 }
