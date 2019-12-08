@@ -16,8 +16,8 @@ function init(){
                     else index=children.length-1;
             }
             console.log(index);
-            document.querySelectorAll('nav > label')[index].dispatchEvent(new Event('click'), new Event('touchend'));
-        } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.dispatchEvent(new Event('click'), new Event('touchend'));
+            document.querySelectorAll('nav > label')[index].click();
+        } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
     });
 }
 
