@@ -108,6 +108,8 @@ details{
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
-    list-style-type: none;
     font-size: var(--medium);
+} summary::marker{
+    display: none;
 }
+/*Content*/
