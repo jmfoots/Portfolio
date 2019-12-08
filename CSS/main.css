@@ -36,6 +36,8 @@ html,body{
 } html{
     background: var(--coal);
 } body{
+    display: flex;
+    flex-direction: column;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     height: 100vh;
 } header{
@@ -43,7 +45,7 @@ html,body{
     background-color: var(--grey);
     box-shadow: 0 1px var(--large) var(--lightmint);
 } footer{
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 100%;
     padding: 0;
@@ -51,6 +53,7 @@ html,body{
 } main{
     display: flex;
     flex-direction: column;
+    flex: 1;
 } section{
     margin: calc(var(--LPad));
     padding: var(--LPad) var(--HPad);
