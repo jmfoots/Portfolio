@@ -1,5 +1,5 @@
 document.onload(function() {
-    document.querySelector('iframe[title=navigation]');
+    document.querySelector('iframe[title=navigation]').click();
     document.querySelector('nav > label:first-child > input').click();
 });
 
