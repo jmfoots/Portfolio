@@ -26,24 +26,8 @@ function loadData(data) {
 function createbio(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
-    var first = true;
-    var [title, subtitle] = ['',''];
-    var pre='';
     clearContent();
-    /*Read Content*/
-    [].forEach.call(data.split("~"), function(line) {
-        console.log(line);
-        if (first && line.length>0 ){
-            [title, subtitle]=line.split(",");
-            console.log(title);
-            console.log(subtitle);
-            first=false;
-        } else {
-            [].forEach.call(line.split("\n"), function(string) {
-                pre += string;
-            });
-        }
-    });
+    var [title, subtitle, pre] = readContent(data);
     /*Create Content*/
     content.insertAdjacentHTML('beforeend', `
             <header title='content'>
