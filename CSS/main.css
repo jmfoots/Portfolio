@@ -180,10 +180,12 @@ details[title=lightbox]{
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
     overflow: visible;
-} section[title=content] > p{
+} section[title=content] > p::before{
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     box-shadow: var(--box);
+} section[title=content] > p {
     padding: var(--HPad);
+    background-color: var(--light);
 }
 /*Tables*/
 table{
