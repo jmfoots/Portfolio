@@ -178,3 +178,20 @@ details[title=lightbox]{
     border-top-left-radius: var(--large);
     overflow: visible;
 }
+/*Tables*/
+table{
+    width: 100%;
+    border-spacing: calc(var(--normal) / 2);
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
+    box-shadow: var(--box);
+} thead{
+    background-color: var(--grey);
+} th {
+    padding: var(--LPad) var(--HPad);
+} th:not(:last-child) {
+    border-right: calc(var(--normal) / 4) var(--trout) solid;
+} td {
+    padding: var(--LPad);
+} td:nth-child(odd){
+    background-color: var(--dust);
+}
