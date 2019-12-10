@@ -33,7 +33,8 @@ function createbio(data) {
     /*Read Content*/
     [].forEach.call(data.split(";"), function(line) {
         if (first){
-            [title, subtitle]=line.split(",");
+            line = line.split('\n')
+            [title, subtitle]=line.split('\n')[0].split(",");
             first=false;
         } else {
             [].forEach.call(line.split("\n"), function(string) {
