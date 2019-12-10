@@ -94,3 +94,6 @@ function createcerts(data) {
     /*Display Content*/
     lightbox.click();
 }
+function createawards(data){
+    createcerts(data);
+}
