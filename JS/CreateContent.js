@@ -26,8 +26,21 @@ function loadData(data) {
 function createbio(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
+    var first = true;
+    var [title, subtitle] = ['',''];
+    var pre='';
     clearContent();
-    var [title, subtitle, pre] = readContent(data);
+    /*Read Content*/
+    [].forEach.call(data.split("~"), function(line) {
+        if (first && line.length>0){
+            [title, subtitle]=line.split(",");
+            first=false;
+        } else {
+            [].forEach.call(line.split("\n"), function(string) {
+                pre += string;
+            });
+        }
+    });
     /*Create Content*/
     content.insertAdjacentHTML('beforeend', `
             <header title='content'>
@@ -37,6 +50,49 @@ function createbio(data) {
             <section title='content'>
                 <p>${pre}</p>
             <section>`);
+    /*Display Content*/
+    lightbox.click();
+}
+function createhobbies(data) {
+    var lightbox = document.querySelector('details[title=lightbox] > summary');
+    var content = document.querySelector('div[title=content]');
+    var first = true; var header = true;
+    var [title, subtitle] = ['',''];
+    var tr=[];
+    clearContent();
+    /*Read & Create Content*/
+    [].forEach.call(data.split("~"), function(line) {
+        if (first && line.length>0){
+            [title, subtitle]=line.split(",");
+            first=false;
+            content.insertAdjacentHTML('beforeend', `
+                <header title='content'>
+                    <h1>${title}</h1>
+                    <h2>${subtitle}</h2>
+                </header>
+                <section title='content'>
+                    <table title='content'>
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                <section>`);
+        } else if (thead) {
+            var thead = document.querySelector('table[title=content] > thead');
+            header = false;
+            [].forEach.call(line.split(','), function(head) {
+                thead.insertAdjacentHTML('beforeend', `<th>${head}</th>`);
+            });
+        } else {
+            var tbody = document.querySelector('table[title=content] > tbody');
+            tbody.insertAdjacentHTML('beforeend', `<tr></tr>`);
+            var row = tbody.lastChild;
+            [].forEach.call(line.split(','), function(item) {
+                row.insertAdjacentHTML('beforeend', `<td>${item}</td>`);
+            });
+        }
+    });
     /*Display Content*/
     lightbox.click();
 }

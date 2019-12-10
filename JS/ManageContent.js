@@ -48,18 +48,3 @@ function clearContent(){
     var content = document.querySelector('div[title=content]');
     while (content.firstChild) content.removeChild(content.firstChild);
 }
-function readContent(data){
-    var first = true; var pre='';
-    var [title, subtitle] = ['',''];
-    [].forEach.call(data.split("~"), function(line) {
-        if (first && line.length>0){
-            [title, subtitle]=line.split(",");
-            first=false;
-        } else {
-            [].forEach.call(line.split("\n"), function(string) {
-                pre += string;
-            });
-        }
-    });
-    return [title, subtitle, pre]
-}
