@@ -58,7 +58,6 @@ function createhobbies(data) {
     var content = document.querySelector('div[title=content]');
     var first = true; var header = true;
     var [title, subtitle] = ['',''];
-    var tr=[];
     clearContent();
     /*Read & Create Content*/
     [].forEach.call(data.split("~"), function(line) {
@@ -78,13 +77,13 @@ function createhobbies(data) {
                         </tbody>
                     </table>
                 <section>`);
-        } else if (thead) {
+        } else if (thead && !first) {
             var thead = document.querySelector('table[title=content] > thead');
             header = false;
             [].forEach.call(line.split(','), function(head) {
                 thead.insertAdjacentHTML('beforeend', `<th>${head}</th>`);
             });
-        } else {
+        } else if (!first && !header){
             var tbody = document.querySelector('table[title=content] > tbody');
             tbody.insertAdjacentHTML('beforeend', `<tr></tr>`);
             var row = tbody.lastChild;
