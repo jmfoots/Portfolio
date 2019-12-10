@@ -78,10 +78,12 @@ function createhobbies(data) {
                     </table>
                 <section>`);
         } else if (header && !first) {
-            var thead = document.querySelector('table[title=content] > thead > tr');
             header = false;
+            var thead = document.querySelector('table[title=content] > thead');
+            thead.insertAdjacentHTML('beforeend', `<tr></tr>`);
+            var tr = thead.querySelector('tr');
             [].forEach.call(line.split(','), function(head) {
-                thead.insertAdjacentHTML('beforeend', `<th>${head}</th>`);
+                tr.insertAdjacentHTML('beforeend', `<th>${head}</th>`);
             });
         } else if (!first && !header){
             var tbody = document.querySelector('table[title=content] > tbody');
