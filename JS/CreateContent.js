@@ -33,7 +33,7 @@ function createbio(data) {
     /*Read Content*/
     [].forEach.call(data.split("~"), function(line) {
         console.log(line);
-        if (first){
+        if (first && line.length>0 ){
             [title, subtitle]=line.split(",");
             console.log(title);
             console.log(subtitle);
