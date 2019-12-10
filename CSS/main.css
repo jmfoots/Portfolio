@@ -166,7 +166,7 @@ details[title=lightbox]{
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
     border: calc(var(--normal) / 4) transparent solid;
-    box-shadow: var(--box);
+    text-align: center;
     transition: border-color 0.5s ease;
 } section[title=grid] {
     display: flex;
@@ -180,6 +180,10 @@ details[title=lightbox]{
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
     overflow: visible;
+} section[title=content] > p{
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
+    box-shadow: var(--box);
+    padding: var(--HPad);
 }
 /*Tables*/
 table{
