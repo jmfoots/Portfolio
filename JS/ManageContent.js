@@ -43,3 +43,8 @@ function pages(id) {
     /*Set Content*/
     if (page) page.dispatchEvent(new Event('click'), new Event('touchend'));
 }
+/*Content Management*/
+function clearContent(){
+    var content = document.querySelector('div[title=content]');
+    while (content.firstChild) content.removeChild(content.firstChild);
+}

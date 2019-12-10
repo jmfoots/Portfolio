@@ -21,6 +21,7 @@ function loadData(data) {
             <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
 }
+
 /*Pages*/
 function createbio(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -28,14 +29,17 @@ function createbio(data) {
     var first = true;
     var [title, subtitle] = '';
     var pre='';
-    /*Clear Content*/
-    while (content.firstChild) content.removeChild(content.firstChild);
+    clearContent();
     /*Read Content*/
-    [].forEach.call(data.split("\n"), function(line) {
+    [].forEach.call(data.split(";"), function(line) {
         if (first){
             [title, subtitle]=line.split(",");
             first=false;
-        } else pre+=line+' ';
+        } else {
+            [].forEach.call(line.split("\n"), function(string) {
+                pre += string;
+            });
+        }
     });
     /*Create Content*/
     content.insertAdjacentHTML('beforeend', `
