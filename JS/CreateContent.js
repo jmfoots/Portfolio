@@ -53,7 +53,7 @@ function createbio(data) {
     /*Display Content*/
     lightbox.click();
 }
-function createhobbies(data) {
+function createcerts(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true; var header = true;
