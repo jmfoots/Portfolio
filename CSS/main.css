@@ -180,7 +180,7 @@ details[title=lightbox]{
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
     overflow: visible;
-} section[title=content]:has(p){
+} section[title=content] + p{
     padding: var(--HPad);
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     box-shadow: var(--box);
