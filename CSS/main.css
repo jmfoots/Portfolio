@@ -172,6 +172,8 @@ details[title=lightbox]{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
+    box-shadow: var(--box);
 } section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 } section[title=content]{
@@ -193,6 +195,8 @@ table{
     border-right: calc(var(--normal) / 4) var(--trout) solid;
 } td {
     padding: var(--LPad);
-} tr:nth-child(even){
+} tbody > tr:nth-child(even){
+    background-color: var(--dust);
+} tbody > tr:nth-child(odd){
     background-color: var(--thinmint);
 }
