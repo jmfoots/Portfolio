@@ -78,7 +78,7 @@ function createhobbies(data) {
                     </table>
                 <section>`);
         } else if (header && !first) {
-            var thead = document.querySelector('table[title=content] > thead');
+            var thead = document.querySelector('table[title=content] > thead > tr');
             header = false;
             [].forEach.call(line.split(','), function(head) {
                 thead.insertAdjacentHTML('beforeend', `<th>${head}</th>`);
