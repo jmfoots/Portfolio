@@ -77,7 +77,7 @@ function createhobbies(data) {
                         </tbody>
                     </table>
                 <section>`);
-        } else if (thead && !first) {
+        } else if (header && !first) {
             var thead = document.querySelector('table[title=content] > thead');
             header = false;
             [].forEach.call(line.split(','), function(head) {
