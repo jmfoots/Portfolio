@@ -19,6 +19,7 @@
     --trout: rgba(74,81,83,1);
     --coal: rgba(58,58,58,1);
     --dust: rgba(58,58,58,0.15);
+    --lightmint: rgba(207,214,211,0.1);
     /*Gradients*/
     --troutcoal: linear-gradient(to bottom, var(--coal) 0%, 5%, var(--trout) 10%, 15%, var(--coal) 100%);
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
@@ -62,7 +63,7 @@ html,body{
     padding: calc(var(--LPad) / 2) var(--MPad);
 }
 /*Headers*/
-h1,h2,h3{
+h1,h2,h3,th{
     font-family: var(--formal), sans-serif;
     color: var(--trout);
     padding: 0;
@@ -71,7 +72,7 @@ h1,h2,h3{
     font-size: var(--title);
 } h2{
     font-size: var(--large);
-} h3{
+} h3,th{
     font-size: var(--medium);
 }
 /*Nav*/
@@ -192,6 +193,6 @@ table{
     border-right: calc(var(--normal) / 4) var(--trout) solid;
 } td {
     padding: var(--LPad);
-} td:nth-child(odd){
-    background-color: var(--dust);
+} tr:nth-child(even){
+    background-color: var(--lightmint);
 }
