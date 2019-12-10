@@ -27,7 +27,7 @@ function createbio(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true;
-    var [title, subtitle] = '';
+    var [title, subtitle] = ['',''];
     var pre='';
     clearContent();
     /*Read Content*/
@@ -35,6 +35,8 @@ function createbio(data) {
         console.log(line);
         if (first){
             [title, subtitle]=line.split(",");
+            console.log(title);
+            console.log(subtitle);
             first=false;
         } else {
             [].forEach.call(line.split("\n"), function(string) {
