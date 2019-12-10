@@ -61,5 +61,5 @@ function readContent(data){
             });
         }
     });
-    return title, subtitle, pre
+    return [title, subtitle, pre]
 }
