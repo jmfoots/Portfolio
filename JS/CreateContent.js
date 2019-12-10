@@ -47,7 +47,7 @@ function createbio(data) {
                 <h1>${title}</h1>
                 <h2>${subtitle}</h2>
             </header>
-            <section title='content'>
+            <section title='content' type='paragraph'>
                 <p>${pre}</p>
             <section>`);
     /*Display Content*/
