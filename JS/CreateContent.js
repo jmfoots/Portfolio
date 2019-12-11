@@ -91,7 +91,7 @@ function buildGrid(data){
                 <ul title='${header}'>
                 </ul>`);
             [].forEach.call(details.split("\n"), function(string) {
-                article.querySelector(`ul[title='${header}']`).insertAdjacentHTML('beforeend', `<li>${string}</li>`);
+                if (string.length>0) article.querySelector(`ul[title='${header}']`).insertAdjacentHTML('beforeend', `<li>${string}</li>`);
             });
         }
     });
