@@ -23,7 +23,8 @@ function init(){
         } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
     });
     document.querySelector('details[title=lightbox]').addEventListener("toggle", function() {
-        document.querySelector('nav').toggleAttribute('style', 'display', 'none');
+        var nav = document.querySelector('nav')
+        nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
     });
 }
 /*Navigation*/

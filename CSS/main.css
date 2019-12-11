@@ -138,8 +138,6 @@ details[title=lightbox]{
     display: inherit;
     z-index: 9;
     opacity: 1;
-} details[title=lightbox][open] {
-    display: none;
 } details[title=lightbox] > summary{
     display: none;
     text-align: center;
