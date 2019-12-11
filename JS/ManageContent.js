@@ -22,6 +22,9 @@ function init(){
             document.querySelectorAll('nav > label')[index].click();
         } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
     });
+    document.querySelector('details[title=lightbox]').addEventListener("toggle", function() {
+        document.querySelector('nav').toggleAttribute('style', 'display', 'none');
+    });
 }
 /*Navigation*/
 function pages(id) {
