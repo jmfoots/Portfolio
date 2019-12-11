@@ -24,7 +24,7 @@ function init(){
     });
     document.querySelector('details[title=lightbox]').addEventListener("toggle", function() {
         var nav = document.querySelector('nav')
-        nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+        nav.style.display = nav.style.display === 'none' ? '' : 'none';
     });
 }
 /*Navigation*/
