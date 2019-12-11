@@ -128,9 +128,8 @@ details[title=footer]{
 details[title=lightbox]{
     display: none;
     top: 0;
-    width: 100vw;
-    min-height: 100vh;
-    max-height: max-content;
+    width: 100%;
+    height: 100%;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
     transition: opacity 0.5s ease;
