@@ -21,39 +21,7 @@ function loadData(data) {
             <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
 }
-
-/*Pages*/
-function createbio(data) {
-    var lightbox = document.querySelector('details[title=lightbox] > summary');
-    var content = document.querySelector('div[title=content]');
-    var first = true;
-    var [title, subtitle] = ['',''];
-    var pre='';
-    clearContent();
-    /*Read Content*/
-    [].forEach.call(data.split("~"), function(line) {
-        if (first && line.length>0){
-            [title, subtitle]=line.split(",");
-            first=false;
-        } else {
-            [].forEach.call(line.split("\n"), function(string) {
-                pre += string;
-            });
-        }
-    });
-    /*Create Content*/
-    content.insertAdjacentHTML('beforeend', `
-            <header title='content'>
-                <h1>${title}</h1>
-                <h2>${subtitle}</h2>
-            </header>
-            <section title='content'>
-                <p>${pre}</p>
-            <section>`);
-    /*Display Content*/
-    lightbox.click();
-}
-function createcerts(data) {
+function buildTable(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true; var header = true;
@@ -94,6 +62,40 @@ function createcerts(data) {
     /*Display Content*/
     lightbox.click();
 }
+/*Pages*/
+function createbio(data) {
+    var lightbox = document.querySelector('details[title=lightbox] > summary');
+    var content = document.querySelector('div[title=content]');
+    var first = true;
+    var [title, subtitle] = ['',''];
+    var pre='';
+    clearContent();
+    /*Read Content*/
+    [].forEach.call(data.split("~"), function(line) {
+        if (first && line.length>0){
+            [title, subtitle]=line.split(",");
+            first=false;
+        } else {
+            [].forEach.call(line.split("\n"), function(string) {
+                pre += string;
+            });
+        }
+    });
+    /*Create Content*/
+    content.insertAdjacentHTML('beforeend', `
+            <header title='content'>
+                <h1>${title}</h1>
+                <h2>${subtitle}</h2>
+            </header>
+            <section title='content'>
+                <p>${pre}</p>
+            </section>`);
+    /*Display Content*/
+    lightbox.click();
+}
+function createcerts(data){
+    buildTable(data);
+}
 function createawards(data){
-    createcerts(data);
+    buildTable(data);
 }
