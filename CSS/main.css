@@ -128,16 +128,15 @@ details[title=footer]{
 details[title=lightbox]{
     display: none;
     top: 0;
-    width: 100%;
-    height: 100%;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
     position: absolute;
-    display: inherit;
+    display: flex;
     z-index: 9;
     opacity: 1;
+    flex-direction: column;
 } details[title=lightbox] > summary{
     display: none;
     text-align: center;
@@ -179,6 +178,8 @@ details[title=lightbox]{
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
     overflow: visible;
+} div[title=content] {
+    flex: 1;
 }
 /*Tables*/
 table{
