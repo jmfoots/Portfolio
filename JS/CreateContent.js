@@ -62,6 +62,38 @@ function buildTable(data) {
     /*Display Content*/
     lightbox.click();
 }
+function buildGrid(data){
+    var lightbox = document.querySelector('details[title=lightbox] > summary');
+    var content = document.querySelector('div[title=content]');
+    var first = true;
+    var [title, subtitle] = ['',''];
+    clearContent();
+    /*Read & Create Content*/
+    [].forEach.call(data.split("~"), function(line) {
+        if (first && line.length>0){
+            [title, subtitle]=line.split(",");
+            first=false;
+            content.insertAdjacentHTML('beforeend', `
+                <header title='content'>
+                    <h1>${title}</h1>
+                    <h2>${subtitle}</h2>
+                </header>
+                <section title='content'>
+                    <article title='content'>
+                    </article>
+                <section>`);
+        } else if (!first && line.length>0) {
+            var article = document.querySelector('article[title=content]');
+            [header, date, detail] = line.split(',');
+            article.insertAdjacentHTML('beforeend', `
+                <h2>${header}</h2>
+                <date>${date}</date>
+                <p>${details}</p>`);
+        }
+    });
+    /*Display Content*/
+    lightbox.click();
+}
 /*Pages*/
 function createbio(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -98,4 +130,7 @@ function createcerts(data){
 }
 function createawards(data){
     buildTable(data);
+}
+function createhobbies(data){
+    buildGrid(data);
 }
