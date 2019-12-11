@@ -1,5 +1,4 @@
 ~About,Activities
-~Activity,Active,Details
 ~World of Warcraft,Winter 2009 - Present,
 Organized weekly events for my friends and my guild.
 Coordinated with group members over voice chat to effectively progress through group content.
