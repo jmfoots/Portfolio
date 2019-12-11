@@ -88,10 +88,10 @@ function buildGrid(data){
             article.insertAdjacentHTML('beforeend', `
                 <h2>${header}</h2>
                 <date>${date}</date>
-                <ul>
+                <ul title='${header}'>
                 </ul>`);
             [].forEach.call(details.split("\n"), function(string) {
-                article.querySelector('ul').insertAdjacentHTML('beforeend', `<li>${string}</li>`);
+                article.querySelector(`ul[title='${header}']`).insertAdjacentHTML('beforeend', `<li>${string}</li>`);
             });
         }
     });
