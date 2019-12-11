@@ -84,7 +84,7 @@ function buildGrid(data){
                 <section>`);
         } else if (!first && line.length>0) {
             var article = document.querySelector('article[title=content]');
-            [header, date, detail] = line.split(',');
+            [header, date, details] = line.split(',');
             article.insertAdjacentHTML('beforeend', `
                 <h2>${header}</h2>
                 <date>${date}</date>
