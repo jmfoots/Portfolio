@@ -88,7 +88,11 @@ function buildGrid(data){
             article.insertAdjacentHTML('beforeend', `
                 <h2>${header}</h2>
                 <date>${date}</date>
-                <p>${details}</p>`);
+                <ul>
+                </ul>`);
+            [].forEach.call(details.split("\n"), function(string) {
+                article.querySelector('ul').insertAdjacentHTML('beforeend', `<li>${string}</li>`);
+            });
         }
     });
     /*Display Content*/
