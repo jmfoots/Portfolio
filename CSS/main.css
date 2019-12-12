@@ -199,3 +199,11 @@ table{
 } tbody > tr:nth-child(odd){
     background-color: var(--thinmint);
 }
+/*Articles*/
+section[title=content] article{
+    display: flex;
+    flex-direction: row;
+}
+section[title=content] > article{
+    flex: 1;
+}
