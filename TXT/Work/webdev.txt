@@ -1,10 +1,7 @@
-~About,Activities
-~World of Warcraft,Winter 2009 - Present,
-Organized weekly events for my friends and my guild.
-Coordinated with group members over voice chat to effectively progress through group content.
-Programmed LUA scripts that create user interface elements.
-~Web Development,Fall 2012 - Present,
-Maintained a portfolio website.
-Created class project websites.
-Created a commissioned website.
-Created websites for technology fair.
+~Work|Web Development
+~Faith Academy Baseball Web Developer|Fall 2017 – Spring 2018|https://jmfoots.github.io/Portfolio/websites/FAB/index.html|
+Developed custom website from scratch.
+Optimized website for fast loading speed.
+Programmed main content to dynamically load from text files.
+Managed web hosting for client.
+Published seasonal information.
