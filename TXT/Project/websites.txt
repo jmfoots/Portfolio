@@ -1,19 +1,19 @@
 ~Projects|Websites
-~Faith Academy Baseball Website|Fall 2017 - Spring 2018|https://jmfoots.github.io/Portfolio/websites/FAB/index.html|IMG/fab.png|
+~Faith Academy Baseball Website|Fall 2017 - Spring 2018|https://jmfoots.github.io/Portfolio/PROJECTS/FAB/index.html|IMG/fab.png|
 Developed custom website.
 Optimized website for fast loading speed.
 Optimized website for mobile and desktop.
 Scripted most archivable content to load dynamically from text files.
 Managed web hosting for client.
 Published seasonal information.
-~Blue Team Cybersecurity Website|Spring 2019|https://jmfoots.github.io/Portfolio/websites/BTC/index.html|IMG/btc.png|
+~Blue Team Cybersecurity Website|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/BTC/index.html|IMG/btc.png|
 Created a CyberSecurity Awareness Message.
 Developed survey for student audience using Google Forms.
 Analyzed audience using survey feedback.
 Managed team using Google Team Drive and kept team informed using GroupMe.
 Created CyberSecurity website as the project deliverable.
 Presented project results in class.
-~Simple Note Prototype|Spring 2019|https://jmfoots.github.io/Portfolio/websites/NAP/index.html|IMG/nap.png|
+~Simple Note Prototype|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/NAP/index.html|IMG/nap.png|
 Proposed an application for review.
 Established Usability and User Experience Goals for the application.
 Evaluated possible considerations and limitations of application.
