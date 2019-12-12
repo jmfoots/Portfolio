@@ -78,15 +78,16 @@ function buildGrid(data){
                     <h1>${title}</h1>
                     <h2>${subtitle}</h2>
                 </header>
-                <section title='content'><article></article></section>`);
+                <section title='content'></section>`);
         } else if (!first && line.length>0) {
             var section = document.querySelector('section[title=content]');
             [header, date, details] = line.split(',');
-            section.lastChild.insertAdjacentHTML('beforeend', `
-                <h2>${header}</h2>
-                <date>${date}</date>
-                <ul></ul>`);
-            section.insertAdjacentHTML('beforeend', `<article></article>`);
+            section.insertAdjacentHTML('beforeend', `
+                <article>
+                    <h2>${header}</h2>
+                    <date>${date}</date>
+                    <ul></ul>
+                </article>`);
             [].forEach.call(details.split("\n"), function(string) {
                 if (string.length>0) section.lastChild.querySelector(`ul`).insertAdjacentHTML('beforeend', `<li>${string}</li>`);
             });
