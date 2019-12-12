@@ -216,6 +216,7 @@ section[title=content] > article{
     flex: 1;
     padding: var(--HPad);
     background-color: var(--light);
+    min-width: 30vw;
     margin: calc(var(--normal) / 4);
 } article > ul {
     list-style: none;
