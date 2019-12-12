@@ -176,3 +176,9 @@ function createinternships(data){
 function createdeveloper(data){
     buildLocation(data);
 }
+function createcollege(data){
+    buildLocation(data);
+}
+function createschool(data){
+    buildLocation(data);
+}
