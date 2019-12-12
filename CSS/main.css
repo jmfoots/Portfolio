@@ -204,4 +204,7 @@ table{
 /*Articles*/
 section[title=content] > article{
     flex: 1;
+    padding: var(--HPad);
+    background-color: var(--light);
+    margin: calc(var(--normal) / 4);
 }
