@@ -223,5 +223,5 @@ section[title=content] > article{
 }
 /*Projects*/
 section[title=content] img {
-    max-width: 100vw;
+    max-width: 100%;
 }
