@@ -170,6 +170,6 @@ function createawards(data){
 function createhobbies(data){
     buildGrid(data);
 }
-function createinternship(data){
+function createinternships(data){
     buildLocation(data);
 }
