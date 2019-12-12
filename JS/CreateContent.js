@@ -78,8 +78,7 @@ function buildGrid(data){
                     <h1>${title}</h1>
                     <h2>${subtitle}</h2>
                 </header>
-                <section title='content'>
-                <section>`);
+                <section title='content'></section>`);
         } else if (!first && line.length>0) {
             var section = document.querySelector('section[title=content]');
             section.insertAdjacentHTML('beforeend', `<article></article>`);
