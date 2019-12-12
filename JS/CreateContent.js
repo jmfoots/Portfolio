@@ -47,13 +47,13 @@ function buildTable(data) {
         } else if (header && !first) {
             header = false;
             var tr = document.querySelector('table[title=content] > thead > tr');
-            [].forEach.call(line.split(','), function(head) {
+            [].forEach.call(line.split('|'), function(head) {
                 tr.insertAdjacentHTML('beforeend', `<th>${head}</th>`);
             });
         } else if (!first && !header){
             var tbody = document.querySelector('table[title=content] > tbody');
             tbody.insertAdjacentHTML('beforeend', `<tr></tr>`);
-            [].forEach.call(line.split(','), function(item) {
+            [].forEach.call(line.split('|'), function(item) {
                 tbody.lastChild.insertAdjacentHTML('beforeend', `<td>${item}</td>`);
             });
         }
@@ -70,7 +70,7 @@ function buildGrid(data){
     /*Read & Create Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split(",");
+            [title, subtitle]=line.split("|");
             first=false;
             content.insertAdjacentHTML('beforeend', `
                 <header>
@@ -80,11 +80,46 @@ function buildGrid(data){
                 <section title='content'></section>`);
         } else if (!first && line.length>0) {
             var section = document.querySelector('section[title=content]');
-            [header, date, details] = line.split(',');
+            [header, date, details] = line.split('|');
             section.insertAdjacentHTML('beforeend', `
                 <article>
                     <h2>${header}</h2>
                     <date>${date}</date>
+                    <ul></ul>
+                </article>`);
+            [].forEach.call(details.split("\n"), function(string) {
+                if (string.length>0) section.lastChild.querySelector(`ul`).insertAdjacentHTML('beforeend', `<li>${string}</li>`);
+            });
+        }
+    });
+    /*Display Content*/
+    lightbox.click();
+}
+function buildLocation(data){
+    var lightbox = document.querySelector('details[title=lightbox] > summary');
+    var content = document.querySelector('div[title=content]');
+    var first = true;
+    var [title, subtitle] = ['',''];
+    clearContent();
+    /*Read & Create Content*/
+    [].forEach.call(data.split("~"), function(line) {
+        if (first && line.length>0){
+            [title, subtitle]=line.split("|");
+            first=false;
+            content.insertAdjacentHTML('beforeend', `
+                <header>
+                    <h1>${title}</h1>
+                    <h2>${subtitle}</h2>
+                </header>
+                <section title='content'></section>`);
+        } else if (!first && line.length>0) {
+            var section = document.querySelector('section[title=content]');
+            [header, date, address, details] = line.split('|');
+            section.insertAdjacentHTML('beforeend', `
+                <article>
+                    <h2>${header}</h2>
+                    <date>${date}</date>
+                    <address>${address}</address>
                     <ul></ul>
                 </article>`);
             [].forEach.call(details.split("\n"), function(string) {
@@ -106,7 +141,7 @@ function createbio(data) {
     /*Read Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split(",");
+            [title, subtitle]=line.split("|");
             first=false;
         } else {
             [].forEach.call(line.split("\n"), function(string) {
@@ -134,4 +169,7 @@ function createawards(data){
 }
 function createhobbies(data){
     buildGrid(data);
+}
+function createinternship(data){
+    buildLocation(data);
 }

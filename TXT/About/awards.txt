@@ -1,4 +1,4 @@
-~About,Achievements
-~Achievement,Date
-~Upsilon Pi Epsilon Mobile Chapter,April 2019
-~National Honor Society Faith Academy,May 2013
+~About|Achievements
+~Achievement|Date
+~Upsilon Pi Epsilon Mobile Chapter|April 2019
+~National Honor Society Faith Academy|May 2013

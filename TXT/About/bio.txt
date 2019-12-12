@@ -1,4 +1,4 @@
-~About,My Journey
+~About|My Journey
 ~I started off making websites for the AISA Technology Fair for a couple years.
 In High School, I took the technical endorsement track which included Cisco Networking, CompTIA A+, and Python Programming.
 During the summers, I worked at my High School setting up computers, cleaning, and fixing them for the teachers.

@@ -22,7 +22,7 @@ function init(){
             document.querySelectorAll('nav > label')[index].click();
         } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
     });
-    /*Hide on Lightbox*/
+    /*Hide*/
     document.querySelector('details[title=lightbox]').addEventListener("toggle", function() {
         var details = document.querySelector('details[title=lightbox')
         for (let sibling of details.parentNode.children) {
