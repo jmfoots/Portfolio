@@ -130,7 +130,7 @@ function buildLocation(data){
     /*Display Content*/
     lightbox.click();
 }
-function buildproject(data){
+function buildProject(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true;
@@ -216,4 +216,7 @@ function createcollege(data){
 }
 function createschool(data){
     buildLocation(data);
+}
+function createwebsites(data){
+    buildProject(data);
 }
