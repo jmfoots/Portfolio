@@ -135,7 +135,6 @@ details[title=lightbox]{
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
     width: 100vw;
-    height: 100vh;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
     position: absolute;
