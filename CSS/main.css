@@ -179,6 +179,8 @@ details[title=lightbox]{
     border-width: var(--normal) 0 0 var(--normal);
     border-top-left-radius: var(--large);
     overflow: visible;
+    display: flex;
+    flex-direction: row;
 }
 /*Tables*/
 table{
@@ -200,10 +202,6 @@ table{
     background-color: var(--thinmint);
 }
 /*Articles*/
-section[title=content] article{
-    display: flex;
-    flex-direction: row;
-}
 section[title=content] > article{
     flex: 1;
 }
