@@ -74,6 +74,10 @@ h1,h2,h3,th{
     font-size: var(--large);
 } h3,th{
     font-size: var(--medium);
+} p{
+    padding: var(--HPad);
+    background-color: var(--light);
+    margin: calc(var(--normal) / 4);
 }
 /*Nav*/
 label input[type=radio]{
@@ -179,6 +183,7 @@ details[title=lightbox]{
     overflow: visible;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     box-shadow: var(--box);
 }
@@ -202,10 +207,9 @@ table{
     background-color: var(--thinmint);
 }
 /*Articles*/
-section[title=content] > article, p{
+section[title=content] > article{
     flex: 1;
     padding: var(--HPad);
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
-    
 }
