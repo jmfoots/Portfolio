@@ -212,4 +212,7 @@ section[title=content] > article{
     padding: var(--HPad);
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
+} article > ul {
+    list-style: inside;
+    padding-left: 0;
 }
