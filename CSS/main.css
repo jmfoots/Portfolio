@@ -187,6 +187,12 @@ details[title=lightbox]{
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     box-shadow: var(--box);
 }
+/*Fix*/
+@media screen and (max-width: 480px){ 
+    section[title=content]{ 
+        flex-direction: column;
+    }
+}
 /*Tables*/
 table{
     width: 100%;
@@ -213,6 +219,6 @@ section[title=content] > article{
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
 } article > ul {
-    list-style: inside;
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
 }

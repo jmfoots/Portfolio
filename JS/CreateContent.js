@@ -43,8 +43,7 @@ function buildTable(data) {
                             <tr></tr>
                         </thead>
                         <tbody></tbody>
-                    </table>
-                <section>`);
+                    </table>`);
         } else if (header && !first) {
             header = false;
             var tr = document.querySelector('table[title=content] > thead > tr');
