@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Records - Faith Academy Baseball</title>
+
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Jonathan Foots">
+		<meta name="keywords" content="Faith Academy,Baseball,FA,scores,scorecard,championships">
+		<meta name="description" content="">
+		<link rel="preload" href="assets/js/core-v2.js" as="script">
+		<script src="assets/js/core-v2.js"></script>
+		<link rel="stylesheet" href="assets/css/main-v2.css"/>
+		<script src="assets/js/championships-v3.js"></script>
+		<script src="assets/js/records.js"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<img id="logo" src="images/ram.png"><a href="index.html" class="title">Faith Academy Baseball</a>
+			<nav>
+				<ul>
+					<li><a href="rosters-v2.html">Rosters</a></li>
+					<li><a href="schedules-v2.html">Schedules</a></li>
+					<li><a class="active" href="records-v2.html">Records</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="datafiles" style="display: none">
+			<iframe id="file_scoreHeadings" src="assets/txt/records/headings.txt" onload="LoadHeadings()"></iframe>
+			<iframe id="file_championships" src="assets/txt/records/championships.txt" onload="LoadChampionships()"></iframe>
+			<iframe id="file_scores" src="assets/txt/records/scores.txt" onload="LoadScores()"></iframe>
+		</section>
+		<div id="wrapper">
+			<ul class="tabs">
+				<li class="active" data-content-id="score">Score Cards</li>
+				<li data-content-id="champs">Championships</li>
+			</ul>
+				<!-- Score Cards -->
+				<section id="main" class="wrapper score" style="display: block;">
+					<div class="inner">
+						<h1 class="major">Score Card for 2018</h1>
+						<ul class="subtabs">
+							<li class="active" data-content-id="V">Varsity</li>
+							<li data-content-id="J">Junior Varsity</li>
+							<!-- <li data-content-id="M">Middle School</li> -->
+						</ul>
+						<section class="V" style="display: block;">
+							<h2>Varsity Score Card</h2>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr class="scoreHead"></tr>
+									</thead>
+									<tbody id="TV">
+									</tbody>
+									<tfoot>
+										<tr><td id="FV"colspan="8"></td></tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						<section class="J" style="display: none;">
+							<h2>Junior Varsity Score Card</h2>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr class="scoreHead"></tr>
+									</thead>
+									<tbody id="TJ">
+									</tbody>
+									<tfoot>
+										<tr><td id="FJ" colspan="8"></td></tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						<!-- <section class="M" style="display: none;">
+							<h2>Middle School Score Card</h2>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr class="scoreHead"></tr>
+									</thead>
+									<tbody id="TM">
+									</tbody>
+									<tfoot>
+										<tr><td id="FM" colspan="8"></td></tr>
+									</tfoot>
+								</table>
+							</div>
+						</section> -->
+				</section>
+				<!-- Championships -->
+				<section id="two" class="wrapper style3 champs" style="display: none;">
+					<div id="champs" class="inner">
+						<h1 class="major">Championships</h1>
+						<h2>State Championship Teams</h2>
+						<ul id="champlinks" class="yeartabs"></ul>
+				</section>
+		</div>
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li id="LM"></li>
+					<li id="LU"></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script src="assets/js/lastUpdated.js" async></script>
+		<script>
+			$('.tabs li').click(function(){
+				$('#wrapper > section').hide();
+				var match = $('.' + $(this).attr('data-content-id'));
+				match.show();
+				$('.tabs li').removeClass('active');
+				$(this).addClass('active');
+			});
+			$('.subtabs li').click(function(){
+				$('#main > div > section').hide();
+				var match = $('.' + $(this).attr('data-content-id'));
+				match.show();
+				$('.subtabs li').removeClass('active');
+				$(this).addClass('active');
+			});
+			 $(document).on('click','.yeartabs li',function(){
+				$('#champs > section').hide();
+				var match = $('.' + $(this).attr('data-content-id'));
+				match.show();
+				$('.yeartabs li').removeClass('active');
+				$(this).addClass('active');
+			});
+		</script>
+	</body>
+</html>

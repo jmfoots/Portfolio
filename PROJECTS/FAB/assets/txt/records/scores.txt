@@ -1,0 +1,43 @@
+j, Feb. 19, Satsuma, Win, 10-3
+j, Feb. 22, Davidson, Win, 10-1
+j, Feb. 24, Theodore, Win, 13-2
+j, Feb. 24, Alma Bryant, Win, 15-5
+j, Feb. 26, Saraland, Loss, 2-3
+j, Feb. 26, Saraland, Win, 4-2
+j, Mar. 1, UMS-Wright, Win, 11-2
+j, Mar. 3, St. Paul's, Win, 4-0
+j, Mar. 3, St. Paul's, Win, 8-5
+j, Mar. 6, Saraland, Win, 5-4
+j, Mar. 9, Davidson, Win, 15-0
+j, Mar. 10, Spanish Fort, Win, 10-1
+j, Mar. 10, Spanish Fort, Win, 8-2
+j, Mar. 19, UMS-Wright, Win, 20-1
+j, Mar. 20, St. Paul's, Win, 4-2
+j, Mar. 20, St. Paul's, Win, 14-6
+j, Apr. 3, Saraland, Loss, 1-5
+j, Apr. 3, Saraland, Loss, 0-1
+j, Apr. 5, Saraland, Win, 9-3
+v, Feb. 19, UMS-Wright, Win, 8-0
+v, Feb. 22, Spanish Fort, Win, 4-3
+v, Feb. 24, St. Luke's, Win, 15-5
+v, Mar. 1, Oxford, Win, 4-2
+v, Mar. 2, Ocean Springs, Win, 8-2
+v, Mar. 2, Warren Central, Win, 7-5
+v, Mar. 3, Sumrall, Win, 3-1
+v, Mar. 3, Pearl, Win, 9-2
+v, Mar. 10, Smiths Station, Loss, 0-4
+v, Mar. 10, Fairhope, Win, 4-3
+v, Mar. 12, McGill-Toolen, Loss, 1-2
+v, Mar. 13, Vigor, Win, 15-0
+v, Mar. 15, Vigor, Win, 21-2
+v, Mar. 17, DeSoto Central, Win, 3-2
+v, Mar. 17, Westmoore, Win, 2-0
+v, Mar. 20, Williamson, Win, 27-1
+v, Mar. 22, Williamson, Win, 21-0
+v, Mar. 24, Gulfport, Win, 17-13
+v, Mar. 24, Pearl River Central, Win, 12-2
+v, Mar. 26, Alexandria, Win, 10-0
+v, Mar. 26, Alexandria, Win, 8-1
+v, Mar. 28, Ramsay, Win, 6-3
+v, Mar. 28, Ramsay, Win, 18-0
+v, Apr. 3, Theodore, Win, 13-2

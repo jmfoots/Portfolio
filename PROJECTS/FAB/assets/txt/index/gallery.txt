@@ -1,0 +1,20 @@
+2016, Varsity Team, Team_1
+2016, Varsity Team, Team_2
+2016, Varsity Team, Team_3
+2016, Varsity Team, Team_4
+2016, Lift-A-Thon, Lift_1
+2016, Lift-A-Thon, Lift_2
+2016, Head Coach: Matt Seymour, Coaches_1
+2016, Varsity Coach: Will Smith, Coaches_2
+2016, Varsity Coach: Mike Bumstead, Coaches_3
+2016, Senior Recognition, Recognition_1
+2016, Senior Recognition, Recognition_2
+2016, Retiring No. 7, Retiring_1
+2017, Varsity Team, Team_2
+2017, Junior Varsity Team, Team_3
+2017, Middle School Team, Team_1
+2017, Lift-A-Thon, Lift_1
+2017, Lift-A-Thon, Lift_2
+2017, Lift-A-Thon, Lift_3
+2017, Senior Recognition, Seniors_1
+2017, Senior Recognition, Seniors_2

@@ -1,0 +1,54 @@
+﻿v, Monday, Feb. 19, UMS-Wright, UMS-Wright, 5:00pm
+v, Thursday, Feb. 22, Spanish Fort, Hank Aaron, 7:00pm
+v, Saturday, Feb. 24, St. Luke's, Hank Aaron, 10:00am
+v, Thursday, Mar. 1, Oxford, Brandon, 4:00pm
+v, Friday, Mar. 2, Ocean Springs, Northwest Rankin, 2:00pm
+v, Friday, Mar. 2, Warren Central, Northwest Rankin, 4:30pm
+v, Saturday, Mar. 3, Sumrall, Pearl, 10:00am
+v, Saturday, Mar. 3, Pearl, Pearl, 3:00pm
+v, Tuesday, Mar. 6, McGill-Toolen, McGill-Toolen, 6:00pm
+v, Saturday, Mar. 10, Smith Station, UMS-Wright, 12:30pm
+v, Saturday, Mar. 10, Fairhope, UMS-Wright, 3:00pm
+v, Tuesday, Mar. 13, Vigor, Vigor, 4:00pm
+v, Thursday, Mar. 15, Vigor (DH), Faith Academy, 5:00 pm
+v, Friday, Mar. 16, Columbia Academy, Ocean Springs, 2:30 pm
+v, Friday, Mar. 16, George County, Ocean Springs, 5:00 pm
+v, Saturday, Mar. 17, Christian Brothers, Pascagoula, 3:00 pm
+v, Saturday, Mar. 17, Pascagoula, Pascagoula, 5:30 pm
+v, Monday, Mar. 19, Enterprise (DH), South Alabama, 3:30 pm
+v, Tuesday, Mar. 20, Williamson, Williamson, 4:00 pm
+v, Thursday, Mar. 22, Williamson (DH), Faith Academy, 4:00pm
+v, Monday, Mar. 26, Alexandria (DH), Faith Academy, 1:00pm
+v, Tuesday, Apr. 3, Theodore, Theodore, 6:00pm
+v, Monday, Apr. 9, Spanish Fort, Spanish Fort, 6:00pm  
+v, Thursday, Apr. 12, St. Paul’s, Faith Academy, 6:00pm
+v, Friday, Apr. 13, St. Paul’s, St. Paul’s, 4:00pm
+v, Monday, Apr. 16-18, Playoffs Round 1, , TBA, Playoffs
+j, Monday, Feb. 19, Satsuma, Faith Academy, 5:00pm
+j, Tuesday, Feb. 20, St. Paul’s, Faith Academy, 5:00pm
+j, Thursday, Feb. 22, Davidson, Away, 4:00pm
+j, Monday, Feb. 26, Saraland (DH), Saraland, 4:00pm
+j, Thursday, Mar. 1, UMS-Wright, Faith Academy, 5:00pm
+j, Saturday, Mar. 3, St. Paul’s (DH), Faith Academy, 10:30am
+j, Tuesday, Mar. 6 , Saraland , Faith Academy, 4:30pm
+j, Friday, Mar. 9, Davidson, Davidson, 5:00pm
+j, Saturday, Mar. 10, Spanish Fort (DH), Faith Academy, 12:00pm/2:30pm
+j, Monday, Mar. 19, UMS-Wright, UMS-Wright, 5:00pm
+j, Tuesday, Mar. 20, St. Paul’s (DH), St. Paul’s, 5:00pm
+j, Thursday, Mar. 29, Davidson, Davidson, 5:00pm
+j, Tuesday, Apr. 3, Saraland (DH), Faith Academy, 4:30pm
+j, Monday, Apr. 5, Saraland (DH), Saraland, 4:30pm
+m, Monday, Feb. 26, Bayside, Bayside, 6:00 pm
+m, Thursday, Mar. 1, Mobile Christian, Mobile Christian, 5:00pm
+m, Thursday, Mar. 3, St. Paul’s, Faith Academy, 3:30pm
+m, Saturday, Mar. 3, St. Paul's, Faith Academy, 5:00pm
+m, Monday, Mar. 5, Saraland (DH), Faith Academy, 4:30pm
+m, Tuesday, Mar. 6, UMS-Wright, UMS-Wright, 5:00pm    
+m, Saturday, Mar. 10, McGill-Toolen, McGill-Toolen, 12:00pm
+m, Saturday, Mar. 10, Rock Quarry, McGill-Toolen, 2:30pm      
+m, Tuesday, Mar. 13, UMS-Wright, Faith Academy, 5:00pm
+m, Monday, Mar. 19,  McGill-Toolen, Faith Academy, 5:00pm    
+m, Tuesday, Mar. 20, Bayside, Faith Academy, 5:00pm    
+m, Saturday, Mar. 24, Mobile Christian, Faith Academy, 11:00am
+m, Monday, Mar. 26,  MS Playoff Semi-Finals, , TBA, Playoffs
+m, Wednesday, Mar. 28, MS Playoff Finals, , TBA

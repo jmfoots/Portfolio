@@ -1,0 +1,10 @@
+V; Matt Seymour; Head Coach; coach_1; Coach Matt Seymour has over eighteen years of coaching experience under his belt. He coached extremely successful seasons at Baker High School (3 years), UMS-Wright (8 years), and Faith (11 years), all as the assistant varsity baseball coach. While he was at UMS-Wright his team won the state championship of 1999. While at Faith Academy, Coach Seymour has helped the Rams earn two 5A Area Championships (2012 and 2013) and the 2008 AISA state championship. Along with the numerous team awards, three of the Faith players made All County, and five received scholarships within this last year (2013). Not only is Coach Seymour a seasoned coach, but also an experienced teacher, with over fifteen years in the classroom. He currently resides in Mobile with his wife Lori, who also teaches at Faith, and his three children, Maddie (17), Jay (14), and Gracie (11). To contact Coach Matt Seymour send him an email at m.seymour@faithacademy.us or call him at 251-633-7267 ext. 1003.
+V; Mike Bumstead; Varsity Coach; coach_2; 
+V; Will Smith; Varsity Coach; coach_3; 
+J; Adam Quinn; Junior Varsity Coach; coach_2; 
+J; James Taylor; Junior Varsity Coach; coach_1; 
+J; Tyler Mills; Junior Varsity Coach; coach_3; 
+M; John Bell; Middle School Head Coach; coach_1; 
+M; Brian Broadus; Middle School Coach; coach_2; 
+M; Matt Bagget; Middle School Coach; coach_3; 
+M; Neil Howard; Middle School Coach; coach_4; 

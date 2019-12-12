@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Faith Academy Baseball</title>
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Jonathan Foots">
+		<meta name="keywords" content="Faith Academy,Baseball,FA">
+		<meta name="description" content="Faith Academy (Mobile, AL) gives young men the opportunity to play baseball at the highest level they dare to dream and are willing to commit to.">
+		<link rel="preload" href="assets/js/core-v2.js" as="script">
+		<script src="assets/js/core-v2.js"></script>
+		<link rel="stylesheet" href="assets/css/main-v2.css"/>
+		<script src="assets/js/index.js"></script>
+		
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<img id="logo" src="images/ram.png"><a href="index.html" class="title">Faith Academy Baseball</a>
+			<nav>
+				<ul>
+					<li><a href="rosters-v2.html">Rosters	</a></li>
+					<li><a href="schedules-v2.html">Schedules</a></li>
+					<li><a href="records-v2.html">Records</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="datafiles" style="display: none">
+			<iframe id="file_forms" src="assets/txt/index/documents.txt" onload="LoadForm()"></iframe>
+			<iframe id="file_media" src="assets/txt/index/gallery.txt" onload="LoadMedia()"></iframe>
+			<iframe id="file_events" src="assets/txt/schedules/schedules.txt" onload="LoadEvents()"></iframe>
+		</section>
+		<section id="wrapper">
+			<ul class="tabs">
+				<li class="active" data-content-id="about">Mission Statement</li>
+				<!-- <li data-content-id="events">Upcoming Events</li> -->
+				<li data-content-id="forms">Forms</li>
+				<li data-content-id="gallery">Media</li>
+			</ul>
+			<!-- Intro -->
+			<section id="intro" class="wrapper style1 fullscreen about" style="display:block">
+				<section>
+					<a class="image main">
+						<img src='images/2017_Team_Composite.jpg' alt="Faith Academy Varsity Baseball Team Picture'" data-position="center center" />
+					</a>
+				</section>
+				<div class="inner">
+					<a class="image left">
+						<img src='images/shield.png' alt="Faith Academy Varsity Baseball Team Picture'" data-position="center center" />
+					</a>
+					<h1>Faith Academy Baseball</h1>
+					<p>It is the mission of Faith Baseball to first and foremost exalt the name of Jesus Christ through baseball. 
+					In doing this the Faith Baseball team will bring respectability as Christians to athletics. 
+					Young men will also be given the opportunity to play baseball at the highest level they dare to dream and are willing to commit to.</p>
+					<h4>Our goal is to live the name "Faith".</h4>
+				</div>
+			</section>
+			<!-- Upcoming Events-->
+			<section id="two" class="wrapper style3 events" style="display:none">
+				<div class="inner">
+					<h1 class="major">Upcoming Events</h1>
+					<div id="upcoming" class="features">
+						<ol id='timeline'></ol>
+					</div>
+				</div>
+			</section>
+			<!-- Forms-->
+			<section id="one" class="wrapper style1 spotlights forms" style="display:none">
+			</section>
+			<!-- Gallery-->
+			<section id="three" class="wrapper style3 spotlights gallery" style="display:none">
+				<div class="container">
+					<h1 class="major" style="margin: 0 1em; text-align: center;">Galleries by Year</h1>
+					<ul id="gallerylinks" class="subtabs" style="margin: .5em 1em;">
+						<li data-content-id="2016">2016</li>
+						<li class="active" data-content-id="2017">2017</li>
+					</ul>
+					<div id="lighthouse" class="lightbox-gallery">
+						<ul id="2016" class="lightbox-gallery 2016" style="display: none;"></ul>
+						<ul id="2017" class="lightbox-gallery 2017"></ul>
+					</div>
+				</div>
+			</section>
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1">
+			<article class="inner">
+				<ul class="menu">
+					<li id="LM"></li>
+					<li id="LU"></li>
+				</ul>
+			</article>
+		</footer>
+		<!-- Scripts -->
+		<script src="assets/js/lastUpdated.js" async></script>
+		<script>
+			$('.tabs li').click(function(){
+				$('#wrapper > section').hide();
+				var match = $('.' + $(this).attr('data-content-id'));
+				match.show();
+				$('.tabs li').removeClass('active');
+				$(this).addClass('active');
+			});
+			$('.subtabs li').click(function(){
+				$('#lighthouse > ul').hide();
+				var match = $('.' + $(this).attr('data-content-id'));
+				match.show();
+				$('.subtabs li').removeClass('active');
+				$(this).addClass('active');
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+v, 1, Gabe Shepard, 
+v, 2, Parker Mills, 
+v, 3, Chris Sargent, 
+v, 4, Brandon White, 
+v, 5, Landon Freeman, 
+v, 6, Jackson Bell, Senior
+v, 9, Michael Garcia, 
+v, 10, Zack Wilkinson, 
+v, 11, JG Bell, Sophmore
+v, 12, Alex McWhorter, 
+v, 13, Noach Broudus, 
+v, 14, Reece Ewing, 
+v, 15, Payton Cowert, 
+v, 16, Braxton Bell, Senior
+v, 17, Robert Pendarvis, 
+v, 18, James Flynn, 
+v, 21, Michael Hopkinson, 
+v, 24, Cole Howell, 
+v, 27, Eli Giles, 
+v, 28, Bryant Andrews, 
+v, 30, Jayden Brown, Freshman
