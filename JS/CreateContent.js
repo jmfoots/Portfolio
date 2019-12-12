@@ -173,3 +173,6 @@ function createhobbies(data){
 function createinternships(data){
     buildLocation(data);
 }
+function createdeveloper(data){
+    buildLocation(data);
+}
