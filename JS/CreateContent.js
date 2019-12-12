@@ -152,7 +152,7 @@ function buildProject(data){
             [header, date, source, src, details] = line.split('|');
             section.insertAdjacentHTML('beforeend', `
                 <article>
-                    <a href='${source}'><img src=${src}></a>
+                    <a href='${source}' target='_blank'><img src=${src}></a>
                     <h2>${header}</h2>
                     <date>${date}</date>
                     <ul></ul>
