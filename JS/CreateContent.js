@@ -74,7 +74,7 @@ function buildGrid(data){
             [title, subtitle]=line.split(",");
             first=false;
             content.insertAdjacentHTML('beforeend', `
-                <header title='content'>
+                <header>
                     <h1>${title}</h1>
                     <h2>${subtitle}</h2>
                 </header>
