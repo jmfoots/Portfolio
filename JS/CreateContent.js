@@ -30,7 +30,7 @@ function buildTable(data) {
     /*Read & Create Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split(",");
+            [title, subtitle]=line.split("|");
             first=false;
             content.insertAdjacentHTML('beforeend', `
                 <header title='content'>
