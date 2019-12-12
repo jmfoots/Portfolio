@@ -130,6 +130,41 @@ function buildLocation(data){
     /*Display Content*/
     lightbox.click();
 }
+function buildproject(data){
+    var lightbox = document.querySelector('details[title=lightbox] > summary');
+    var content = document.querySelector('div[title=content]');
+    var first = true;
+    var [title, subtitle] = ['',''];
+    clearContent();
+    /*Read & Create Content*/
+    [].forEach.call(data.split("~"), function(line) {
+        if (first && line.length>0){
+            [title, subtitle]=line.split("|");
+            first=false;
+            content.insertAdjacentHTML('beforeend', `
+                <header>
+                    <h1>${title}</h1>
+                    <h2>${subtitle}</h2>
+                </header>
+                <section title='content'></section>`);
+        } else if (!first && line.length>0) {
+            var section = document.querySelector('section[title=content]');
+            [header, date, source, src, details] = line.split('|');
+            section.insertAdjacentHTML('beforeend', `
+                <article>
+                    <a href='${source}'><img src=${src}></a>
+                    <h2>${header}</h2>
+                    <date>${date}</date>
+                    <ul></ul>
+                </article>`);
+            [].forEach.call(details.split("\n"), function(string) {
+                if (string.length>0) section.lastChild.querySelector(`ul`).insertAdjacentHTML('beforeend', `<li>${string}</li>`);
+            });
+        }
+    });
+    /*Display Content*/
+    lightbox.click();
+}
 /*Pages*/
 function createbio(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
