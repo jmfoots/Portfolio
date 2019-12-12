@@ -1,2 +1,10 @@
 ~Projects|Toolkits
-~|||IMG/fab.png|
+~Solid State Drive Validation Bash Tool|Winter 2018 - Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/SSD/ProjectReport.pdf|IMG/ssd.png|
+Creating test data, files, and directory structures to run the other scripts against.
+Simulating file alterations that a user could make while making a ‘best attempt’ to isolate these alterations to modify one metadata field at a time.
+Creating an image of a drive.
+Setting up the drive and its partitions for the creation of the file metadata files.
+Creating a File metadata csv used to display all possible ways a file could have been altered.
+Creating a Summary csv used to show that one or more partitions on the drive has changed and that the entire drive is not 100% the same.
+Creating a Comparison csv used to show that one or more files on the before/after file metadata csv files has changed, been deleted, or been added.
+Only Project Report is available publically.
