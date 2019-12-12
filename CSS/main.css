@@ -134,7 +134,7 @@ details[title=lightbox]{
     top: 0;
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
-    width: 100vw;
+    width: 100%;
     height: max-content;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
@@ -223,5 +223,5 @@ section[title=content] > article{
 }
 /*Projects*/
 section[title=content] img {
-    max-width: 100%;
+    max-width: 100vw;
 }
