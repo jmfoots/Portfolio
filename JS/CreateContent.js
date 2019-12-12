@@ -220,3 +220,6 @@ function createschool(data){
 function createwebsites(data){
     buildProject(data);
 }
+function createtoolkits(data){
+    buildProject(data);
+}
