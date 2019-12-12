@@ -83,7 +83,7 @@ function buildGrid(data){
             var section = document.querySelector('section[title=content]');
             section.insertAdjacentHTML('beforeend', `<article></article>`);
             [header, date, details] = line.split(',');
-            document.querySelector('section[title=content]:lastchild').insertAdjacentHTML('beforeend', `
+            document.querySelector('section[title=content]:last-child').insertAdjacentHTML('beforeend', `
                 <h2>${header}</h2>
                 <date>${date}</date>
                 <ul></ul>`);
