@@ -22,9 +22,12 @@ function init(){
             document.querySelectorAll('nav > label')[index].click();
         } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
     });
+    /*Hide on Lightbox*/
     document.querySelector('details[title=lightbox]').addEventListener("toggle", function() {
-        var nav = document.querySelector('nav')
-        nav.style.display = nav.style.display === 'none' ? '' : 'none';
+        var details = document.querySelector('details[title=lightbox')
+        for (let sibling of details.parentNode.children) {
+            if (sibling !== details) sibling.style.display = sibling.style.display === 'none' ? '' : 'none';
+        }
     });
 }
 /*Navigation*/
