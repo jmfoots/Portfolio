@@ -135,11 +135,11 @@ details[title=lightbox]{
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
     width: 100vw;
+    height: max-content;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
     position: absolute;
     display: inherit;
-    z-index: 9;
     opacity: 1;
 } details[title=lightbox] > summary{
     display: none;
