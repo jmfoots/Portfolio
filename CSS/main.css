@@ -176,11 +176,11 @@ details[title=lightbox]{
 } section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 } section[title=content]{
-    border-width: var(--normal) 0 0 var(--normal);
-    border-top-left-radius: var(--large);
     overflow: visible;
     display: flex;
     flex-direction: row;
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
+    box-shadow: var(--box);
 }
 /*Tables*/
 table{
@@ -207,4 +207,5 @@ section[title=content] > article{
     padding: var(--HPad);
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
+    
 }
