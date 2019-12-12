@@ -1,5 +1,5 @@
 ~Work|Web Development
-~Faith Academy Baseball Web Developer|Fall 2017 – Spring 2018|https://jmfoots.github.io/Portfolio/websites/FAB/index.html|
+~Faith Academy Baseball Web Developer|Fall 2017 – Spring 2018|https://jmfoots.github.io/Portfolio/PROJECTS/FAB/index.html|
 Developed custom website.
 Optimized website for fast loading speed.
 Programmed dynamically load content from text files.
