@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Note</title>
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/fontawesome.min.css" rel="stylesheet">
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery-linedtextarea.js"></script>
+</head>
+<form class="container">
+    <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">	
+          <abbr title='Open File Menu'><a class="gn-icon gn-icon-menu"></a></abbr>
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller">
+                    <ul class="gn-menu">
+                        <li><abbr title='Create new file'><a class="gn-icon far fa-file" href='./index.html' target="_blank">New File</a></abbr>
+						</li>
+						<li>
+						<abbr title='Open existing file'>
+							<a class="gn-icon far fa-folder-open">
+								<div class="upload-btn-wrapper">
+									<button class="btn">Open file</button>
+									<input type="file" id="myFile" name="myFile" onchange="OpenFile()"/>
+								</div>
+							</a>							
+						</abbr>
+						</li>
+						<li>
+							<abbr title='Scroll to Gallery'>
+								<a class="gn-icon far fa-save">
+									<div class="upload-btn-wrapper">
+										<button class="btn" type="button" value="save" id="save">Save</button>
+									</div>
+								</a>
+							</abbr>
+						</li>
+						<li><abbr title='Scroll to Videos'><a class="gn-icon fas fa-cog">Options</a></abbr>
+						</li>
+                    </ul>
+                </div>
+            </nav>
+        </li>
+		<li><abbr title='Change file name'><input type="text" id='myFileName' class="gn-title" name="filename" placeholder="Untitled" onchange="RunAs();"></abbr></li>
+		<li><abbr title='Run As' id='runAs'><a class="gn-icon fal fa-play"></a></abbr></li>
+    </ul>
+	<article>
+		<textarea id='myTextArea' class="lined"></textarea>
+	</article>
+	<input type="hidden" name="not_gonna_submit" disabled="disabled" value="invisible" />
+</form>
+<script src="./js/handlebars.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/readFile.js"></script>
+<script src="./js/saveFile.js"></script>
+<script src="./js/runAs.js"></script>
+</html>
