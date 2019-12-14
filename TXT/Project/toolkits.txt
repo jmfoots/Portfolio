@@ -12,6 +12,7 @@ Only Project Report is available publically.
 Attempts to restore deleted files based on file signatures.
 It cannot restore fragmented files.
 It is not always reliable.
+Click image to download the tool.
 ~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
 Automation script to configure a new PC to be compliant with University of South Alabama Hardening Standard.
 Configures standard user and admin user accounts.
