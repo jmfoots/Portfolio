@@ -10,8 +10,8 @@ Creating a Comparison csv used to show that one or more files on the before/afte
 Only Project Report is available publically.
 ~Data Carver Bash Tool|Fall 2018|https://jmfoots.github.io/Portfolio/PROJECTS/DCS/carver.sh|IMG/dcs.png|
 Attempts to restore deleted files based on file signatures.
-Cannot restore fragmented files.
-Not always reliable.
+It cannot restore fragmented files.
+It is not always reliable.
 ~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
 Automation script to configure a new PC to be compliant with University of South Alabama Hardening Standard.
 Configures standard user and admin user accounts.
