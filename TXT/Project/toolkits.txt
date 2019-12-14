@@ -19,3 +19,10 @@ Configures Registry to automatically log on standard user.
 Configures Task Scheduler to apply auto logon after logging into admin user.
 Installs required programs and windows updates.
 Only Project Report is available publically.
+~Reddit Scraper Python Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/RSP/RedditScraper.zip|IMG/rsp.png|
+Requires Python, Honeyview, Java, and Firefox.
+Requires Selenium and Browsermobproxy python modules.
+Pulls latest images from subreddits listed in subreddit csv.
+Displays images using Honeyview.
+Honeyview should be configured to display one image at a time.
+Click image to download the tool.
