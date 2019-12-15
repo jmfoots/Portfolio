@@ -180,8 +180,8 @@ function createbio(data) {
             first=false;
         } else {
             [].forEach.call(line.split("\n"), function(string) {
-                pre += string;
-            });
+                pre += string+' ';
+            }); pre.replace(/ $/, "");
         }
     });
     /*Create Content*/
