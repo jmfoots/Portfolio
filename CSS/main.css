@@ -219,3 +219,9 @@ section[title=content] > article{
 section[title=content] img {
     max-width: 100%;
 }
+/*Fix*/
+@media screen and (max-width: 1200px){ 
+    section[title=content] > article{
+        flex: 1 0 49%;
+    }
+}
