@@ -1,0 +1,7 @@
+~Projects|Simulations
+~Three Bit Computer Simulations|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/TBC/3bitcomputer.pdf|IMG/tbc.png|
+Created a three bit computer in Logisim Evolution that performs bit-wise operations.
+Performs NOT, AND, NAND, OR, XOR, NOR, XNOR, and ADD.
+Uses three Read/Write Registers and three Read-Only Registers.
+Accepts input to two registers and places output in selected register.
+Circuit diagram only available in pdf form.
