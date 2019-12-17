@@ -207,7 +207,7 @@ table{
 }
 /*Articles*/
 section[title=content] > article{
-    flex: 1 0 32%;
+    flex: 1 0 45%;
     padding: var(--HPad);
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
@@ -218,10 +218,4 @@ section[title=content] > article{
 /*Projects*/
 section[title=content] img {
     max-width: 100%;
-}
-/*Fix*/
-@media screen and (max-width: 1200px){ 
-    section[title=content] > article{
-        flex: 1 0 49%;
-    }
 }
