@@ -187,7 +187,7 @@ details[title=lightbox]{
     box-shadow: var(--box);
 }
 /*Fix*/
-@media screen and (max-width: 480px){ 
+@media screen and (max-width: 800px){ 
     section[title=content]{ 
         flex-direction: column;
     }
