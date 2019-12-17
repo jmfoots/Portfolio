@@ -219,3 +219,9 @@ section[title=content] > article{
 section[title=content] img {
     max-width: 100%;
 }
+/*Fix*/
+@media (pointer:none), (pointer:coarse) { 
+    section[title=content]{
+        flex-direction: column;
+    }
+}
