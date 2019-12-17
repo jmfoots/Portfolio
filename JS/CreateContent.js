@@ -226,3 +226,6 @@ function createtoolkits(data){
 function createsimulations(data){
     buildProject(data);
 }
+function creategames(data){
+    buildProject(data);
+}
