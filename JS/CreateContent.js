@@ -223,3 +223,6 @@ function createwebsites(data){
 function createtoolkits(data){
     buildProject(data);
 }
+function createsimulations(data){
+    buildProject(data);
+}
