@@ -207,7 +207,7 @@ table{
 }
 /*Articles*/
 section[title=content] > article{
-    flex: 1 0 21%;
+    flex: 1 0 32%;
     padding: var(--HPad);
     background-color: var(--light);
     margin: calc(var(--normal) / 4);
