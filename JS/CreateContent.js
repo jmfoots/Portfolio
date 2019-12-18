@@ -229,6 +229,6 @@ function createsimulations(data){
 function creategames(data){
     buildProject(data);
 }
-function createBooth(data){
-    buildBooth(data);
+function createbooths(data){
+    buildProject(data);
 }
