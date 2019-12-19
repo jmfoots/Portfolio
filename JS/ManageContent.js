@@ -62,6 +62,7 @@ function hexify(){
         var horizontal = h.style.width / 2;
         var vertical = h.style.height / 2;
         var color = h.style.backgroundColor;
+        
         var before = `
             content:"";
             position: absolute;
@@ -76,7 +77,13 @@ function hexify(){
             border-left: ${horizontal}px solid transparent;
             border-right: ${horizontal}px solid transparent;
             bottom: calc(1px - ${vertical}px);`;
-        h.pseudoStyle("before", before);
-        h.pseudoStyle("after", after);
+        [].forEach.call(before.split("\n"), function(css) {
+            [attr, style]=line.split(":");
+            h.pseudoStyle("before", attr, style);
+        });
+        [].forEach.call(after.split("\n"), function(css) {
+            [attr, style]=line.split(":");
+            h.pseudoStyle("after", attr, style);
+        });
     });
 }
