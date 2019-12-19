@@ -6,6 +6,8 @@ function createNavigation(data) {
             <label title="${title}" class="fas fa-${icon}">
                 <input type="radio" onclick="pages('${title}')"/>
             </label>`);
+        document.querySelector('div[id=pages]').insertAdjacentHTML('beforeend', `
+            <iframe title='${title}' src="TXT/${title}.txt" onclick='loadData(this.contentDocument.body.firstChild.innerHTML)'></iframe>`);
     });
 }
 /*Data*/
