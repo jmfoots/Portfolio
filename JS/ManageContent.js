@@ -1,5 +1,5 @@
 /*Wait until Exist*/
-function exist (element){
+async function exist (element){
     while (!document.querySelector(element)) await new Promise(resolve => requestAnimationFrame(resolve));
     return document.querySelector(element);
 }
