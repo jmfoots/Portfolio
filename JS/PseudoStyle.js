@@ -18,11 +18,11 @@ String.prototype.splice = function(idx, str) {
 
 HTMLElement.prototype.pseudoStyle = function(element,prop,value){
 	var css = document.getElementById('PseudoCSS');
-  var style = css.innerHTML.indexOf(`${this.cssPath()}::${element}{`);
-  if (style > 0) {
-    css.innerHTML = css.innerHTML.splice(style+1,`\n${prop}:${value}`);
+  var ele = `${this.cssPath()}::${element}`;
+  if (css.innerHTML.indexOf(ele) > 0) {
+    css.innerHTML = css.innerHTML.splice((css.innerHTML.indexOf(ele)+ele.length+2),`\n${prop}:${value}`);
   } else {
-    css.innerHTML += ` ${this.cssPath()}::${element}{${prop}:${value}}`;
+    css.innerHTML += ` ${this.cssPath()}::${element}{ ${prop}:${value}}`;
   }
   console.log(css.innerHTML);
   return this;
