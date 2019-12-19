@@ -3,10 +3,10 @@ HTMLElement.prototype.cssPath = function(){
     return `#${this.id}`
   } else {
     var parents = '';
-    var parent = this.parentNode.tagName;
-    while (parent.parentNode){
+    var parent = this.parentNode.tagName.toLowerCase();
+    while (parent.parentNode.tagName.length > 0){
       parents += `${parent} > `;
-      parent = parent.parentNode.tagName;
+      parent = parent.parentNode.tagName.toLowerCase();
     }
     return `${parents}${this.tagName.toLowerCase()}`
   }
@@ -20,9 +20,10 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
 	var css = document.getElementById('PseudoCSS');
   var ele = `${this.cssPath()}::${element}`;
   if (css.innerHTML.indexOf(ele) > 0) {
-    css.innerHTML = css.innerHTML.splice((css.innerHTML.indexOf(ele)+ele.length+2),`\n${prop}:${value}`);
+    var idx = css.innerHTML.indexOf(ele)+ele.length+2;
+    css.innerHTML = css.innerHTML.splice(idx,`\n${prop}:${value}`);
   } else {
-    css.innerHTML += ` ${this.cssPath()}::${element}{ ${prop}:${value}}`;
+    css.innerHTML += `\n${this.cssPath()}::${element}{ \n${prop}:${value}}`;
   }
   console.log(css.innerHTML);
   return this;

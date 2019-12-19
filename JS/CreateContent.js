@@ -20,6 +20,7 @@ function loadData(data) {
         document.querySelector('section[title=grid]').insertAdjacentHTML('beforeend', `
             <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
+    hexify();
 }
 function buildTable(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');

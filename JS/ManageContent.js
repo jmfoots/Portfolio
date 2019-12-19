@@ -29,7 +29,6 @@ function init(){
             if (sibling !== details) sibling.style.display = sibling.style.display === 'none' ? '' : 'none';
         }
     });
-    hexify();
 }
 /*Navigation*/
 function pages(id) {
