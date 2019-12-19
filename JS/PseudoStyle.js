@@ -1,12 +1,14 @@
-HTMLElement.prototype.xPath = function(){
+HTMLElement.prototype.cssPath = function(){
   if (this.id) {
-    return `//*[@id=${this.id}]`
-  } else if (this.tagName === 'BODY') {
-    return '/html/body'
+    return `#${this.id}`
   } else {
-    const sameTagSiblings = Array.from(this.parentNode.childNodes).filter(e => e.nodeName === this.nodeName)
-    const idx = sameTagSiblings.indexOf(this)
-    return `${this.parentNode.xPath}/${this.tagName.toLowerCase()}${(sameTagSiblings.length > 1 ? `[${idx + 1}]` : '')}`
+    var parents = '';
+    var parent = this.parentNode;
+    while (parent.parentNode){
+      parents += `${parent} > `;
+      parent = parent.parentNode;
+    }
+    return `${parents}${this.tagName.toLowerCase()}`
   }
 }
 
@@ -16,11 +18,11 @@ String.prototype.splice = function(idx, str) {
 
 HTMLElement.prototype.pseudoStyle = function(element,prop,value){
 	var css = document.getElementById('PseudoCSS');
-  var style = css.innerHTML.indexOf(`${this.xPath}::${element}{`);
+  var style = css.innerHTML.indexOf(`${this.cssPath}::${element}{`);
   if (style > 0) {
     css.innerHTML = css.innerHTML.splice(style,`\n${prop}:${value}`);
   } else {
-    css.innerHTML += ` ${this.xPath}::${element}{${prop}:${value}}`;
+    css.innerHTML += ` ${this.cssPath}::${element}{${prop}:${value}}`;
   }
   console.log(css.innerHTML);
   return this;
