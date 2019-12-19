@@ -1,10 +1,12 @@
-function init(){
+async function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    exist('iframe[title=navigation]').dispatchEvent(new Event('click'), new Event('touchend'));
+    var iframe = checkElement('iframe[title=navigation]');
+    iframe.dispatchEvent(new Event('click'), new Event('touchend'));
     /*Default Page*/
-    exist('nav > label:first-child > input').dispatchEvent(new Event('click'), new Event('touchend'));
+    var input = checkElement('nav > label:first-child > input')
+    input.dispatchEvent(new Event('click'), new Event('touchend'));
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
         var lightbox = document.querySelector('details[title=lightbox][open] > summary');
@@ -31,8 +33,8 @@ function init(){
     });
 }
 /*Wait until Exist*/
-async function exist (element){
-    while (!document.querySelector(element)) await new Promise(resolve => requestAnimationFrame(resolve));
+async function checkElement(element){
+    while (!document.querySelector(element)) new Promise(resolve => { setTimeout(() => {resolve('resolved');}, 500); });
     return document.querySelector(element);
 }
 /*Navigation*/
