@@ -67,12 +67,14 @@ function hexify(){
         var vertical = h.offsetHeight / 2;
         var before = `content:"";
         position: absolute;
+        left: 0;
         border-bottom: ${vertical}px solid var(--light);
         border-left: ${horizontal}px solid transparent;
         border-right: ${horizontal}px solid transparent;
         top: -${vertical}px;`;
         var after = `content:"";
         position: absolute;
+        left: 0;
         border-top: ${vertical}px solid var(--light);
         border-left: ${horizontal}px solid transparent;
         border-right: ${horizontal}px solid transparent;
