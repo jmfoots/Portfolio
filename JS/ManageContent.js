@@ -32,9 +32,7 @@ function init(){
 }
 /*Wait until Exist*/
 async function exist (element){
-    while ( document.querySelector(element) === null) {
-        await new Promise( resolve =>  requestAnimationFrame(resolve) )
-    }
+    while (document.querySelector(element) === null) await new Promise(resolve => requestAnimationFrame(resolve));
     return document.querySelector(element);
 }
 /*Navigation*/
