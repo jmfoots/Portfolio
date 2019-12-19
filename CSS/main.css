@@ -170,12 +170,15 @@ details[title=lightbox]{
     border: calc(var(--normal) / 4) transparent solid;
     text-align: center;
     transition: border-color 0.5s ease;
+} section[title=grid] > h2::before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+    float: left;
 } section[title=grid] {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
-    box-shadow: var(--box);
 } section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
     border-color: var(--trout);
 } section[title=content]{
