@@ -78,14 +78,14 @@ function hexify(){
             border-right: ${horizontal}px solid transparent;
             bottom: calc(1px - ${vertical}px);`;
         [].forEach.call(before.split("\n"), function(css) {
-            attr = css.split('\t')[0];
-            style = attr.split(':')[0];
+            attr = css.split('\t')[1].split(':')[0];
+            style = attr.split(':')[1];
             console.log(`before- ${attr}:${style}`)
             h.pseudoStyle("before", attr, style);
         });
         [].forEach.call(after.split("\n"), function(css) {
-            attr = css.split('\t')[0];
-            style = attr.split(':')[0];
+            attr = css.split('\t')[1].split(':')[0];
+            style = attr.split(':')[1];
             console.log(`after- ${attr}:${style}`)
             h.pseudoStyle("after", attr, style);
         });
