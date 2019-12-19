@@ -66,7 +66,7 @@ function hexify(){
         var horizontal = h.offsetWidth / 2;
         var vertical = h.offsetHeight / 2;
         var color = h.style.backgroundColor;
-        var border = (h.clientWidth / 2) - horizontal;
+        var border = (h.clientHeight / 2) - vertical;
         var before = `content:"";
         position: absolute;
         left: calc(50% - ${horizontal}px);

@@ -6,7 +6,7 @@ HTMLElement.prototype.parents = function(){
     parent = parent.parentNode;
   }
   parents.reverse().forEach(function(parent){ string += `${parent} > `});
-  return string.slice(0, -3);
+  return string;
 }
 
 HTMLElement.prototype.cssPath = function(){
