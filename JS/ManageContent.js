@@ -2,9 +2,9 @@ async function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    checkElement('iframe[title=navigation]').value.dispatchEvent(new Event('click'), new Event('touchend'));
+    checkElement('iframe[title=navigation]').then(dispatchEvent(new Event('click'), new Event('touchend')))
     /*Default Page*/
-    checkElement('nav > label:first-child > input').value.dispatchEvent(new Event('click'), new Event('touchend'));
+    checkElement('nav > label:first-child > input').then(dispatchEvent(new Event('click'), new Event('touchend')))
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
         var lightbox = document.querySelector('details[title=lightbox][open] > summary');
