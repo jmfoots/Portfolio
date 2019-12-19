@@ -2,7 +2,7 @@ async function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    checkElement('iframe[title=navigation]').then(this.dispatchEvent(new Event('click'), new Event('touchend')))
+    document.querySelector('iframe[title=navigation]').dispatchEvent(new Event('click'), new Event('touchend')))
     /*Default Page*/
     checkElement('nav > label:first-child > input').then(this.dispatchEvent(new Event('click'), new Event('touchend')))
     /*Listeners*/
