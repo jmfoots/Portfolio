@@ -31,15 +31,8 @@ async function init(){
     });
 }
 /*Wait until Exist*/
-function waitHalfSecond() {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve('resolved');
-      }, 500);
-    });
-  }
 async function checkElement(element){
-    while (!document.querySelector(element)) waitHalfSecond();
+    while (!document.querySelector(element)) new Promise(resolve => {setTimeout(() => {resolve('resolved');}, 500);});
     return document.querySelector(element);
 }
 /*Navigation*/
