@@ -13,5 +13,6 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
     sheet += `${this}::${element}{${prop}:${value};}`
     document.getElementsByTagName('head')[0].appendChild(css);
   }
+  console.log(sheet);
   return this;
 };
