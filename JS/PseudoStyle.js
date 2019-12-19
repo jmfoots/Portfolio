@@ -15,8 +15,7 @@ String.prototype.splice = function(idx, str) {
 };
 
 HTMLElement.prototype.pseudoStyle = function(element,prop,value){
-  var id = 'PseudoCSS';
-	var css = document.getElementById(id);
+	var css = document.getElementById('PseudoCSS');
   var style = css.innerHTML.indexOf(`${this.xPath}::${element}{`);
   if (style > 0) {
     css.innerHTML = css.innerHTML.splice(style,`\n${prop}:${value}`);
