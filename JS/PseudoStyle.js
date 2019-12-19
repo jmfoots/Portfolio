@@ -22,8 +22,7 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   if (style > 0) {
     css.innerHTML = css.innerHTML.splice(style,`\n${prop}:${value}`);
   } else {
-    css.innerHTML += ` ${this.xPath}::${element}{${prop}:${value}}`
-    
+    css.innerHTML += ` ${this.xPath}::${element}{${prop}:${value}}`;
   }
   console.log(css.innerHTML);
   return this;
