@@ -1,3 +1,8 @@
+/*Wait until Exist*/
+function exist (element){
+    while (!document.querySelector(element)) await new Promise(resolve => requestAnimationFrame(resolve));
+    return document.querySelector(element);
+}
 function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
@@ -29,11 +34,6 @@ function init(){
             if (sibling !== details) sibling.style.display = sibling.style.display === 'none' ? '' : 'none';
         }
     });
-}
-/*Wait until Exist*/
-async function exist (element){
-    while (document.querySelector(element) === null) await new Promise(resolve => requestAnimationFrame(resolve));
-    return document.querySelector(element);
 }
 /*Navigation*/
 function pages(id) {
