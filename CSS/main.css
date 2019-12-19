@@ -60,7 +60,6 @@ html,body{
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
 }
 /*Headers*/
 h1,h2,h3,th{
