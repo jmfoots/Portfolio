@@ -78,11 +78,11 @@ function hexify(){
             border-right: ${horizontal}px solid transparent;
             bottom: calc(1px - ${vertical}px);`;
         [].forEach.call(before.split("\n"), function(css) {
-            [attr, style]=line.split(":");
+            [attr, style]=css.split(":");
             h.pseudoStyle("before", attr, style);
         });
         [].forEach.call(after.split("\n"), function(css) {
-            [attr, style]=line.split(":");
+            [attr, style]=css.split(":");
             h.pseudoStyle("after", attr, style);
         });
     });
