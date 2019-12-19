@@ -57,10 +57,12 @@ html,body{
 } main{
     display: flex;
     flex-direction: column;
+    background: var(--coal);
     flex: 1;
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
 }
 /*Headers*/
 h1,h2,h3,th{
@@ -181,8 +183,6 @@ details[title=lightbox]{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
-    box-shadow: var(--box);
 }
 /*Tables*/
 table{
