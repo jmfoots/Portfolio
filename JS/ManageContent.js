@@ -29,6 +29,7 @@ function init(){
             if (sibling !== details) sibling.style.display = sibling.style.display === 'none' ? '' : 'none';
         }
     });
+    hexify();
 }
 /*Navigation*/
 function pages(id) {
@@ -54,4 +55,28 @@ function pages(id) {
 function clearContent(){
     var content = document.querySelector('div[title=content]');
     while (content.firstChild) content.removeChild(content.firstChild);
+}
+/*Buttons to Hexagons*/
+function hexify(){
+    [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h) {
+        var horizontal = h.style.width / 2;
+        var vertical = h.style.height / 2;
+        var color = h.style.backgroundColor;
+        var before = `
+            content:"";
+            position: absolute;
+            border-bottom: ${vertical}px solid ${color};
+            border-left: ${horizontal}px solid transparent;
+            border-right: ${horizontal}px solid transparent;
+            top: -${vertical}px;`;
+        var after = `
+            content:"";
+            position: absolute;
+            border-bottom: ${vertical}px solid ${color};
+            border-left: ${horizontal}px solid transparent;
+            border-right: ${horizontal}px solid transparent;
+            bottom: calc(1px - ${vertical}px);`;
+        h.pseudoStyle("before", $before);
+        h.pseudoStyle("after", $before);
+    });
 }

@@ -162,6 +162,7 @@ details[title=lightbox]{
 } details[title=lightbox][open] > summary{
     display: block;
 } section[title=grid] > h2{
+    position: relative;
     cursor: pointer;
     flex: 1;
     padding: var(--HPad);
@@ -170,22 +171,6 @@ details[title=lightbox]{
     border: calc(var(--normal) / 4) transparent solid;
     text-align: center;
     transition: border-color 0.5s ease;
-} section[title=grid] > h2::before {
-    content: " ";
-    width: 0; height: 0;
-    border-bottom: 30px solid var(--light);
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
-    position: absolute;
-    top: -30px;
-} section[title=grid] > h2::after {
-    content: "";
-    width: 0;
-    position: absolute;
-    bottom: -30px;
-    border-top: 30px solid var(--light);
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
 } section[title=grid] {
     display: flex;
     justify-content: space-between;
