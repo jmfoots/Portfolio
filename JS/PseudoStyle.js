@@ -4,13 +4,9 @@ HTMLElement.prototype.xPath = function(){
   } else if (this.tagName === 'BODY') {
     return '/html/body'
   } else {
-    const sameTagSiblings = Array.from(this.parentNode.childNodes)
-      .filter(e => e.nodeName === this.nodeName)
+    const sameTagSiblings = Array.from(this.parentNode.childNodes).filter(e => e.nodeName === this.nodeName)
     const idx = sameTagSiblings.indexOf(this)
-    return this.parentNode.xPath +
-      '/' +
-      this.tagName.toLowerCase() +
-      (sameTagSiblings.length > 1 ? `[${idx + 1}]` : '')
+    return `${this.parentNode.xPath}/${this.tagName.toLowerCase()}${(sameTagSiblings.length > 1 ? `[${idx + 1}]` : '')}`
   }
 }
 
@@ -22,10 +18,9 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   var id = 'PseudoCSS';
 	var css = document.getElementById(id) || document.createElement('style');
       css.id = id;
-      sheet = css.innerHTML;
-  var style = sheet.indexOf(`${this.xPath}::${element}{`);
+  var style = sheet.innerHTML.indexOf(`${this.xPath}::${element}{`);
   if (style > 0) {
-    sheet.splice(style,`\n${prop}:${value}`);
+    css.innerHTML = css.innerHTML.splice(style,`\n${prop}:${value}`);
   } else {
     sheet += ` ${this.xPath}::${element}{${prop}:${value}}`
     document.getElementsByTagName('head')[0].appendChild(css);
