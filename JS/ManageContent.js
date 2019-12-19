@@ -57,6 +57,11 @@ function clearContent(){
 }
 /*Buttons to Hexagons*/
 function hexify(){
+    var pseudoCSS = document.querySelector('style[id=PseudoCSS]');
+    while (pseudoCSS) pseudoCSS.remove();
+    var css = document.createElement('style');
+    css.id = 'PseudoCSS';
+    document.getElementsByTagName('head')[0].appendChild(css);
     [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h) {
         var horizontal = h.offsetWidth / 2;
         var vertical = h.offsetHeight / 2;
