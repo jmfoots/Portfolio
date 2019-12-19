@@ -32,7 +32,7 @@ async function init(){
 }
 /*Wait until Exist*/
 async function checkElement(element){
-    while (!document.querySelector(element)) new Promise(resolve => {setTimeout(() => {resolve(document.querySelector(element));}, 2000);});
+    while (!document.querySelector(element)) await new Promise(resolve => {setTimeout(() => {resolve(document.querySelector(element));}, 2000);});
 }
 /*Navigation*/
 function pages(id) {
