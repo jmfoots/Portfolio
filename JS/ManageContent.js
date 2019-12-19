@@ -63,29 +63,25 @@ function hexify(){
         var vertical = h.style.height / 2;
         var color = h.style.backgroundColor;
         
-        var before = `
-            content:"";
-            position: absolute;
-            border-bottom: ${vertical}px solid ${color};
-            border-left: ${horizontal}px solid transparent;
-            border-right: ${horizontal}px solid transparent;
-            top: -${vertical}px;`;
-        var after = `
-            content:"";
-            position: absolute;
-            border-bottom: ${vertical}px solid ${color};
-            border-left: ${horizontal}px solid transparent;
-            border-right: ${horizontal}px solid transparent;
-            bottom: calc(1px - ${vertical}px);`;
+        var before = `content:"";
+        position: absolute;
+        border-bottom: ${vertical}px solid ${color};
+        border-left: ${horizontal}px solid transparent;
+        border-right: ${horizontal}px solid transparent;
+        top: -${vertical}px;`;
+        var after = `content:"";
+        position: absolute;
+        border-bottom: ${vertical}px solid ${color};
+        border-left: ${horizontal}px solid transparent;
+        border-right: ${horizontal}px solid transparent;
+        bottom: calc(1px - ${vertical}px);`;
         [].forEach.call(before.split("\n"), function(css) {
-            attr = css.split('\t')[0].split(':')[0];
-            style = attr.split(':')[1];
+            [attr, style] = css.split(':');
             console.log(`before- ${attr}:${style}`)
             h.pseudoStyle("before", attr, style);
         });
         [].forEach.call(after.split("\n"), function(css) {
-            attr = css.split('\t')[0].split(':')[0];
-            style = attr.split(':')[1];
+            [attr, style] = css.split(':');
             console.log(`after- ${attr}:${style}`)
             h.pseudoStyle("after", attr, style);
         });
