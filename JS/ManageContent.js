@@ -62,7 +62,6 @@ function hexify(){
         var horizontal = h.style.width / 2;
         var vertical = h.style.height / 2;
         var color = h.style.backgroundColor;
-        
         var before = `content:"";
         position: absolute;
         border-bottom: ${vertical}px solid ${color};
@@ -77,12 +76,10 @@ function hexify(){
         bottom: calc(1px - ${vertical}px);`;
         [].forEach.call(before.split("\n"), function(css) {
             [attr, style] = css.trim('\t').split(':');
-            console.log(`before- ${attr}:${style}`)
             h.pseudoStyle("before", attr, style);
         });
         [].forEach.call(after.split("\n"), function(css) {
             [attr, style] = css.trim('\t').split(':');
-            console.log(`after- ${attr}:${style}`)
             h.pseudoStyle("after", attr, style);
         });
     });
