@@ -84,8 +84,8 @@ function hexify(){
             h.pseudoStyle("before", attr, style);
         });
         [].forEach.call(after.split("\n"), function(css) {
-            attr = css.split('\t');
-            style = attr.split(':');
+            attr = css.split('\t')[1];
+            style = attr.split(':')[1];
             console.log(`after- ${attr}:${style}`)
             h.pseudoStyle("after", attr, style);
         });
