@@ -14,7 +14,7 @@ HTMLElement.prototype.cssPath = function(){
     return `#${this.id}`
   } else {
     var siblings = Array.from(this.parentNode.childNodes).filter(e => e.nodeName === this.nodeName);
-    return `${this.parents()}${this.tagName.toLowerCase()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)})` : ''}`
+    return `${this.parents()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)})` : ''}`
   }
 }
 
