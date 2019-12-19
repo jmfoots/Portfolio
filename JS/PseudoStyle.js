@@ -1,15 +1,20 @@
+HTMLElement.prototype.parents = function(){
+  var parent = this.parentNode;
+  var parents = '';
+  while (parent.parentNode){
+    parents += `${parent.tagName.toLowerCase()} > `;
+    parent = parent.parentNode;
+    console.log(parents);
+  }
+  return parents;
+}
+
 HTMLElement.prototype.cssPath = function(){
   if (this.id) {
     return `#${this.id}`
   } else {
-    var parents = '';
-    var parent = this.parentNode;
-    var siblings = Array.from(parent.childNodes).filter(e => e.nodeName === this.nodeName);
-    while (parent.parentNode.tagName.toLowerCase() !== 'body'){
-      parents += `${parent.tagName.toLowerCase()} > `;
-      parent = parent.parentNode;
-    }
-    return `${parents}${this.tagName.toLowerCase()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)})` : ''}`
+    var siblings = Array.from(this.parentNode.childNodes).filter(e => e.nodeName === this.nodeName);
+    return `${this.parents()}${this.tagName.toLowerCase()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)})` : ''}`
   }
 }
 
