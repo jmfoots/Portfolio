@@ -4,7 +4,7 @@ async function init(){
     /*Load Navigation*/
     document.querySelector('iframe[title=navigation]').dispatchEvent(new Event('click'), new Event('touchend'));
     /*Default Page*/
-    checkElement('nav > label:first-child > input').then(this.dispatchEvent(new Event('click'), new Event('touchend')));
+    checkElement('nav > label:first-child > input').then(dispatchEvent(new Event('click'), new Event('touchend')));
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
         var lightbox = document.querySelector('details[title=lightbox][open] > summary');
@@ -32,7 +32,7 @@ async function init(){
 }
 /*Wait until Exist*/
 async function checkElement(element){
-    while (!document.querySelector(element)) new Promise(resolve => {setTimeout(() => {resolve('resolved');}, 100);});
+    while (!document.querySelector(element)) new Promise(resolve => {setTimeout(() => {resolve('resolved');}, 2000);});
     return document.querySelector(element);
 }
 /*Navigation*/
