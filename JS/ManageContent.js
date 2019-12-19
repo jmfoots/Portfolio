@@ -55,13 +55,17 @@ function clearContent(){
     var content = document.querySelector('div[title=content]');
     while (content.firstChild) content.removeChild(content.firstChild);
 }
-/*Buttons to Hexagons*/
-function hexify(){
+/*Initialize new Pseudo CSS*/
+function PseudoCSS(){
     var pseudoCSS = document.querySelector('style[id=PseudoCSS]');
     if (pseudoCSS) pseudoCSS.remove();
     var css = document.createElement('style');
     css.id = 'PseudoCSS';
     document.getElementsByTagName('head')[0].appendChild(css);
+}
+/*Buttons to Hexagons*/
+function hexify(){
+    PseudoCSS();
     [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h) {
         var horizontal = h.offsetWidth / 2;
         var vertical = h.offsetHeight / 2;
@@ -90,3 +94,39 @@ function hexify(){
         });
     });
 }
+/*Return parent chain*/
+HTMLElement.prototype.parents = function(){
+    var parent = this.parentNode;
+    var parents = []; var string = '';
+    while (parent.parentNode){
+        parents.push(`${parent.tagName.toLowerCase()}`);
+        parent = parent.parentNode;
+    }
+    parents.reverse().forEach(function(parent){ string += `${parent} > `});
+    return string;
+}
+/*Return child's path and index*/
+HTMLElement.prototype.cssPath = function(){
+    if (this.id) {
+        return `#${this.id}`
+    } else {
+        var siblings = Array.from(this.parentNode.childNodes).filter(e => e.nodeName === this.nodeName);
+        return `${this.parents()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)+1})` : ''}`
+    }
+}
+/*Append after index*/
+String.prototype.splice = function(idx, str) {
+    return this.slice(0, idx) + str + this.slice(idx);
+};
+/*Create append new CSS style*/
+HTMLElement.prototype.pseudoStyle = function(element,prop,value){
+    var css = document.getElementById('PseudoCSS');
+    var ele = `${this.cssPath()}::${element}`;
+    if (css.innerHTML.indexOf(ele) > 0) {
+        var idx = css.innerHTML.indexOf(ele)+ele.length+2;
+        css.innerHTML = css.innerHTML.splice(idx,`\n${prop}:${value}`);
+    } else {
+        css.innerHTML += `\n${this.cssPath()}::${element}{ \n${prop}:${value}}`;
+    }
+    return this;
+};
