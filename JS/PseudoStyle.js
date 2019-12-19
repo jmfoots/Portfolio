@@ -1,12 +1,12 @@
 HTMLElement.prototype.parents = function(){
   var parent = this.parentNode;
-  var parents = '';
+  var parents = []; var string = '';
   while (parent.parentNode){
-    parents += `${parent.tagName.toLowerCase()} > `;
+    parents.push(`${parent.tagName.toLowerCase()}`);
     parent = parent.parentNode;
-    console.log(parents);
   }
-  return parents;
+  parents.reverse().forEach(function(parent){ string += `${parent} > `});
+  return string;
 }
 
 HTMLElement.prototype.cssPath = function(){
