@@ -5,12 +5,12 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   var id = 'PseudoCSS';
 	var css = document.getElementById(id) || document.createElement('style');
       css.id = id;
-      css = css.innerHTML;
-  var style = css.indexOf(`${this}::${element}{`);
+      sheet = css.innerHTML;
+  var style = sheet.indexOf(`${this}::${element}{`);
   if (style > 0) {
-    css.splice(style,`\n${prop}:${value};`);
+    sheet.splice(style,`\n${prop}:${value};`);
   } else {
-    css += `${this}::${element}{${prop}:${value};}`
+    sheet += `${this}::${element}{${prop}:${value};}`
     document.getElementsByTagName('head')[0].appendChild(css);
   }
   return this;
