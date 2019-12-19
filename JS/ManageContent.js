@@ -65,20 +65,22 @@ function hexify(){
     [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h) {
         var horizontal = h.offsetWidth / 2;
         var vertical = h.offsetHeight / 2;
+        var color = getComputedStyle(h.getPropertyValue('background-color'));
+        var border = getComputedStyle(h.getPropertyValue('border-width'));
         var before = `content:"";
         position: absolute;
-        left: 0;
-        border-bottom: ${vertical}px solid var(--light);
+        left: calc(50% - ${horizontal}px);
+        border-bottom: ${vertical}px solid ${color};
         border-left: ${horizontal}px solid transparent;
         border-right: ${horizontal}px solid transparent;
-        top: -${vertical}px;`;
+        top: calc(-${border}px - ${vertical}px);`;
         var after = `content:"";
         position: absolute;
-        left: 0;
-        border-top: ${vertical}px solid var(--light);
+        left: calc(50% - ${horizontal}px);
+        border-top: ${vertical}px solid ${color};
         border-left: ${horizontal}px solid transparent;
         border-right: ${horizontal}px solid transparent;
-        bottom: calc(1px - ${vertical}px);`;
+        bottom: calc(-${border}px - ${vertical}px);`;
         [].forEach.call(before.split("\n"), function(css) {
             [attr, style] = css.trim('\t').split(':');
             h.pseudoStyle("before", attr, style);
