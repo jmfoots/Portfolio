@@ -7,9 +7,9 @@ function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    exist(document.querySelector('iframe[title=navigation]')).dispatchEvent(new Event('click'), new Event('touchend'));
+    exist('iframe[title=navigation]').dispatchEvent(new Event('click'), new Event('touchend'));
     /*Default Page*/
-    exist(document.querySelector('nav > label:first-child > input')).dispatchEvent(new Event('click'), new Event('touchend'));
+    exist('nav > label:first-child > input').dispatchEvent(new Event('click'), new Event('touchend'));
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
         var lightbox = document.querySelector('details[title=lightbox][open] > summary');
