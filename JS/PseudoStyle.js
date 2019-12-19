@@ -6,7 +6,7 @@ HTMLElement.prototype.parents = function(){
     parent = parent.parentNode;
   }
   parents.reverse().forEach(function(parent){ string += `${parent} > `});
-  return string;
+  return string.slice(0, -3);
 }
 
 HTMLElement.prototype.cssPath = function(){
@@ -14,7 +14,7 @@ HTMLElement.prototype.cssPath = function(){
     return `#${this.id}`
   } else {
     var siblings = Array.from(this.parentNode.childNodes).filter(e => e.nodeName === this.nodeName);
-    return `${this.parents()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)})` : ''}`
+    return `${this.parents()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)+1})` : ''}`
   }
 }
 
@@ -31,6 +31,5 @@ HTMLElement.prototype.pseudoStyle = function(element,prop,value){
   } else {
     css.innerHTML += `\n${this.cssPath()}::${element}{ \n${prop}:${value}}`;
   }
-  console.log(css.innerHTML);
   return this;
 };
