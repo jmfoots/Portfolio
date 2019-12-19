@@ -65,16 +65,15 @@ function hexify(){
     [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h) {
         var horizontal = h.offsetWidth / 2;
         var vertical = h.offsetHeight / 2;
-        var color = h.style.backgroundColor;
         var before = `content:"";
         position: absolute;
-        border-bottom: ${vertical}px solid ${color};
+        border-bottom: ${vertical}px solid var(--light);
         border-left: ${horizontal}px solid transparent;
         border-right: ${horizontal}px solid transparent;
         top: -${vertical}px;`;
         var after = `content:"";
         position: absolute;
-        border-bottom: ${vertical}px solid ${color};
+        border-top: ${vertical}px solid var(--light);
         border-left: ${horizontal}px solid transparent;
         border-right: ${horizontal}px solid transparent;
         bottom: calc(1px - ${vertical}px);`;
