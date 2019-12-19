@@ -76,7 +76,7 @@ function hexify(){
             border-left: ${horizontal}px solid transparent;
             border-right: ${horizontal}px solid transparent;
             bottom: calc(1px - ${vertical}px);`;
-        h.pseudoStyle("before", $before);
-        h.pseudoStyle("after", $before);
+        h.pseudoStyle("before", before);
+        h.pseudoStyle("after", after);
     });
 }
