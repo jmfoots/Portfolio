@@ -79,10 +79,12 @@ function hexify(){
             bottom: calc(1px - ${vertical}px);`;
         [].forEach.call(before.split("\n"), function(css) {
             [attr, style]=css.split(":");
+            console.log(`before- ${attr}:${style}`)
             h.pseudoStyle("before", attr, style);
         });
         [].forEach.call(after.split("\n"), function(css) {
             [attr, style]=css.split(":");
+            console.log(`after- ${attr}:${style}`)
             h.pseudoStyle("after", attr, style);
         });
     });
