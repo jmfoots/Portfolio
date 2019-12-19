@@ -2,9 +2,13 @@ function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    document.querySelector('iframe[title=navigation]').dispatchEvent(new Event('click'), new Event('touchend'));
+    document.querySelector('iframe[title=navigation]').addEventListener('load', function () {
+        this.dispatchEvent(new Event('click'), new Event('touchend'));
+    });
     /*Default Page*/
-    document.querySelector('nav > label:first-child > input').dispatchEvent(new Event('click'), new Event('touchend'));
+    document.querySelector('nav > label:first-child > input').addEventListener('load', function () {
+        this.dispatchEvent(new Event('click'), new Event('touchend'));
+    });
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
         var lightbox = document.querySelector('details[title=lightbox][open] > summary');
