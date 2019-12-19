@@ -3,13 +3,13 @@ HTMLElement.prototype.cssPath = function(){
     return `#${this.id}`
   } else {
     var parents = '';
-    var parent = this.parentNode.tagName.toLowerCase();
+    var parent = this.parentNode;
+    var siblings = Array.from(parent.childNodes).filter(e => e.nodeName === this.nodeName);
     while (parent.parentNode.tagName.toLowerCase() !== 'body'){
-      parents += `${parent} > `;
-      parent = parent.parentNode.tagName.toLowerCase();
+      parents += `${parent.tagName.toLowerCase()} > `;
+      parent = parent.parentNode;
     }
-    this.getRootNode().
-    return `${parents}${this.tagName.toLowerCase()}`
+    return `${parents}${this.tagName.toLowerCase()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)})` : ''}`
   }
 }
 

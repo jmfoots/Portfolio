@@ -58,8 +58,8 @@ function clearContent(){
 /*Buttons to Hexagons*/
 function hexify(){
     [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h) {
-        var horizontal = h.style.width / 2;
-        var vertical = h.style.height / 2;
+        var horizontal = h.offsetWidth / 2;
+        var vertical = h.offsetHeight / 2;
         var color = h.style.backgroundColor;
         var before = `content:"";
         position: absolute;
