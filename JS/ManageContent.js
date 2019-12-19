@@ -2,10 +2,10 @@ async function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    checkElement('iframe[title=navigation]');
+    console.log(checkElement('iframe[title=navigation]'));
     document.querySelector('iframe[title=navigation]').dispatchEvent(new Event('click'), new Event('touchend'));
     /*Default Page*/
-    var input = checkElement('nav > label:first-child > input')
+    console.log(checkElement('nav > label:first-child > input'));
     document.querySelector('nav > label:first-child > input').dispatchEvent(new Event('click'), new Event('touchend'));
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
@@ -33,8 +33,15 @@ async function init(){
     });
 }
 /*Wait until Exist*/
+function waitHalfSecond() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve('resolved');
+      }, 500);
+    });
+  }
 async function checkElement(element){
-    while (!document.querySelector(element)) new Promise(resolve => { setTimeout(() => {resolve('resolved');}, 500); });
+    while (!document.querySelector(element)) waitHalfSecond();
     return document.querySelector(element);
 }
 /*Navigation*/
