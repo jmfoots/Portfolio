@@ -58,7 +58,7 @@ function clearContent(){
 /*Buttons to Hexagons*/
 function hexify(){
     var pseudoCSS = document.querySelector('style[id=PseudoCSS]');
-    while (pseudoCSS) pseudoCSS.remove();
+    if (pseudoCSS) pseudoCSS.remove();
     var css = document.createElement('style');
     css.id = 'PseudoCSS';
     document.getElementsByTagName('head')[0].appendChild(css);
