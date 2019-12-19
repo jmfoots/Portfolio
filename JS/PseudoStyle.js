@@ -7,13 +7,11 @@ HTMLElement.prototype.xPath = function(){
     const sameTagSiblings = Array.from(this.parentNode.childNodes)
       .filter(e => e.nodeName === this.nodeName)
     const idx = sameTagSiblings.indexOf(this)
-
-    return getElementXPath(this.parentNode) +
+    return this.parentNode.xPath +
       '/' +
       this.tagName.toLowerCase() +
       (sameTagSiblings.length > 1 ? `[${idx + 1}]` : '')
   }
-  return null
 }
 
 String.prototype.splice = function(idx, str) {
