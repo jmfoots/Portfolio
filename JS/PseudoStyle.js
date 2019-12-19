@@ -4,10 +4,11 @@ HTMLElement.prototype.cssPath = function(){
   } else {
     var parents = '';
     var parent = this.parentNode.tagName.toLowerCase();
-    while (parent.parentNode){
+    while (parent.parentNode.tagName.toLowerCase() !== 'body'){
       parents += `${parent} > `;
       parent = parent.parentNode.tagName.toLowerCase();
     }
+    this.getRootNode().
     return `${parents}${this.tagName.toLowerCase()}`
   }
 }
