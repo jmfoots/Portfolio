@@ -4,7 +4,7 @@ HTMLElement.prototype.cssPath = function(){
   } else {
     var parents = '';
     var parent = this.parentNode.tagName.toLowerCase();
-    while (parent.parentNode.tagName.length > 0){
+    while (parent.parentNode){
       parents += `${parent} > `;
       parent = parent.parentNode.tagName.toLowerCase();
     }
