@@ -23,10 +23,6 @@ function loadData(data) {
             <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
 }
-/*Mobile-friendly click*/
-HTMLElement.prototype.open = function(){
-    this.dispatchEvent(new Event('click'), new Event('touchend'));
-}
 /*Build Templates*/
 function buildTable(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
