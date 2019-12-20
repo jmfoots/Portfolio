@@ -76,6 +76,7 @@ h1,h2,h3,th{
 } p{
     padding: var(--HPad);
     background-color: var(--light);
+    box-shadow: var(--box);
     margin: calc(var(--normal) / 4);
 }
 /*Nav*/
@@ -131,9 +132,9 @@ details[title=footer]{
 details[title=lightbox]{
     display: none;
     top: 0;
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     opacity:0;
     width: 100%;
+    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     height: max-content;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
@@ -166,6 +167,7 @@ details[title=lightbox]{
     flex: 1;
     padding: var(--HPad);
     background-color: var(--light);
+    box-shadow: var(--box);
     margin: calc(var(--normal) / 4);
     border: calc(var(--normal) / 4) transparent solid;
     text-align: center;
@@ -206,6 +208,7 @@ section[title=content] > article{
     flex: 1 0 45%;
     padding: var(--HPad);
     background-color: var(--light);
+    box-shadow: var(--box);
     margin: calc(var(--normal) / 4);
 } article > ul {
     list-style: none;
