@@ -59,6 +59,10 @@ function clearContent(){
     var content = document.querySelector('div[title=content]');
     while (content.firstChild) content.removeChild(content.firstChild);
 }
+/*Mobile-friendly lightbox*/
+function open(){
+    document.querySelector('details[title=lightbox]').toggleAttribute('open');
+}
 /*Initialize new Pseudo CSS*/
 function PseudoCSS(){
     var pseudoCSS = document.querySelector('style[id=PseudoCSS]');
