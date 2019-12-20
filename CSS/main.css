@@ -253,6 +253,7 @@ details[title=footer]{
 details[title=lightbox]{
     display: none;
     opacity:0;
+    background: inherit;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
     position: absolute;
