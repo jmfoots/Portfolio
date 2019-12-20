@@ -134,7 +134,7 @@
     --large: 20px;
     --icon: 36px;
     --title: 42px;
-    --panel: calc((100% - (var(--PPad) * 2) + 5) / 5);
+    --panel: calc(20% - var(--normal) + 5px);
     /*Padding*/
     --LPad: 20px;
     --MPad: 25px;
@@ -156,10 +156,10 @@
     --box: calc(var(--large) / 4) calc(var(--large) / 4) calc(var(--icon)  / 4) calc(var(--large) / 4) var(--dust);
     /*Panels*/
     --panels: border-box var(--PPad)/var(--panel) 100%  no-repeat,
-        calc(2 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat,
-        calc(3 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat,
-        calc(4 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat,
-        calc(5 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat;
+        calc(2 * var(--panel) + 1px)/var(--panel) 100% var(--coaltrout) no-repeat,
+        calc(3 * var(--panel) + 1px)/var(--panel) 100% var(--coaltrout) no-repeat,
+        calc(4 * var(--panel) + 1px)/var(--panel) 100% var(--coaltrout) no-repeat,
+        calc(5 * var(--panel) + 1px)/var(--panel) 100% var(--coaltrout) no-repeat;
 }
 /*Main*/
 html,body{
