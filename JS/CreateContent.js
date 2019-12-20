@@ -62,7 +62,7 @@ function buildTable(data) {
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.toggleAttribute('open');
 }
 function buildGrid(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -96,7 +96,7 @@ function buildGrid(data){
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.toggleAttribute('open');
 }
 function buildLocation(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -131,7 +131,7 @@ function buildLocation(data){
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.toggleAttribute('open');
 }
 function buildProject(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -166,7 +166,7 @@ function buildProject(data){
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.toggleAttribute('open');
 }
 function buildParagraph(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -196,7 +196,7 @@ function buildParagraph(data){
                 <p>${pre}</p>
             </section>`);
     /*Display Content*/
-    lightbox.open();
+    lightbox.toggleAttribute('open');
 }
 /*Pages*/
 function createbio(data) {

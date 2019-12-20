@@ -67,10 +67,6 @@ function PseudoCSS(){
     css.id = 'PseudoCSS';
     document.getElementsByTagName('head')[0].appendChild(css);
 }
-/*Mobile-friendly details*/
-HTMLElement.prototype.open = function(){
-    this.toggleAttribute('open');
-}
 /*Mobile-friendly click*/
 HTMLElement.prototype.mouse = function(){
     this.dispatchEvent(new Event('click'), new Event('touchend'));
