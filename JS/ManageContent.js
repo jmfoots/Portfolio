@@ -2,9 +2,9 @@ async function init(){
     /*Last Updated*/
     document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    document.querySelector('iframe[title=navigation]').dispatchEvent(new Event('click'), new Event('touchend'));
+    document.querySelector('iframe[title=navigation]').mouse();
     /*Default Page*/
-    checkElement('nav > label:first-child > input').then(resolve => resolve.dispatchEvent(new Event('click'), new Event('touchend')));
+    checkElement('nav > label:first-child > input').then(resolve => resolve.mouse());
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
         var lightbox = document.querySelector('details[title=lightbox][open] > summary');
@@ -55,7 +55,7 @@ function pages(id) {
     while (data.firstChild) data.removeChild(data.firstChild);
     while (grid.firstChild) grid.removeChild(grid.firstChild);
     /*Set Content*/
-    if (page) page.dispatchEvent(new Event('click'), new Event('touchend'));
+    if (page) page.mouse();
     pagename.innerHTML = `Portfolio: ${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
 }
 /*Content Management*/
@@ -71,36 +71,9 @@ function PseudoCSS(){
     css.id = 'PseudoCSS';
     document.getElementsByTagName('head')[0].appendChild(css);
 }
-/*Buttons to Hexagons*/
-function hexify(){
-    PseudoCSS();
-    [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h) {
-        var horizontal = h.offsetWidth / 2;
-        var vertical = h.offsetHeight / 2;
-        var border = (h.clientHeight / 2) - vertical;
-        var before = `content:"";
-        position: absolute;
-        left: calc(50% - ${horizontal}px);
-        border-bottom: ${vertical}px solid var(--light);
-        border-left: ${horizontal}px solid transparent;
-        border-right: ${horizontal}px solid transparent;
-        top: calc(${border}px - ${vertical}px);`;
-        var after = `content:"";
-        position: absolute;
-        left: calc(50% - ${horizontal}px);
-        border-top: ${vertical}px solid var(--light);
-        border-left: ${horizontal}px solid transparent;
-        border-right: ${horizontal}px solid transparent;
-        bottom: calc(${border}px - ${vertical}px);`;
-        [].forEach.call(before.split("\n"), function(css) {
-            [attr, style] = css.trim('\t').split(':');
-            h.pseudoStyle("before", attr, style);
-        });
-        [].forEach.call(after.split("\n"), function(css) {
-            [attr, style] = css.trim('\t').split(':');
-            h.pseudoStyle("after", attr, style);
-        });
-    });
+/*Mobile-friendly click*/
+HTMLElement.prototype.mouse = function(){
+    this.dispatchEvent(new Event('click'), new Event('touchend'));
 }
 /*Return parent chain*/
 HTMLElement.prototype.parents = function(){
@@ -113,6 +86,7 @@ HTMLElement.prototype.parents = function(){
     parents.reverse().forEach(function(parent){ string += `${parent} > `});
     return string;
 }
+
 /*Return child's path and index*/
 HTMLElement.prototype.cssPath = function(){
     if (this.id) {
