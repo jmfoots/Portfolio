@@ -41,7 +41,7 @@ async function checkElement(element){
 function pages(id) {
     var grid = document.querySelector('section[title=grid]');
     var data = document.querySelector('div[title=data]');
-    var pagename = document.querySelector(`iframe[title=pagename]`);
+    var pagename = document.querySelector(`h2[title=pagename]`);
     var page = document.querySelector(`iframe[title=${id}]`);
     /*Current Page*/
     [].forEach.call(document.querySelectorAll('nav > label'), function(label) {
