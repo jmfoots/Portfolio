@@ -352,7 +352,7 @@ section[id=content] img {
     width: 100%;
 }
 /*Fix*/
-@media (pointer:none), (pointer:coarse) { 
+@media (pointer:none), (hover: none), (pointer:coarse), (pointer:fine) { 
     section[id=content]{
         flex-direction: column;
     }
