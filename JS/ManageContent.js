@@ -53,7 +53,7 @@ function pages(id) {
     while (grid.firstChild) grid.removeChild(grid.firstChild);
     /*Set Content*/
     if (page) page.mouse();
-    pagename.innerHTML = `Portfolio: ${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
+    pagename.innerHTML = `${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
 }
 /*Content Management*/
 function clearContent(){
