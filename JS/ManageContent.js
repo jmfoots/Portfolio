@@ -21,6 +21,9 @@ async function init(){
             document.querySelectorAll('nav > label')[index].click();
         } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
     });
+    [].forEach.call(document.querySelectorAll('section[title=grid] > h2'), function(h2) {
+        h2.addEventListener("touchend", mouse());
+    });
     /*Hide*/
     document.querySelector('details[title=lightbox]').addEventListener("toggle", function() {
         var details = document.querySelector('details[title=lightbox')
