@@ -29,7 +29,9 @@ async function init(){
         }
     });
     /*No Title Text*/
-    document.querySelectorAll('[title]').addEventListener("mouseenter", function(e){e.preventDefault()});
+    [].forEach.call(document.querySelectorAll('[title]'), function(title) {
+        title.addEventListener("mouseenter", function(e){e.preventDefault()});
+    });
 }
 /*Wait until Exist*/
 async function checkElement(element){
