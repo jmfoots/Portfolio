@@ -192,6 +192,7 @@ html,body{
     -webkit-box-shadow: var(--shadow);
             box-shadow: var(--shadow);
 } footer{
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
