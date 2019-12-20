@@ -5,6 +5,8 @@
     ExpiresByType text/css "access plus 1 minute"
     ExpiresByType text/plain "access plus 1 minute"
     ExpiresByType image/png "access plus 10 minutes"
+    ExpiresByType application/pdf "access plus 10 minutes"
+    ExpiresByType text/javascript "access plus 1 minute"
     ExpiresByType application/javascript "access plus 1 minute"
 </IfModule>
 # END EXPIRES
