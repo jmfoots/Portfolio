@@ -1,8 +1,11 @@
 # Portfolio
+
 Portfolio Resume made by Jonathan Foots.
-Created to display my personal progress.
-Archives my past and present projects.
+- Created to display my personal progress.
+- Archives my past and present projects.
+
 #
+
 Copyright 2019 Jonathan Foots
 
 Licensed under the Apache License, Version 2.0 (the "License");
