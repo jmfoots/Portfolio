@@ -1,0 +1,2 @@
+college,TXT/Degree/college.txt,University
+school,TXT/Degree/school.txt,High School
