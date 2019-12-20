@@ -176,12 +176,12 @@ html,body{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
     box-shadow: var(--shadow);
-} footer{
-    display: flex;
-    width: 100%;
+    flex: 1;
 } main{
     display: flex;
     flex-direction: column;
+    flex: 1;
+} footer{
     flex: 1;
 } section{
     margin: calc(var(--LPad)/2);
@@ -229,6 +229,7 @@ label input[type=radio]{
     background-color: var(--light);
 } nav {
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
     font-size: var(--large);
     text-align: center;
@@ -239,14 +240,12 @@ label input[type=radio]{
 }
 /*Footer*/
 details[title=footer]{
-    flex: 1;
     margin: 0 calc(var(--normal) / 2);
     padding: var(--LPad);
     border-top: calc(var(--normal) / 4) transparent solid;
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
-    display: block;
     font-size: var(--medium);
     list-style-type: none;
 } details summary::-webkit-details-marker{
@@ -264,7 +263,7 @@ details[title=lightbox]{
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
     position: absolute;
-    display: inherit;
+    display: flex;
     opacity: 1;
 } details[title=lightbox] > summary{
     display: none;
@@ -304,6 +303,7 @@ details[title=lightbox]{
     border-color: var(--trout);
 } section[title=content]{
     display: flex;
+    flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
 }
