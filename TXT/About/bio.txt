@@ -1,8 +1,8 @@
 ~About|My Journey
-~I started off making websites for the AISA Technology Fair for a couple years.
-In High School, I took the technical endorsement track which included Cisco Networking, CompTIA A+, and Python Programming.
+~In middle school, I developed websites to enter into the AISA Technology Fair.
+In High School, I completed the technical endorsement track that included Cisco Networking, CompTIA A+, and Python Programming courses.
 During the summers, I worked at my High School setting up computers, cleaning, and fixing them for the teachers.
-After High School, I had already learned HTML, Javascript, Python, DOS, and LUA.
-In college, I gained experience in Application Development, Database Management, Network Administration, Digital Forensics, Project Management, Needs Assessment, Information Security, and Multi-media Design.
+After graduating High School, I learned LUA while developing addons and macros for World of Warcraft.
+In college, I gained experience in the areas of Application Development, Database Management, Network Administration, Digital Forensics, Project Management, Needs Assessment, Information Security, and Multi-media Design.
 My goal is to get a local job in the information technology or information security once I graduate.
 Specifically, I am interested in automation programming to simplify user involvement and reduce the required skill threshold.
