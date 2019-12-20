@@ -244,7 +244,7 @@ label input[type=radio]{
     text-align: center;
     justify-content: space-around;
     margin: 0 calc(var(--normal) / 2);
-} iframe{
+} iframe, #data, #pages{
     display: none;
 }
 /*Footer*/
