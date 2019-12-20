@@ -134,10 +134,12 @@
     --large: 20px;
     --icon: 36px;
     --title: 42px;
+    --panel: calc((100% - (var(--PPad) * 2) + 5) / 5);
     /*Padding*/
     --LPad: 20px;
     --MPad: 25px;
     --HPad: 30px;
+    --PPad: calc(var(--normal) / 2);
     /*Colors*/
     --light: rgba(238,239,240,1);
     --grey: rgba(220,222,225,1);
@@ -148,9 +150,16 @@
     --thinmint: rgba(207,214,211,0.65);
     /*Gradients*/
     --lightmint: linear-gradient(to left bottom, var(--light) 0%, var(--mint) 100%);
+    --coaltrout: linear-gradient(to bottom, var(--coal) 0%,var(--trout) 1%,var(--trout) 99%,var(--coal) 100%);
     /*Box Shadows*/
     --shadow: calc(var(--normal) / 4) calc(var(--medium)  / 4) calc(var(--icon)  / 2) calc(var(--large) / 2) var(--dust);
     --box: calc(var(--large) / 4) calc(var(--large) / 4) calc(var(--icon)  / 4) calc(var(--large) / 4) var(--dust);
+    /*Panels*/
+    --panels: border-box var(--PPad)/var(--panel) 100%  no-repeat,
+        calc(2 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat,
+        calc(3 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat,
+        calc(4 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat,
+        calc(5 * var(--panel) + 1)/var(--panel) 100% var(--coaltrout) no-repeat;
 }
 /*Main*/
 html,body{
@@ -180,6 +189,7 @@ html,body{
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
+    background: var(--panels);
     padding-bottom: calc(2 * var(--HPad));
 } section{
     margin: calc(var(--LPad)/2);
