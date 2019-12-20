@@ -298,6 +298,7 @@ details[id=footer]{
 /*Content*/
 details[id=lightbox]{
     display: none;
+    min-height: 100vh;
     opacity:0;
     background: inherit;
     -webkit-transition: opacity 0.5s ease;
@@ -308,6 +309,14 @@ details[id=lightbox]{
     display: -ms-flexbox;
     display: flex;
     opacity: 1;
+} details[id=lightbox] > div[id=content]{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 } details[id=lightbox] > summary{
     display: none;
     text-align: center;
