@@ -18,7 +18,7 @@ function loadData(data) {
         document.querySelector('div[title=data]').insertAdjacentHTML('beforeend', `
             <iframe title=${title} src="${src}" onclick="create${title}(${html})"></iframe>`);
         /*Create Section*/
-        var section = `document.querySelector('iframe[title=${title}]').click()`;
+        var section = `document.querySelector('iframe[title=${title}]').mouse()`;
         document.querySelector('section[title=grid]').insertAdjacentHTML('beforeend', `
             <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
