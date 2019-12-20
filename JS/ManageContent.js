@@ -28,10 +28,6 @@ async function init(){
             if (sibling !== details) sibling.style.display = sibling.style.display === 'none' ? '' : 'none';
         }
     });
-    /*No Title Text*/
-    [].forEach.call(document.querySelectorAll('[title]'), function(title) {
-        title.addEventListener("mouseenter", function(e){e.preventDefault()});
-    });
 }
 /*Wait until Exist*/
 async function checkElement(element){
