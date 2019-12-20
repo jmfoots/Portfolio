@@ -28,6 +28,8 @@ async function init(){
             if (sibling !== details) sibling.style.display = sibling.style.display === 'none' ? '' : 'none';
         }
     });
+    /*No Title Text*/
+    document.querySelectorAll('[title]').addEventListener("mouseenter", function(e){e.preventDefault()});
 }
 /*Wait until Exist*/
 async function checkElement(element){
