@@ -1,5 +1,6 @@
 ~Projects|Games
 ~Unity Loot Run|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/ULR/LootRunFinalReport.pdf|IMG/ulr.png|
+Click image to view Project Report.
 Created a game which player runs through dungeon avoiding traps to reach chest.
 Traps and chest location is randomized.
 Player can choose between three different maps.
