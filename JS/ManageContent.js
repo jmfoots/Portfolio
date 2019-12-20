@@ -1,15 +1,16 @@
 async function init(){
     /*Last Updated*/
-    document.querySelector(`summary[title='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
+    document.querySelector(`summary[id='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
-    document.querySelector('iframe[title=navigation]').mouse();
+    document.querySelector('iframe[id=navigation]').mouse();
     /*Default Page*/
     checkElement('nav > label:first-child > input').then(resolve => resolve.mouse());
     /*Listeners*/
     document.addEventListener('keydown', function(e) {
-        var lightbox = document.querySelector('details[title=lightbox][open] > summary');
+        var summary = document.querySelector('details[id=lightbox][open] > summary');
         var children = document.querySelectorAll('nav > label');
         var index = Array.prototype.indexOf.call(children, document.querySelector('label[class*=far]'));
+        
         if ([39, 9, 38, 37, 8, 40].indexOf(e.keyCode) >= 0) {
             if (([39, 9, 38].indexOf(e.keyCode) >= 0)){ //Next
                 if (index < (children.length-1)) index+=1;
@@ -18,12 +19,12 @@ async function init(){
                 if (index > 0) index-=1;
                     else index=children.length-1;
             }
-            document.querySelectorAll('nav > label')[index].click();
-        } else if (lightbox && ([32, 27].indexOf(e.keyCode) >= 0)) lightbox.click();
+            children[index].click();
+        } else if (summary && ([32, 27].indexOf(e.keyCode) >= 0)) summary.click();
     });
     /*Hide*/
-    document.querySelector('details[title=lightbox]').addEventListener("toggle", function() {
-        var details = document.querySelector('details[title=lightbox')
+    document.querySelector('details[id=lightbox]').addEventListener("toggle", function() {
+        var details = document.querySelector('details[id=lightbox]')
         for (let sibling of details.parentNode.children) {
             if (sibling !== details) sibling.style.display = sibling.style.display === 'none' ? '' : 'none';
         }
@@ -35,13 +36,13 @@ async function checkElement(element){
 }
 /*Navigation*/
 function pages(id) {
-    var grid = document.querySelector('section[title=grid]');
-    var data = document.querySelector('div[title=data]');
-    var pagename = document.querySelector(`h2[title=pagename]`);
-    var page = document.querySelector(`iframe[title=${id}]`);
+    var grid = document.querySelector('section[id=grid]');
+    var data = document.querySelector('div[id=data]');
+    var pagename = document.querySelector(`h2[id=pagename]`);
+    var page = document.querySelector(`iframe[id=${id}]`);
     /*Current Page*/
     [].forEach.call(document.querySelectorAll('nav > label'), function(label) {
-        if (label != document.querySelector('label[title='+id+']')) {
+        if (label != document.querySelector('label[id='+id+']')) {
             label.classList.remove('far'); label.classList.add('fas');
         } else {
             label.classList.add('far'); label.classList.remove('fas');
@@ -56,27 +57,18 @@ function pages(id) {
 }
 /*Content Management*/
 function clearContent(){
-    var content = document.querySelector('div[title=content]');
+    var content = document.querySelector('div[id=content]');
     while (content.firstChild) content.removeChild(content.firstChild);
 }
 /*Mobile-friendly lightbox*/
 function Lightbox(){
-    document.querySelector('details[title=lightbox]').toggleAttribute('open');
+    document.querySelector('details[id=lightbox]').toggleAttribute('open');
 }
-/*Initialize new Pseudo CSS*/
-function PseudoCSS(){
-    var pseudoCSS = document.querySelector('style[id=PseudoCSS]');
-    if (pseudoCSS) pseudoCSS.remove();
-    var css = document.createElement('style');
-    css.id = 'PseudoCSS';
-    document.getElementsByTagName('head')[0].appendChild(css);
-}
-/*Mobile-friendly click*/
-HTMLElement.prototype.mouse = function(){
+/*Prototypes*/
+HTMLElement.prototype.mouse = function(){ /*Mobile-friendly click*/
     this.dispatchEvent(new Event('click'), new Event('touchend'));
 }
-/*Return parent chain*/
-HTMLElement.prototype.parents = function(){
+HTMLElement.prototype.parents = function(){ /*Return parent chain*/
     var parent = this.parentNode;
     var parents = []; var string = '';
     while (parent.parentNode){
@@ -86,9 +78,7 @@ HTMLElement.prototype.parents = function(){
     parents.reverse().forEach(function(parent){ string += `${parent} > `});
     return string;
 }
-
-/*Return child's path and index*/
-HTMLElement.prototype.cssPath = function(){
+HTMLElement.prototype.cssPath = function(){ /*Return child's path and index*/
     if (this.id) {
         return `#${this.id}`
     } else {
@@ -96,19 +86,6 @@ HTMLElement.prototype.cssPath = function(){
         return `${this.parents()}${siblings.length > 1 ? `:nth-child(${siblings.indexOf(this)+1})` : ''}`
     }
 }
-/*Append after index*/
-String.prototype.splice = function(idx, str) {
+String.prototype.splice = function(idx, str) { /*Append after index*/
     return this.slice(0, idx) + str + this.slice(idx);
-};
-/*Create append new CSS style*/
-HTMLElement.prototype.pseudoStyle = function(element,prop,value){
-    var css = document.getElementById('PseudoCSS');
-    var ele = `${this.cssPath()}::${element}`;
-    if (css.innerHTML.indexOf(ele) > 0) {
-        var idx = css.innerHTML.indexOf(ele)+ele.length+2;
-        css.innerHTML = css.innerHTML.splice(idx,`\n${prop}:${value}`);
-    } else {
-        css.innerHTML += `\n${this.cssPath()}::${element}{ \n${prop}:${value}}`;
-    }
-    return this;
 };

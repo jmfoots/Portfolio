@@ -241,14 +241,14 @@ label input[type=radio]{
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
 } label::after{ 
-    content: attr(title);
+    content: attr(id);
     display: block;
     font-size: var(--medium);
     line-height: calc(var(--normal) * 1.6);
     text-transform: uppercase;
 } label:hover, label:focus {
     border-color: var(--mint);
-} label[class*='far'], details[title=footer][open]{
+} label[class*='far'], details[id=footer][open]{
     border-color: var(--trout);
     background-color: var(--light);
 } nav {
@@ -269,7 +269,7 @@ label input[type=radio]{
     display: none;
 }
 /*Footer*/
-details[title=footer]{
+details[id=footer]{
     margin: 0 calc(var(--normal) / 2);
     padding: var(--LPad);
     border-top: calc(var(--normal) / 4) transparent solid;
@@ -284,39 +284,39 @@ details[title=footer]{
     display: none;
 }
 /*Content*/
-details[title=lightbox]{
+details[id=lightbox]{
     display: none;
     opacity:0;
     background: inherit;
     -webkit-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
-} details[title=lightbox][open]{
+} details[id=lightbox][open]{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     opacity: 1;
-} details[title=lightbox] > summary{
+} details[id=lightbox] > summary{
     display: none;
     text-align: center;
     padding: var(--LPad) calc(var(--LPad) / 2);
     border-top: calc(var(--normal) / 4) transparent solid;
     cursor: pointer;
-} details[title=lightbox] > summary::before{
+} details[id=lightbox] > summary::before{
     color: var(--coal);
     font-size: var(--icon);
     padding: var(--LPad) var(--HPad);
-} details[title=lightbox] > summary::after{ 
-    content: attr(title);
+} details[id=lightbox] > summary::after{ 
+    content: attr(id);
     display: block;
     font-size: var(--medium);
     line-height: calc(var(--normal) * 1.6);
     text-transform: uppercase;
-} details[title=lightbox] > summary:hover, details[title=lightbox] > summary:focus{
+} details[id=lightbox] > summary:hover, details[id=lightbox] > summary:focus{
     border-color: var(--trout);
-} details[title=lightbox][open] > summary{
+} details[id=lightbox][open] > summary{
     display: block;
-} section[title=grid] > h2{
+} section[id=grid] > h2{
     cursor: pointer;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -331,7 +331,7 @@ details[title=lightbox]{
     -webkit-transition: border-color 0.5s ease;
     -o-transition: border-color 0.5s ease;
     transition: border-color 0.5s ease;
-} section[title=grid] {
+} section[id=grid] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -340,9 +340,9 @@ details[title=lightbox]{
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-} section[title=grid] > h2:hover, section[title='grid'] > h2:focus{
+} section[id=grid] > h2:hover, section[id='grid'] > h2:focus{
     border-color: var(--trout);
-} section[title=content]{
+} section[id=content]{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -378,7 +378,7 @@ table{
     background-color: var(--thinmint);
 }
 /*Articles*/
-section[title=content] > article{
+section[id=content] > article{
     -webkit-box-flex: 1;
         -ms-flex: 1 0 45%;
             flex: 1 0 45%;
@@ -392,12 +392,12 @@ section[title=content] > article{
     padding: 0;
 }
 /*Projects*/
-section[title=content] img {
+section[id=content] img {
     width: 100%;
 }
 /*Fix*/
 @media (pointer:none), (pointer:coarse) { 
-    section[title=content]{
+    section[id=content]{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;

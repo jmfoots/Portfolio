@@ -1,46 +1,46 @@
 /*Navigation*/
 function createNavigation(data) {
     [].forEach.call(data.split("\n"), function(line) {
-        var [title, icon] = line.split(",");
+        var [id, icon] = line.split(",");
         document.querySelector('nav').insertAdjacentHTML('beforeend', `
-            <label title="${title}" class="fas fa-${icon}">
-                <input type="radio" onclick="pages('${title}')"/>
+            <label id="${id}" class="fas fa-${icon}">
+                <input type="radio" onclick="pages('${id}')"/>
             </label>`);
-        document.querySelector('div[title=pages]').insertAdjacentHTML('beforeend', `
-            <iframe title='${title}' src="TXT/${title}.txt" onclick='loadData(this.contentDocument.body.firstChild.innerHTML)'></iframe>`);
+        document.querySelector('div[id=pages]').insertAdjacentHTML('beforeend', `
+            <iframe id='${id}' src="TXT/${id}.txt" onclick='loadData(this.contentDocument.body.firstChild.innerHTML)'></iframe>`);
     });
 }
 /*Data*/
 function loadData(data) {
     [].forEach.call(data.split("\n"), function(line) {
-        var [title, src, alt] = line.split(",");
+        var [id, src, alt] = line.split(",");
         var html = 'this.contentDocument.body.firstChild.innerHTML';
-        document.querySelector('div[title=data]').insertAdjacentHTML('beforeend', `
-            <iframe title=${title} src="${src}" onclick="create${title}(${html})"></iframe>`);
+        document.querySelector('div[id=data]').insertAdjacentHTML('beforeend', `
+            <iframe id=${id} src="${src}" onclick="create${id}(${html})"></iframe>`);
         /*Create Section*/
-        var section = `document.querySelector('iframe[title=${title}]').mouse()`;
-        document.querySelector('section[title=grid]').insertAdjacentHTML('beforeend', `
-            <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
+        var section = `document.querySelector('iframe[id=${id}]').mouse()`;
+        document.querySelector('section[id=grid]').insertAdjacentHTML('beforeend', `
+            <h2 id="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
 }
 /*Build Templates*/
 function buildTable(data) {
-    var content = document.querySelector('div[title=content]');
+    var content = document.querySelector('div[id=content]');
     var first = true; var header = true;
-    var [title, subtitle] = ['',''];
+    var [id, subid] = ['',''];
     clearContent();
     /*Read & Create Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split("|");
+            [id, subid]=line.split("|");
             first=false;
             content.insertAdjacentHTML('beforeend', `
-                <header title='content'>
-                    <h1>${title}</h1>
-                    <h2>${subtitle}</h2>
+                <header id='content'>
+                    <h1>${id}</h1>
+                    <h2>${subid}</h2>
                 </header>
-                <section title='content'>
-                    <table title='content'>
+                <section id='content'>
+                    <table id='content'>
                         <thead>
                             <tr></tr>
                         </thead>
@@ -48,12 +48,12 @@ function buildTable(data) {
                     </table>`);
         } else if (header && !first) {
             header = false;
-            var tr = document.querySelector('table[title=content] > thead > tr');
+            var tr = document.querySelector('table[id=content] > thead > tr');
             [].forEach.call(line.split('|'), function(head) {
                 tr.insertAdjacentHTML('beforeend', `<th>${head}</th>`);
             });
         } else if (!first && !header){
-            var tbody = document.querySelector('table[title=content] > tbody');
+            var tbody = document.querySelector('table[id=content] > tbody');
             tbody.insertAdjacentHTML('beforeend', `<tr></tr>`);
             [].forEach.call(line.split('|'), function(item) {
                 tbody.lastChild.insertAdjacentHTML('beforeend', `<td>${item}</td>`);
@@ -64,23 +64,23 @@ function buildTable(data) {
     Lightbox();
 }
 function buildGrid(data){
-    var content = document.querySelector('div[title=content]');
+    var content = document.querySelector('div[id=content]');
     var first = true;
-    var [title, subtitle] = ['',''];
+    var [id, subid] = ['',''];
     clearContent();
     /*Read & Create Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split("|");
+            [id, subid]=line.split("|");
             first=false;
             content.insertAdjacentHTML('beforeend', `
                 <header>
-                    <h1>${title}</h1>
-                    <h2>${subtitle}</h2>
+                    <h1>${id}</h1>
+                    <h2>${subid}</h2>
                 </header>
-                <section title='content'></section>`);
+                <section id='content'></section>`);
         } else if (!first && line.length>0) {
-            var section = document.querySelector('section[title=content]');
+            var section = document.querySelector('section[id=content]');
             [header, date, details] = line.split('|');
             section.insertAdjacentHTML('beforeend', `
                 <article>
@@ -97,23 +97,23 @@ function buildGrid(data){
     Lightbox();
 }
 function buildLocation(data){
-    var content = document.querySelector('div[title=content]');
+    var content = document.querySelector('div[id=content]');
     var first = true;
-    var [title, subtitle] = ['',''];
+    var [id, subid] = ['',''];
     clearContent();
     /*Read & Create Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split("|");
+            [id, subid]=line.split("|");
             first=false;
             content.insertAdjacentHTML('beforeend', `
                 <header>
-                    <h1>${title}</h1>
-                    <h2>${subtitle}</h2>
+                    <h1>${id}</h1>
+                    <h2>${subid}</h2>
                 </header>
-                <section title='content'></section>`);
+                <section id='content'></section>`);
         } else if (!first && line.length>0) {
-            var section = document.querySelector('section[title=content]');
+            var section = document.querySelector('section[id=content]');
             [header, date, address, details] = line.split('|');
             section.insertAdjacentHTML('beforeend', `
                 <article>
@@ -131,23 +131,23 @@ function buildLocation(data){
     Lightbox();
 }
 function buildProject(data){
-    var content = document.querySelector('div[title=content]');
+    var content = document.querySelector('div[id=content]');
     var first = true;
-    var [title, subtitle] = ['',''];
+    var [id, subid] = ['',''];
     clearContent();
     /*Read & Create Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split("|");
+            [id, subid]=line.split("|");
             first=false;
             content.insertAdjacentHTML('beforeend', `
                 <header>
-                    <h1>${title}</h1>
-                    <h2>${subtitle}</h2>
+                    <h1>${id}</h1>
+                    <h2>${subid}</h2>
                 </header>
-                <section title='content'></section>`);
+                <section id='content'></section>`);
         } else if (!first && line.length>0) {
-            var section = document.querySelector('section[title=content]');
+            var section = document.querySelector('section[id=content]');
             [header, date, source, src, details] = line.split('|');
             section.insertAdjacentHTML('beforeend', `
                 <article>
@@ -165,15 +165,15 @@ function buildProject(data){
     Lightbox();
 }
 function buildParagraph(data){
-    var content = document.querySelector('div[title=content]');
+    var content = document.querySelector('div[id=content]');
     var first = true;
-    var [title, subtitle] = ['',''];
+    var [id, subid] = ['',''];
     var pre='';
     clearContent();
     /*Read Content*/
     [].forEach.call(data.split("~"), function(line) {
         if (first && line.length>0){
-            [title, subtitle]=line.split("|");
+            [id, subid]=line.split("|");
             first=false;
         } else {
             [].forEach.call(line.split("\n"), function(string) {
@@ -183,11 +183,11 @@ function buildParagraph(data){
     });
     /*Create Content*/
     content.insertAdjacentHTML('beforeend', `
-            <header title='content'>
-                <h1>${title}</h1>
-                <h2>${subtitle}</h2>
+            <header id='content'>
+                <h1>${id}</h1>
+                <h2>${subid}</h2>
             </header>
-            <section title='content'>
+            <section id='content'>
                 <p>${pre}</p>
             </section>`);
     /*Display Content*/
