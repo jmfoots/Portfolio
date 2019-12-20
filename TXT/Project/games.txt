@@ -14,4 +14,3 @@ Created a game which player runs through dungeon avoiding traps to reach chest.
 Traps and chest location is randomized.
 Player can choose between three different maps.
 There are a variety of traps and each map favors a different trap.
-Only Project Report is available publically.
