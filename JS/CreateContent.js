@@ -25,7 +25,6 @@ function loadData(data) {
 }
 /*Build Templates*/
 function buildTable(data) {
-    var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true; var header = true;
     var [title, subtitle] = ['',''];
@@ -62,10 +61,9 @@ function buildTable(data) {
         }
     });
     /*Display Content*/
-    open();
+    Lightbox();
 }
 function buildGrid(data){
-    var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true;
     var [title, subtitle] = ['',''];
@@ -96,10 +94,9 @@ function buildGrid(data){
         }
     });
     /*Display Content*/
-    open();
+    Lightbox();
 }
 function buildLocation(data){
-    var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true;
     var [title, subtitle] = ['',''];
@@ -131,10 +128,9 @@ function buildLocation(data){
         }
     });
     /*Display Content*/
-    open();
+    Lightbox();
 }
 function buildProject(data){
-    var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true;
     var [title, subtitle] = ['',''];
@@ -166,10 +162,9 @@ function buildProject(data){
         }
     });
     /*Display Content*/
-    open();
+    Lightbox();
 }
 function buildParagraph(data){
-    var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true;
     var [title, subtitle] = ['',''];
@@ -196,7 +191,7 @@ function buildParagraph(data){
                 <p>${pre}</p>
             </section>`);
     /*Display Content*/
-    open();
+    Lightbox();
 }
 /*Pages*/
 function createbio(data) {

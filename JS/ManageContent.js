@@ -60,7 +60,7 @@ function clearContent(){
     while (content.firstChild) content.removeChild(content.firstChild);
 }
 /*Mobile-friendly lightbox*/
-function open(){
+function Lightbox(){
     document.querySelector('details[title=lightbox]').toggleAttribute('open');
 }
 /*Initialize new Pseudo CSS*/
