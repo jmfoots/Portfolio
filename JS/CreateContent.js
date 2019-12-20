@@ -18,7 +18,7 @@ function loadData(data) {
         document.querySelector('div[title=data]').insertAdjacentHTML('beforeend', `
             <iframe title=${title} src="${src}" onclick="create${title}(${html})"></iframe>`);
         /*Create Section*/
-        var section = `document.querySelector('iframe[title=${title}]').open()`;
+        var section = `document.querySelector('iframe[title=${title}]').mouse()`;
         document.querySelector('section[title=grid]').insertAdjacentHTML('beforeend', `
             <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
@@ -61,7 +61,7 @@ function buildTable(data) {
         }
     });
     /*Display Content*/
-    lightbox.click();
+    lightbox.open();
 }
 function buildGrid(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -95,7 +95,7 @@ function buildGrid(data){
         }
     });
     /*Display Content*/
-    lightbox.click();
+    lightbox.open();
 }
 function buildLocation(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -130,7 +130,7 @@ function buildLocation(data){
         }
     });
     /*Display Content*/
-    lightbox.click();
+    lightbox.open();
 }
 function buildProject(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -165,7 +165,7 @@ function buildProject(data){
         }
     });
     /*Display Content*/
-    lightbox.click();
+    lightbox.open();
 }
 /*Pages*/
 function createbio(data) {
