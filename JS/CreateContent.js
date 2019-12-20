@@ -61,7 +61,7 @@ function buildTable(data) {
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.mouse();
 }
 function buildGrid(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -95,7 +95,7 @@ function buildGrid(data){
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.mouse();
 }
 function buildLocation(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -130,7 +130,7 @@ function buildLocation(data){
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.mouse();
 }
 function buildProject(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -165,7 +165,7 @@ function buildProject(data){
         }
     });
     /*Display Content*/
-    lightbox.open();
+    lightbox.mouse();
 }
 /*Pages*/
 function createbio(data) {
