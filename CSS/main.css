@@ -179,8 +179,8 @@ html,body{
 } main{
     display: flex;
     flex-direction: column;
-    flex: 1 0 calc(25% - var(--HPad));
-    padding-bottom: var(--MPad);
+    flex: 1 0 calc(2 * var(--HPad));
+    padding-bottom: calc(2 * var(--HPad));
 } footer{
     bottom: 0;
 } section{
@@ -306,6 +306,7 @@ details[title=lightbox]{
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: calc(2 * var(--HPad));
 }
 /*Tables*/
 table{
