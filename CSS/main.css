@@ -315,6 +315,7 @@ details[id=lightbox]{
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: calc(2 * var(--HPad));
+    background: var(--panels);
 }
 /*Tables*/
 table{
