@@ -200,6 +200,7 @@ h1,h2,h3,th{
     font-size: var(--medium);
 } p{
     padding: var(--HPad);
+    background-color: var(--light);
     box-shadow: var(--box);
     margin: calc(var(--normal) / 4);
 }
