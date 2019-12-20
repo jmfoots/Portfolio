@@ -169,7 +169,7 @@ html,body{
 } body{
     display: flex;
     flex-direction: column;
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
+    background: border-box center/calc(100% - var(--normal)) 100% var(--lightmint) no-repeat;
     flex: 1;
 } header{
     padding: var(--LPad) var(--HPad);
@@ -252,12 +252,7 @@ details[title=footer]{
 /*Content*/
 details[title=lightbox]{
     display: none;
-    top: 0;
     opacity:0;
-    width: 100%;
-    background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
-    min-height: 100%;
-    max-height: max-content;
     transition: opacity 0.5s ease;
 } details[title=lightbox][open]{
     position: absolute;
