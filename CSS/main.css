@@ -176,13 +176,12 @@ html,body{
     padding: var(--LPad) var(--HPad);
     background-color: var(--grey);
     box-shadow: var(--shadow);
-    flex: 1;
 } main{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 0 calc(25% - var(--HPad));
 } footer{
-    flex: 1;
+    bottom: 0;
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
@@ -229,7 +228,6 @@ label input[type=radio]{
     background-color: var(--light);
 } nav {
     display: flex;
-    flex: 1;
     flex-wrap: wrap;
     font-size: var(--large);
     text-align: center;
