@@ -23,6 +23,11 @@ function loadData(data) {
             <h2 title="Open ${alt}" onclick="${section}">${alt}</h2>`);
     });
 }
+/*Mobile-friendly click*/
+HTMLElement.prototype.open = function(){
+    this.dispatchEvent(new Event('click'), new Event('touchend'));
+}
+/*Build Templates*/
 function buildTable(data) {
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
@@ -61,7 +66,7 @@ function buildTable(data) {
         }
     });
     /*Display Content*/
-    lightbox.mouse();
+    lightbox.open();
 }
 function buildGrid(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -95,7 +100,7 @@ function buildGrid(data){
         }
     });
     /*Display Content*/
-    lightbox.mouse();
+    lightbox.open();
 }
 function buildLocation(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -130,7 +135,7 @@ function buildLocation(data){
         }
     });
     /*Display Content*/
-    lightbox.mouse();
+    lightbox.open();
 }
 function buildProject(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
@@ -165,10 +170,9 @@ function buildProject(data){
         }
     });
     /*Display Content*/
-    lightbox.mouse();
+    lightbox.open();
 }
-/*Pages*/
-function createbio(data) {
+function buildParagraph(data){
     var lightbox = document.querySelector('details[title=lightbox] > summary');
     var content = document.querySelector('div[title=content]');
     var first = true;
@@ -196,7 +200,11 @@ function createbio(data) {
                 <p>${pre}</p>
             </section>`);
     /*Display Content*/
-    lightbox.click();
+    lightbox.open();
+}
+/*Pages*/
+function createbio(data) {
+    buildParagraph(data);
 }
 function createcerts(data){
     buildTable(data);
