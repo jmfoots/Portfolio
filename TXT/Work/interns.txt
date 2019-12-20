@@ -5,7 +5,7 @@ Programmed tools using either python, PowerShell, or DOS.
 Drafted policies, procedures, and documentation for scripts.
 Maintained an ADA-compliant department website.
 Hardened new PCs into Kiosks.
-~Academic Computing Help Desk Internship|Summer 2018 & 2019|5840 USA Drive South Mobile, AL 36688|
+~Academic Computing Help Desk Internship|Summer 2018, Summer 2019 - Present|5840 USA Drive South Mobile, AL 36688|
 Assigned to temporarily assist this department by Information Security Office.
 Programmed command-line tools to record device information, configure power settings, enable remote desktop, and upgrading the operating system.
 Assisted callers with creating help tickets.
