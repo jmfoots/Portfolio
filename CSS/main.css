@@ -166,7 +166,6 @@ html,body{
     display: flex;
     flex-direction: column;
     background: var(--coal);
-    height: 100%;
 } body{
     display: flex;
     flex-direction: column;
@@ -179,10 +178,8 @@ html,body{
 } main{
     display: flex;
     flex-direction: column;
-    flex: 1 0 calc(2 * var(--HPad));
+    flex: 1 0 auto;
     padding-bottom: calc(2 * var(--HPad));
-} footer{
-    bottom: 0;
 } section{
     margin: calc(var(--LPad)/2);
     padding: calc(var(--LPad) / 2) var(--MPad);
@@ -230,6 +227,7 @@ label input[type=radio]{
     background-color: var(--light);
 } nav {
     display: flex;
+    flex: 0 0 auto;
     flex-wrap: wrap;
     font-size: var(--large);
     text-align: center;
