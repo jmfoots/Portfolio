@@ -7,9 +7,11 @@ Maintained an ADA-compliant department website.
 Hardened new PCs into Kiosks.
 ~Academic Computing Help Desk Internship|Summer 2018 & 2019|5840 USA Drive South Mobile, AL 36688|
 Assigned to temporarily assist this department by Information Security Office.
+Programmed command-line tools to record device information, configure power settings, enable remote desktop, and upgrading the operating system.
 Assisted callers with creating help tickets.
 Resolved help desk tickets.
 Performed new PC setup.
+Setup device encryption on laptops.
 ~Telecommunication Internship|Fall 2019 - Present|5840 USA Drive South Mobile, AL 36688|
 Assigned to temporarily assist this department by Information Security Office.
 Helped install security cameras and encoders.
