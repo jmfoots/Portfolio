@@ -217,7 +217,7 @@ section[title=content] > article{
 }
 /*Projects*/
 section[title=content] img {
-    max-width: 100%;
+    width: 100%;
 }
 /*Fix*/
 @media (pointer:none), (pointer:coarse) { 
