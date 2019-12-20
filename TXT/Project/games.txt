@@ -6,3 +6,8 @@ Traps and chest location is randomized.
 Player can choose between three different maps.
 There are a variety of traps and each map favors a different trap.
 Only Project Report is available publically.
+~Khan's HUD WeakAura|Fall 2019|https://wago.io/ReaaG_3yp|IMG/kuw.png|
+Click image to view weakaura hosted on Wago.
+Created a Heads-Up-Display for World of Warcraft.
+Tracks various resources, cooldowns, and combat information.
+Developed custom scripts to create clickable buttons and keybindings to improve user experience.
