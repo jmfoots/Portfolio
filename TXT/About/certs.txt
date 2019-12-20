@@ -1,3 +1,4 @@
 ~About|Certifications
 ~Certification|Awarded
-~SANS CyberSecurity Awareness Training|August 2018 & 2019
+~SANS CyberSecurity Awareness Training|August 2018
+~SANS CyberSecurity Awareness Training|August 2019
