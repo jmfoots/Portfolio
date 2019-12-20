@@ -180,6 +180,7 @@ html,body{
     display: flex;
     flex-direction: column;
     flex: 1 0 calc(25% - var(--HPad));
+    padding-bottom: var(--MPad);
 } footer{
     bottom: 0;
 } section{
