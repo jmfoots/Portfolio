@@ -352,8 +352,9 @@ section[id=content] img {
     width: 100%;
 }
 /*Fix*/
-@media (pointer:none), (hover: none) { 
+@media (hover: none){ 
     section[id=content]{
         flex-direction: column;
+        flex-wrap: unset;
     }
 }

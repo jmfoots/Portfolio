@@ -416,11 +416,13 @@ section[id=content] img {
     width: 100%;
 }
 /*Fix*/
-@media (pointer:none), (hover: none) { 
+@media (hover: none){ 
     section[id=content]{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        -ms-flex-wrap: unset;
+            flex-wrap: unset;
     }
 }
