@@ -1,6 +1,6 @@
 async function init(){
     /*Last Updated*/
-    document.querySelector(`summary[id='Page Details']`).insertAdjacentText('beforeend', document.lastModified);
+    document.querySelector(`summary[id='footer']`).insertAdjacentText('beforeend', document.lastModified);
     /*Load Navigation*/
     document.querySelector('iframe[id=navigation]').mouse();
     /*Default Page*/
