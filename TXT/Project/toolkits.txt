@@ -1,13 +1,13 @@
 ~Projects|Toolkits
 ~Solid State Drive Validation Bash Tool|Winter 2018 - Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/SSD/ProjectReport.pdf|IMG/ssd.png|
 Click image to view project report PDF.
-Created test data, files, and directory structures to run the other scripts against.
-Simulated file alterations that a user could make while making a ‘best attempt’ to isolate these alterations to modify one metadata field at a time.
 Created an image of a drive.
-Setup the drive and its partitions for the creation of the file metadata files.
-Created a File metadata csv used to display all possible ways a file could have been altered.
-Created a Summary csv used to show that one or more partitions on the drive has changed and that the entire drive is not 100% the same.
-Created a Comparison csv used to show that one or more files on the before/after file metadata csv files has changed, been deleted, or been added.
+Created test data and directory trees.
+Simulated file alterations to test if changes can be detected.
+Setup partitions with test data.
+Gathered file metadata to show if file has changed in any way.
+Summarized partition information to show if it has changed.
+Compared metadata to show changes, deletions, or additions.
 ~Data Carver Bash Tool|Fall 2018|https://jmfoots.github.io/Portfolio/PROJECTS/DCS/carver.sh|IMG/dcs.png|
 Click image to download the tool.
 Created scripts to carve deleted files out using file signatures.

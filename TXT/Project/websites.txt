@@ -5,8 +5,6 @@ Developed custom website.
 Optimized website for fast loading speed.
 Optimized website for mobile and desktop.
 Scripted most content to load dynamically from text files.
-Managed web hosting for client.
-Published seasonal information.
 ~Blue Team Cybersecurity Website|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/BTC/index.html|IMG/btc.png|
 Click image to view website.
 Worked with team to create a multimedia project.
@@ -23,7 +21,7 @@ Established Usability and User Experience Goals for the application.
 Evaluated possible considerations and limitations of application.
 Drafted survey questions for user analysis.
 Created User personas to visualize user needs.
-Drew a low-fidelity prototype of the applications main tasks.
+Drew a low-fidelity prototype of the application's main tasks.
 Developed a High-Fidelity Prototype of a Web Based Notepad Application
 Documented design decisions.
 Created a marketing review for application.
