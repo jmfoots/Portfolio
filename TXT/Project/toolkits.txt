@@ -17,10 +17,11 @@ It was not able to restore fragmented files.
 It was not always reliable.
 ~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
 Click image to view project report PDF.
-Created an automation script to configure a new PC to be compliant with University of South Alabama Hardening Standard.
+Created an automation script to harden new PC into Kiosk.
 Configured standard user and admin user accounts.
 Configured Group Policy setting using CIS-CAT.
-Configured Local Security Policy to display University machine usage notice.
+Configured Local Security Policy for machine usage notice.
 Configured Registry to automatically log on standard user.
-Configured Task Scheduler to apply auto logon after logging into admin user.
+Configured Task Scheduler to re-apply auto logon.
 Installed required programs and windows updates.
+Tested tool on virtual machine before deploying.
