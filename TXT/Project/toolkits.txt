@@ -1,31 +1,26 @@
 ~Projects|Toolkits
 ~Solid State Drive Validation Bash Tool|Winter 2018 - Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/SSD/ProjectReport.pdf|IMG/ssd.png|
 Click image to view project report PDF.
-Creating test data, files, and directory structures to run the other scripts against.
-Simulating file alterations that a user could make while making a ‘best attempt’ to isolate these alterations to modify one metadata field at a time.
-Creating an image of a drive.
-Setting up the drive and its partitions for the creation of the file metadata files.
-Creating a File metadata csv used to display all possible ways a file could have been altered.
-Creating a Summary csv used to show that one or more partitions on the drive has changed and that the entire drive is not 100% the same.
-Creating a Comparison csv used to show that one or more files on the before/after file metadata csv files has changed, been deleted, or been added.
+Created test data, files, and directory structures to run the other scripts against.
+Simulated file alterations that a user could make while making a ‘best attempt’ to isolate these alterations to modify one metadata field at a time.
+Created an image of a drive.
+Setup the drive and its partitions for the creation of the file metadata files.
+Created a File metadata csv used to display all possible ways a file could have been altered.
+Created a Summary csv used to show that one or more partitions on the drive has changed and that the entire drive is not 100% the same.
+Created a Comparison csv used to show that one or more files on the before/after file metadata csv files has changed, been deleted, or been added.
 ~Data Carver Bash Tool|Fall 2018|https://jmfoots.github.io/Portfolio/PROJECTS/DCS/carver.sh|IMG/dcs.png|
 Click image to download the tool.
-Attempts to restore deleted files based on file signatures.
-It cannot restore fragmented files.
-It is not always reliable.
+Created scripts to carve deleted files out using file signatures.
+Developed understanding of NTFS and EXT file systems.
+Attempted to restore deleted files based on file signatures.
+It was not able to restore fragmented files.
+It was not always reliable.
 ~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
 Click image to view project report PDF.
-Automation script to configure a new PC to be compliant with University of South Alabama Hardening Standard.
-Configures standard user and admin user accounts.
-Configures Group Policy setting using CIS-CAT.
-Configures Local Security Policy to display University machine usage notice.
-Configures Registry to automatically log on standard user.
-Configures Task Scheduler to apply auto logon after logging into admin user.
-Installs required programs and windows updates.
-~Reddit Scraper Python Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/RSP/RedditScraper.zip|IMG/rsp.png|
-Click image to download the tool.
-Requires Python, Honeyview, Java, and Firefox.
-Requires Selenium and Browsermobproxy python modules.
-Pulls latest images from subreddits listed in subreddit csv.
-Displays images using Honeyview.
-Honeyview should be configured to display one image at a time.
+Created an automation script to configure a new PC to be compliant with University of South Alabama Hardening Standard.
+Configured standard user and admin user accounts.
+Configured Group Policy setting using CIS-CAT.
+Configured Local Security Policy to display University machine usage notice.
+Configured Registry to automatically log on standard user.
+Configured Task Scheduler to apply auto logon after logging into admin user.
+Installed required programs and windows updates.
