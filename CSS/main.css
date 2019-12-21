@@ -176,8 +176,6 @@ html,body{
     flex-direction: column;
     background: var(--coal);
     min-height: 100vh;
-    max-width: 100vw;
-    overflow-x: hidden;
 } body{
     display: flex;
     flex-direction: column;
@@ -354,7 +352,7 @@ section[id=content] img {
     width: 100%;
 }
 /*Fix*/
-@media (pointer:none), (hover: none), (pointer:coarse), (pointer:fine) { 
+@media (pointer:none), (hover: none) { 
     section[id=content]{
         flex-direction: column;
     }
