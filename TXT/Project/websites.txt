@@ -8,20 +8,19 @@ Scripted most content to load dynamically from text files.
 ~Blue Team Cybersecurity Website|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/BTC/index.html|IMG/btc.png|
 Click image to view website.
 Worked with team to create a multimedia project.
-Created a CyberSecurity Awareness Message.
-Developed survey for student audience using Google Forms.
+Created a “CyberSecurity Awareness” message.
+Developed survey for student audience.
 Analyzed audience using survey feedback.
-Managed team using Google Team Drive and kept team informed using GroupMe.
-Created CyberSecurity website as the project deliverable.
+Created website to convey message to audience.
 Presented project results in class.
 ~Simple Note Prototype|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/NAP/index.html|IMG/nap.png|
 Click image to view website.
 Proposed an application for review.
-Established Usability and User Experience Goals for the application.
+Established usability and user experience goals for the application.
 Evaluated possible considerations and limitations of application.
 Drafted survey questions for user analysis.
-Created User personas to visualize user needs.
-Drew a low-fidelity prototype of the application's main tasks.
-Developed a High-Fidelity Prototype of a Web Based Notepad Application
+Created user personas to visualize user needs.
+Drew a low-fidelity prototype of the application’s main tasks.
+Developed a high-fidelity prototype.
 Documented design decisions.
 Created a marketing review for application.

@@ -22,6 +22,6 @@ Helped test battery backups.
 Performed routine checks on cameras.
 Performed inventory checks.
 ~IUCRC Student Assistant|Winter 2018 - Fall 2019| 150 Jaguar Drive Mobile, AL 36688|
-Programmed a tool to validate files on a solid-state drive.
-Verified the integrity of file metadata.
-Programmed the tool using bash.
+Used Bash to validate files on a solid-state drive.
+Generated test data to run against the tool.
+Compared results before and after to verify changes.
