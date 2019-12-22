@@ -32,9 +32,7 @@ async function init(){
 }
 /*Wait until Exist*/
 async function checkElement(element){
-    if (typeof element === 'string') var query = document.querySelector(element);
-    else var query = element;
-    return new Promise(resolve => {setTimeout(() => {resolve(query);}, 250);});
+    return new Promise(resolve => {setTimeout(() => {resolve(document.querySelector(element));}, 250);});
 }
 /*Navigation*/
 function pages(id) {
@@ -56,9 +54,10 @@ function pages(id) {
     /*Set Content*/
     if (page) page.mouse();
     pagename.innerHTML = `${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
-    [].forEach.call(document.querySelectorAll(`section[id=grid] > h2`), function(h2) {
-        h2.style.cssText = "opacity: 0; transition: 0.7s opacity;";
-        checkElement(h2).then(resolve => resolve.style.cssText = "opacity: 1;");
+    var sections = `section[id=grid] > h2`;
+    [].forEach.call(document.querySelectorAll(sections), function(h2) {
+        h2.style.cssText = `opacity: 0; transition: ${0.7 * sections.indexOf(h2)}s opacity;`;
+        checkElement(`${sections}:nth-child(${sections.indexOf(h2)})`).then(resolve => resolve.style.cssText = "opacity: 1;");
     });
 }
 /*Content Management*/
