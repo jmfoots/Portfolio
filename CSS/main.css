@@ -42,8 +42,6 @@ html,body{
     margin: 0;
     font-family: var(--regular), sans-serif;
     font-size: var(--normal);
-    font-weight: normal;
-    text-align: left;
     color: var(--coal);
 } html{
     display: flex;
@@ -69,7 +67,7 @@ html,body{
     padding: var(--HPad);
 }
 /*Headers*/
-h1,h2,h3,th{
+h1,h2,h3,th,summary{
     font-family: var(--formal), sans-serif;
     color: var(--trout);
     padding: 0;
@@ -78,7 +76,7 @@ h1,h2,h3,th{
     font-size: var(--title);
 } h2{
     font-size: var(--large);
-} h3,th{
+} h3,th,summary{
     font-size: var(--medium);
 } p{
     padding: var(--HPad);
@@ -128,7 +126,6 @@ details[id=footer]{
     transition: background-color 0.5s ease;
     cursor: pointer;
 } summary{
-    font-size: var(--medium);
     list-style-type: none;
 } details summary::-webkit-details-marker{
     display: none;
