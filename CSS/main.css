@@ -8,7 +8,7 @@
     --large: calc(0.6vw + 24px);
     --icon: calc(0.6vw + 36px);
     --title: calc(0.6vw + 32px);
-    --panel: calc(20% - 4px);
+    --panel: calc(20% - calc(var(--normal) / 4));
     /*Padding*/
     --LPad: calc(0.6vw + 20px);
     --MPad: calc(0.6vw + 25px);
