@@ -54,6 +54,12 @@ function pages(id) {
     /*Set Content*/
     if (page) page.mouse();
     pagename.innerHTML = `${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
+    [].forEach.call(document.querySelectorAll(`section[id=grid] > h2`), function(h2) {
+        h2.style.cssText = "opacity: 0; transition: 0.7s opacity;";
+        h2.addEventListener("DOMContentLoaded", function() {
+            h2.style.cssText = "opacity: 1;";
+        });
+    });
 }
 /*Content Management*/
 function clearContent(){
