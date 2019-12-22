@@ -56,10 +56,8 @@ function pages(id) {
     pagename.innerHTML = `${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
     var sections = `section[id=grid] > h2`;
     [].forEach.call(document.querySelectorAll(sections), function(h2, i) {
-        console.log(`${0.7 * i}s`)
-        h2.style.cssText = `opacity: 0; transition: ${0.7 * i}s opacity;`;
-        console.log(`${sections}:nth-child(${i})`);
-        checkElement(`${sections}:nth-child(${i})`).then(resolve => resolve.style.cssText = "opacity: 1;");
+        h2.style.cssText = `opacity: 0; transition: ${1 * i+1}s opacity;`;
+        checkElement(`${sections}:nth-child(${i+1})`).then(resolve => resolve.style.cssText = "opacity: 1;");
     });
 }
 /*Content Management*/
