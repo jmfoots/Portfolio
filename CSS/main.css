@@ -191,6 +191,7 @@ details[id=lightbox]{
 table{
     width: 100%;
     border-spacing: calc(var(--normal) / 2);
+    padding: calc(var(--LPad) / 2);
     background: border-box center/calc(100% - var(--normal)) var(--lightmint) no-repeat;
     box-shadow: var(--box);
 } thead{
