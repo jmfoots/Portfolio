@@ -55,11 +55,11 @@ function pages(id) {
     if (page) page.mouse();
     pagename.innerHTML = `${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
     var sections = `section[id=grid] > h2`;
-    [].forEach.call(document.querySelectorAll(sections), function(h2) {
-        console.log(`${0.7 * sections.indexOf(h2)}s`)
-        h2.style.cssText = `opacity: 0; transition: ${0.7 * sections.indexOf(h2)}s opacity;`;
-        console.log(`${sections}:nth-child(${sections.indexOf(h2)})`);
-        checkElement(`${sections}:nth-child(${sections.indexOf(h2)})`).then(resolve => resolve.style.cssText = "opacity: 1;");
+    [].forEach.call(document.querySelectorAll(sections), function(h2, i) {
+        console.log(`${0.7 * sections.indexOf(i)}s`)
+        h2.style.cssText = `opacity: 0; transition: ${0.7 * sections.indexOf(i)}s opacity;`;
+        console.log(`${sections}:nth-child(${sections.indexOf(i)})`);
+        checkElement(`${sections}:nth-child(${sections.indexOf(i)})`).then(resolve => resolve.style.cssText = "opacity: 1;");
     });
 }
 /*Content Management*/
