@@ -32,7 +32,9 @@ async function init(){
 }
 /*Wait until Exist*/
 async function checkElement(element){
-    return new Promise(resolve => {setTimeout(() => {resolve(document.querySelector(element));}, 250);});
+    if (typeof string) var query = document.querySelector(element);
+    else var query = element;
+    return new Promise(resolve => {setTimeout(() => {resolve(query);}, 250);});
 }
 /*Navigation*/
 function pages(id) {
@@ -56,9 +58,7 @@ function pages(id) {
     pagename.innerHTML = `${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
     [].forEach.call(document.querySelectorAll(`section[id=grid] > h2`), function(h2) {
         h2.style.cssText = "opacity: 0; transition: 0.7s opacity;";
-        h2.addEventListener("DOMContentLoaded", function() {
-            h2.style.cssText = "opacity: 1;";
-        });
+        checkElement(h2).then(resolve => resolve.style.cssText = "opacity: 1;");
     });
 }
 /*Content Management*/
