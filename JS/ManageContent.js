@@ -32,7 +32,7 @@ async function init(){
 }
 /*Wait until Exist*/
 async function checkElement(element){
-    if (element instanceof String) var query = document.querySelector(element);
+    if (typeof element === 'string') var query = document.querySelector(element);
     else var query = element;
     return new Promise(resolve => {setTimeout(() => {resolve(query);}, 250);});
 }
