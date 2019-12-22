@@ -57,7 +57,7 @@ function pages(id) {
     var sections = `section[id=grid] > h2`;
     [].forEach.call(document.querySelectorAll(sections), function(h2, i) {
         h2.style.cssText = `opacity: 0; transition: ${1 * i+1}s opacity;`;
-        checkElement(`${sections}:nth-child(${i+1})`).then(resolve => resolve.style.cssText = "opacity: 1;");
+        checkElement(`${sections}:nth-child(${i+1})`).then(resolve => resolve.style.cssText += "opacity: 1;");
     });
 }
 /*Content Management*/
