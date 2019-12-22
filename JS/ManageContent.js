@@ -56,7 +56,7 @@ function pages(id) {
     pagename.innerHTML = `${(`${id.charAt(0).toUpperCase()}${id.slice(1)}`)}`;
     var sections = `section[id=grid] > h2`;
     [].forEach.call(document.querySelectorAll(sections), function(h2, i) {
-        h2.style.cssText = `opacity: 0; transition: ${1 * i+1}s opacity;`;
+        h2.style.cssText = `opacity: 0; transition: ${0.7 * i+1}s opacity;`;
         checkElement(`${sections}:nth-child(${i+1})`).then(resolve => resolve.style.opacity = 1);
     });
 }
