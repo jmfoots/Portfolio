@@ -3,16 +3,16 @@
     --regular: 'Roboto';
     --formal: 'Open Sans';
     /*FontSize*/
-    --normal: 16px;
-    --medium: 18px;
-    --large: 20px;
-    --icon: 36px;
-    --title: 42px;
+    --normal: calc(0.6vw + 14px);
+    --medium: calc(0.6vw + 16px);
+    --large: calc(0.6vw + 24px);
+    --icon: calc(0.6vw + 36px);
+    --title: calc(0.6vw + 32px);
     --panel: calc(20% - 4px);
     /*Padding*/
-    --LPad: 20px;
-    --MPad: 25px;
-    --HPad: 30px;
+    --LPad: calc(0.6vw + 20px);
+    --MPad: calc(0.6vw + 25px);
+    --HPad: calc(0.6vw + 30px);
     --PPad: calc(var(--normal) / 2);
     /*Colors*/
     --light: rgba(238,239,240,1);
