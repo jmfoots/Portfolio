@@ -192,8 +192,7 @@ html,body{
     background: var(--panels);
     padding-bottom: calc(2 * var(--HPad));
 } section{
-    margin: calc(var(--LPad)/2);
-    padding: calc(var(--LPad) / 2) var(--MPad);
+    padding: var(--HPad);
 }
 /*Headers*/
 h1,h2,h3,th{
