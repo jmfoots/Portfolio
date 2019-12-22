@@ -37,12 +37,14 @@
 }
 /*Main*/
 html,body{
-    outline: none;
     padding: 0;
     margin: 0;
     font-family: var(--regular), sans-serif;
     font-size: var(--normal);
     color: var(--coal);
+    -webkit-tap-highlight-color: transparent !important; 
+    -webkit-focus-ring-color: transparent !important; 
+    outline: none !important;
 } html{
     display: flex;
     flex-direction: column;
