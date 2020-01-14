@@ -9,6 +9,6 @@ Created a game which player runs through dungeon avoiding traps to reach chest.
 Traps and chest location were randomized.
 Player was able to choose between three different maps.
 Used a variety of traps and each map favored a different trap.
-~KhanUI Weakaura|Winter 2020|https://wago.io/dPxOdYOp0|IMG/duw.png|
+~KhanUI Weakaura|Winter 2020|https://wago.io/dPxOdYOp0|IMG/kuw.png|
 Click image to view weakaura hosted on Wago.
 Created a Minimalist UI that only shows information when relevant.
