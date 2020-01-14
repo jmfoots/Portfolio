@@ -3,14 +3,12 @@
 Click image to view weakaura hosted on Wago.
 Created a datatext display for World of Warcraft system statistics.
 Displays Addon Memory Usage, Frames per Second, and Home/World Latency.
-~Khan's HUD WeakAura|Fall 2019|https://wago.io/ReaaG_3yp|IMG/kuw.png|
-Click image to view weakaura hosted on Wago.
-Created a Heads-Up-Display for World of Warcraft.
-Tracks various resources, cooldowns, and combat information.
-Developed custom scripts to create clickable buttons and keybindings to improve user experience.
 ~Unity Loot Run|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/ULR/LootRunFinalReport.pdf|IMG/ulr.png|
 Click image to view Project Report.
 Created a game which player runs through dungeon avoiding traps to reach chest.
 Traps and chest location were randomized.
 Player was able to choose between three different maps.
 Used a variety of traps and each map favored a different trap.
+~KhanUI Weakaura|Winter 2020|https://wago.io/dPxOdYOp0|IMG/duw.png|
+Click image to view weakaura hosted on Wago.
+Created a Minimalist UI that only shows information when relevant.
