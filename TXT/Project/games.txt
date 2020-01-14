@@ -1,8 +1,4 @@
 ~Projects|Games
-~Datatext WeakAura|Winter 2018|https://wago.io/r1ZNORnAX|IMG/duw.png|
-Click image to view weakaura hosted on Wago.
-Created a datatext display for World of Warcraft system statistics.
-Displays Addon Memory Usage, Frames per Second, and Home/World Latency.
 ~Unity Loot Run|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/ULR/LootRunFinalReport.pdf|IMG/ulr.png|
 Click image to view Project Report.
 Created a game which player runs through dungeon avoiding traps to reach chest.
@@ -12,3 +8,7 @@ Used a variety of traps and each map favored a different trap.
 ~KhanUI Weakaura|Winter 2020|https://wago.io/dPxOdYOp0|IMG/kuw.png|
 Click image to view weakaura hosted on Wago.
 Created a Minimalist UI that only shows information when relevant.
+~Customizable Vendor Button|Winter 2020|https://wago.io/_trhkvVPn|IMG/cvb.png|
+Click image to view weakaura hosted on Wago.
+Created to sell items to vendor with a click of a button that shows when enabled and vendor is open.
+Created customization options to allow player to sell items that met desired criteria.
