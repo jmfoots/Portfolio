@@ -1,4 +1,7 @@
 ~Projects|Toolkits
+~Suricata Server Kit|Winter 2020 - Present|||
+Created script install service and manage backups.
+Developed tool to apply configurations and run service.
 ~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
 Click image to view project report PDF.
 Performed needs assessment.
@@ -7,11 +10,12 @@ Developed PowerShell tool to harden kiosks.
 Click image to view project report PDF.
 Created an image of a drive.
 Created test data and directory trees.
-Simulated file alterations to test if changes can be detected.
-Setup partitions with test data.
-Gathered file metadata to show if file has changed in any way.
-Summarized partition information to show if it has changed.
-Compared metadata to show changes, deletions, or additions.
+Developed tool to validate files on a solid-state drive.
+Analyzed files to prove changes occurred.
+~Spirion PII Report Tool|Spring 2018 - Present|||
+Distributing weekly remediation notices.
+Developed tool to split large log file into individual reports.
+Generated summary report to expedite remediation process.
 ~Data Carver Bash Tool|Fall 2018|https://jmfoots.github.io/Portfolio/PROJECTS/DCS/carver.sh|IMG/dcs.png|
 Click image to download the tool.
 Created scripts to carve deleted files out using file signatures.
