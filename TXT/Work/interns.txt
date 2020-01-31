@@ -1,27 +1,18 @@
 ~Work|Internships
 ~Information Security Office Internship|Summer 2018 - Present|5840 USA Drive South Mobile, AL 36688|
-Gained experience with SANS, Spirion, SolarWinds, Splunk, and Nessus.
-Used Python to manipulate large csv files into readable reports.
-Used PowerShell and command-line to automate windows tasks.
-Drafted policies, procedures, and documentation for scripts.
-Maintained an ADA-compliant department website.
-Hardened new PCs into Kiosks.
-~Academic Computing Help Desk Internship|Summer 2018, Summer 2019 - Present|5840 USA Drive South Mobile, AL 36688|
-Assigned to temporarily assist this department by Information Security Office.
-Used PowerShell and command-line to automate windows tasks.
-Assisted callers with creating help tickets.
+Working with SANS, Spirion, Splunk and Suricata.
+Administering SANS training.
+Maintaining an ADA-compliant department website.
+Drafted policies, procedures, and documentation.
+Worked with SolarWinds and Nessus.
+~Academic Computing Help Desk Student Assistant|Summer 2018 - Present|5840 USA Drive South Mobile, AL 36688|
+Performing security software installs.
+Programmed tools to automate windows tasks.
 Resolved help desk tickets.
-Performed new PC setup.
-Setup device encryption on laptops.
-~Telecommunication Internship|Fall 2019 - Present|5840 USA Drive South Mobile, AL 36688|
-Assigned to temporarily assist this department by Information Security Office.
-Helped install security cameras and encoders.
-Helped map cameras locations and directions.
+~Telecommunication Student Assistant|Fall 2019 - Winter 2020|5840 USA Drive South Mobile, AL 36688|
+Installed security cameras and encoders.
 Configured new security cameras.
-Helped test battery backups.
-Performed routine checks on cameras.
 Performed inventory checks.
 ~IUCRC Student Assistant|Winter 2018 - Fall 2019| 150 Jaguar Drive Mobile, AL 36688|
-Used Bash to validate files on a solid-state drive.
-Generated test data to run against the tool.
-Compared results before and after to verify changes.
+Developed tool to validate files on a solid-state drive.
+Analyzed files to prove changes occurred.
