@@ -16,7 +16,6 @@ Documented design decisions.
 Created a marketing review for application.
 ~Faith Academy Baseball Website|Fall 2017 - Spring 2018|https://jmfoots.github.io/Portfolio/PROJECTS/FAB/index.html|IMG/fab.png|
 Click image to view website.
-Developed custom-built website.
-Optimized website for fast loading speed.
-Optimized website for mobile and desktop.
-Scripted most content to load dynamically from text files.
+Created custom-built website.
+Managed web hosting for client.
+Published seasonal information.
