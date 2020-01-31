@@ -203,6 +203,9 @@ function createcerts(data){
 function createawards(data){
     buildTable(data);
 }
+function createorganizations(data){
+    buildTable(data);
+}
 function createhobbies(data){
     buildGrid(data);
 }

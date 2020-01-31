@@ -1,4 +1,5 @@
 bio,TXT/About/bio.txt,Story
 hobbies,TXT/About/hobbies.txt,Hobbies
 awards,TXT/About/awards.txt,Accomplishments
+organizations,TXT/About/organizations.txt,Organizations
 certs,TXT/About/certs.txt,Certifications

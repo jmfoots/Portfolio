@@ -1,10 +1,8 @@
 ~About|Activities
 ~World of Warcraft|Winter 2009 - Present|
+Coordinating with group members over voice chat to effectively progress through group content.
+Programming LUA scripts that create user interface elements.
 Organized weekly events for my friends and my guild.
-Coordinated with group members over voice chat to effectively progress through group content.
-Programmed LUA scripts that create user interface elements.
 ~Web Development|Fall 2012 - Present|
-Maintained a portfolio website.
-Created class project websites.
-Created a commissioned website.
-Created websites for technology fair.
+Maintaining a portfolio website.
+Developed custom-built websites for class projects, commission, and technology fair.
