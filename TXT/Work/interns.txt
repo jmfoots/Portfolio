@@ -1,18 +1,18 @@
 ~Work|Internships
-~Information Security Office Internship|Summer 2018 - Present|5840 USA Drive South Mobile, AL 36688|
+~Information Security Office Internship|Summer 2018 - Present|University of South Alabama, Mobile, AL|
 Working with SANS, Spirion, Splunk and Suricata.
 Administering SANS training.
 Maintaining an ADA-compliant department website.
 Drafted policies, procedures, and documentation.
 Worked with SolarWinds and Nessus.
-~Academic Computing Help Desk Student Assistant|Summer 2018 - Present|5840 USA Drive South Mobile, AL 36688|
+~Academic Computing Help Desk Student Assistant|Summer 2018 - Present|University of South Alabama, Mobile, AL|
 Performing security software installs.
 Programmed tools to automate windows tasks.
 Resolved help desk tickets.
-~Telecommunication Student Assistant|Fall 2019 - Winter 2020|5840 USA Drive South Mobile, AL 36688|
+~Telecommunication Student Assistant|Fall 2019 - Winter 2020|University of South Alabama, Mobile, AL|
 Installed security cameras and encoders.
 Configured new security cameras.
 Performed inventory checks.
-~IUCRC Student Assistant|Winter 2018 - Fall 2019| 150 Jaguar Drive Mobile, AL 36688|
+~IUCRC Student Assistant|Winter 2018 - Fall 2019|University of South Alabama, Mobile, AL|
 Developed tool to validate files on a solid-state drive.
 Analyzed files to prove changes occurred.
