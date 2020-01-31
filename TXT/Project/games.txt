@@ -5,15 +5,3 @@ Created a game which player runs through dungeon avoiding traps to reach chest.
 Traps and chest location were randomized.
 Player was able to choose between three different maps.
 Used a variety of traps and each map favored a different trap.
-~KhanUI Weakaura|Winter 2020|https://wago.io/dPxOdYOp0|IMG/kuw.png|
-Click image to view weakaura hosted on Wago.
-Created a Minimalist UI that only shows information when relevant.
-~Customizable Vendor Weakaura|Winter 2020|https://wago.io/_trhkvVPn|IMG/cvb.png|
-Click image to view weakaura hosted on Wago.
-Created to sell items to vendor with a click of a button that shows when enabled and vendor is open.
-Created customization options to allow player to sell items that met desired criteria.
-~Simple Pot Weakaura|Winter 2020|https://wago.io/phFBkE7PU|IMG/spw.png|
-Click image to view weakaura hosted on Wago.
-Created to allow players to use multiple combat potions with ease without taking up much screen space or keybinds.
-Designed to let players left click to use a potion and shift-left click to rotate between potions.
-Created customization options to let players choose which potions they want to use.

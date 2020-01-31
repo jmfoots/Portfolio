@@ -1,4 +1,8 @@
 ~Projects|Toolkits
+~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
+Click image to view project report PDF.
+Performed needs assessment.
+Developed PowerShell tool to harden kiosks.
 ~Solid State Drive Validation Bash Tool|Winter 2018 - Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/SSD/ProjectReport.pdf|IMG/ssd.png|
 Click image to view project report PDF.
 Created an image of a drive.
@@ -15,13 +19,3 @@ Developed understanding of NTFS and EXT file systems.
 Attempted to restore deleted files based on file signatures.
 It was not able to restore fragmented files.
 It was not always reliable.
-~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
-Click image to view project report PDF.
-Created an automation script to harden new PC into Kiosk.
-Configured standard user and admin user accounts.
-Configured Group Policy setting using CIS-CAT.
-Configured Local Security Policy for machine usage notice.
-Configured Registry to automatically log on standard user.
-Configured Task Scheduler to re-apply auto logon.
-Installed required programs and windows updates.
-Tested tool on virtual machine before deploying.

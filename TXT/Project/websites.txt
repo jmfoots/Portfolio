@@ -1,26 +1,22 @@
 ~Projects|Websites
-~Faith Academy Baseball Website|Fall 2017 - Spring 2018|https://jmfoots.github.io/Portfolio/PROJECTS/FAB/index.html|IMG/fab.png|
-Click image to view website.
-Developed custom website.
-Optimized website for fast loading speed.
-Optimized website for mobile and desktop.
-Scripted most content to load dynamically from text files.
 ~Blue Team Cybersecurity Website|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/BTC/index.html|IMG/btc.png|
 Click image to view website.
-Worked with team to create a multimedia project.
-Created a “CyberSecurity Awareness” message.
-Developed survey for student audience.
-Analyzed audience using survey feedback.
-Created website to convey message to audience.
-Presented project results in class.
+Conducted a survey to gage student awareness.
+Developed custom-built website to raise Cybersecurity awareness.
 ~Simple Note Prototype|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/NAP/index.html|IMG/nap.png|
 Click image to view website.
 Proposed an application for review.
 Established usability and user experience goals for the application.
 Evaluated possible considerations and limitations of application.
-Drafted survey questions for user analysis.
+Conducted survey for user analysis.
 Created user personas to visualize user needs.
-Drew a low-fidelity prototype of the application’s main tasks.
+Drafted a low-fidelity prototype of the application’s main tasks.
 Developed a high-fidelity prototype.
 Documented design decisions.
 Created a marketing review for application.
+~Faith Academy Baseball Website|Fall 2017 - Spring 2018|https://jmfoots.github.io/Portfolio/PROJECTS/FAB/index.html|IMG/fab.png|
+Click image to view website.
+Developed custom-built website.
+Optimized website for fast loading speed.
+Optimized website for mobile and desktop.
+Scripted most content to load dynamically from text files.

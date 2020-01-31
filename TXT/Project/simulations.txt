@@ -1,7 +1,5 @@
 ~Projects|Simulations
 ~Three Bit Computer Simulation|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/TBC/3BitComputer.pdf|IMG/tbc.png|
 Click image to view circuit diagram PDF.
-Used Logisim Evolution to create a three-bit computer.
-Performed seven different bit-wise operations.
-Used three read/write registers and three read-only registers.
-Accepted input to two registers and places output in selected register.
+Created a three-bit computer simulation.
+Designed seven different bit-wise operations to be performed on three read/write registers and three read-only registers.
