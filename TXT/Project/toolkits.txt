@@ -13,7 +13,7 @@ Created an image of a drive.
 Created test data and directory trees.
 Developed tool to validate files on a solid-state drive.
 Analyzed files to prove changes occurred.
-~Spirion PII Report Tool|Spring 2018 - Present|PROJECTS/SUR/SpirionReport.py|IMG/spr.png|
+~Spirion PII Report Tool|Spring 2018 - Present|PROJECTS/SPR/SpirionReport.py|IMG/spr.png|
 Click image to download Spirion report script.
 Distributing weekly remediation notices.
 Developed tool to split large log file into individual reports.
