@@ -1,5 +1,6 @@
 ~Projects|Toolkits
-~Suricata Server Kit|Winter 2020 - Present|||
+~Suricata Server Kit|Winter 2020 - Present|https://jmfoots.github.io/Portfolio/PROJECTS/SUR/suricata-setup.sh|IMG/sur.png|
+Click image to download suricata/oinkmaster install script.
 Created script install service and manage backups.
 Developing tool to apply configurations and run service.
 ~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
@@ -12,7 +13,8 @@ Created an image of a drive.
 Created test data and directory trees.
 Developed tool to validate files on a solid-state drive.
 Analyzed files to prove changes occurred.
-~Spirion PII Report Tool|Spring 2018 - Present|||
+~Spirion PII Report Tool|Spring 2018 - Present|https://jmfoots.github.io/Portfolio/PROJECTS/SUR/SpirionReport.py|IMG/spr.png|
+Click image to download Spirion report script.
 Distributing weekly remediation notices.
 Developed tool to split large log file into individual reports.
 Generated summary report to expedite remediation process.
