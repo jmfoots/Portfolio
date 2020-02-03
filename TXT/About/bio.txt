@@ -1,6 +1,6 @@
 ~About|My Journey
 ~In middle school, I developed websites to enter into the AISA Technology Fair.
-In high school, I completed the technical endorsement track that included Cisco Networking, CompTIA A+, and Python Programming courses.
+In high school, I pursued the technical endorsement track courses: Cisco Networking, CompTIA A+, and Python Programming.
 During the summers, I worked at my high school setting up computers, cleaning, and fixing them for the teachers.
 After graduating high school, I learned LUA while developing addons and macros for World of Warcraft.
 In college, I gained experience in the areas of Application Development, Database Management, Network Administration, Digital Forensics, Project Management, Needs Assessment, Information Security, and Multi-media Design.
