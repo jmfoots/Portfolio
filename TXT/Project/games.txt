@@ -1,5 +1,5 @@
 ~Projects|Games
-~Unity Loot Run|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/ULR/LootRunFinalReport.pdf|IMG/ulr.png|
+~Unity Loot Run|Fall 2019|PROJECTS/ULR/LootRunFinalReport.pdf|IMG/ulr.png|
 Click image to view Project Report.
 Developed a game which player runs through dungeon avoiding traps to reach chest.
 Generated randomized traps and chest locations.

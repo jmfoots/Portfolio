@@ -1,5 +1,5 @@
 ~Projects|Simulations
-~Three Bit Computer Simulation|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/TBC/3BitComputer.pdf|IMG/tbc.png|
+~Three Bit Computer Simulation|Fall 2019|PROJECTS/TBC/3BitComputer.pdf|IMG/tbc.png|
 Click image to view circuit diagram PDF.
 Created a three-bit computer simulation.
 Designed seven different bit-wise operations to be performed on three read/write registers and three read-only registers.

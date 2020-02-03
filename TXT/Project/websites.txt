@@ -1,9 +1,9 @@
 ~Projects|Websites
-~Blue Team Cybersecurity Website|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/BTC/index.html|IMG/btc.png|
+~Blue Team Cybersecurity Website|Spring 2019|PROJECTS/BTC/index.html|IMG/btc.png|
 Click image to view website.
 Conducted a survey to gage student awareness.
 Developed custom-built website to raise Cybersecurity awareness.
-~Simple Note Prototype|Spring 2019|https://jmfoots.github.io/Portfolio/PROJECTS/NAP/index.html|IMG/nap.png|
+~Simple Note Prototype|Spring 2019|PROJECTS/NAP/index.html|IMG/nap.png|
 Click image to view website.
 Proposed an application for review.
 Established usability and user experience goals for the application.
@@ -14,7 +14,7 @@ Drafted a low-fidelity prototype of the application’s main tasks.
 Developed a high-fidelity prototype.
 Documented design decisions.
 Created a marketing review for application.
-~Faith Academy Baseball Website|Fall 2017 - Spring 2018|https://jmfoots.github.io/Portfolio/PROJECTS/FAB/index.html|IMG/fab.png|
+~Faith Academy Baseball Website|Fall 2017 - Spring 2018|PROJECTS/FAB/index.html|IMG/fab.png|
 Click image to view website.
 Created custom-built website.
 Managed web hosting for client.
