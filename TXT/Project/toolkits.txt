@@ -1,24 +1,24 @@
 ~Projects|Toolkits
-~Suricata Server Kit|Winter 2020 - Present|https://jmfoots.github.io/Portfolio/PROJECTS/SUR/suricata-setup.sh|IMG/sur.png|
+~Suricata Server Kit|Winter 2020 - Present|PROJECTS/SUR/suricata-setup.sh|IMG/sur.png|
 Click image to download suricata/oinkmaster install script.
 Created script install service and manage backups.
 Developing tool to apply configurations and run service.
-~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
+~KioskKit Powershell Tool|Fall 2019|PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
 Click image to view project report PDF.
 Performed needs assessment.
 Developed PowerShell tool to harden kiosks.
-~Solid State Drive Validation Bash Tool|Winter 2018 - Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/SSD/ProjectReport.pdf|IMG/ssd.png|
+~Solid State Drive Validation Bash Tool|Winter 2018 - Fall 2019|PROJECTS/SSD/ProjectReport.pdf|IMG/ssd.png|
 Click image to view project report PDF.
 Created an image of a drive.
 Created test data and directory trees.
 Developed tool to validate files on a solid-state drive.
 Analyzed files to prove changes occurred.
-~Spirion PII Report Tool|Spring 2018 - Present|https://jmfoots.github.io/Portfolio/PROJECTS/SUR/SpirionReport.py|IMG/spr.png|
+~Spirion PII Report Tool|Spring 2018 - Present|PROJECTS/SUR/SpirionReport.py|IMG/spr.png|
 Click image to download Spirion report script.
 Distributing weekly remediation notices.
 Developed tool to split large log file into individual reports.
 Generated summary report to expedite remediation process.
-~Data Carver Bash Tool|Fall 2018|https://jmfoots.github.io/Portfolio/PROJECTS/DCS/carver.sh|IMG/dcs.png|
+~Data Carver Bash Tool|Fall 2018|PROJECTS/DCS/carver.sh|IMG/dcs.png|
 Click image to download the tool.
 Created scripts to carve deleted files out using file signatures.
 Developed understanding of NTFS and EXT file systems.
