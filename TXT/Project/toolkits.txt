@@ -1,7 +1,7 @@
 ~Projects|Toolkits
 ~Suricata Server Kit|Winter 2020 - Present|||
 Created script install service and manage backups.
-Developed tool to apply configurations and run service.
+Developing tool to apply configurations and run service.
 ~KioskKit Powershell Tool|Fall 2019|https://jmfoots.github.io/Portfolio/PROJECTS/KKP/KioskKitProject.pdf|IMG/kkp.png|
 Click image to view project report PDF.
 Performed needs assessment.
