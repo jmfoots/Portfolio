@@ -1,5 +1,5 @@
 ~Work|Web Development
-~Faith Academy Baseball Web Developer|Fall 2017 – Spring 2018|PROJECTS/FAB/index.html|
+~Faith Academy Baseball Web Developer|Fall 2017 – Spring 2018|Faith Academy, Mobile, AL|
 Created custom-built website.
 Managed web hosting for client.
 Published seasonal information.
