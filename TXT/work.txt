@@ -1,2 +1,3 @@
 internships,TXT/Work/interns.txt,Internships
+fulltime,TXT/Work/fulltime.txt,Full-Time Positions
 developer,TXT/Work/webdev.txt,Web Developer

@@ -1,11 +1,11 @@
 ~Work|Internships
-~Information Security Office Internship|Summer 2018 - Present|University of South Alabama, Mobile, AL|
+~Information Security Office Internship|Summer 2018 - Spring 2020|University of South Alabama, Mobile, AL|
 Working with SANS, Spirion, Splunk and Suricata.
 Administering SANS training.
 Maintaining an ADA-compliant department website.
 Drafted policies, procedures, and documentation.
 Worked with SolarWinds and Nessus.
-~Academic Computing Help Desk Student Assistant|Summer 2018 - Present|University of South Alabama, Mobile, AL|
+~Academic Computing Help Desk Student Assistant|Summer 2018 - Spring 2020|University of South Alabama, Mobile, AL|
 Performing security software installs.
 Programmed tools to automate windows tasks.
 Resolved help desk tickets.
