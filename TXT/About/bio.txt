@@ -4,5 +4,6 @@ In high school, I pursued the technical endorsement track courses: Cisco Network
 During the summers, I worked at my high school setting up computers, cleaning, and fixing them for the teachers.
 After graduating high school, I learned LUA while developing addons and macros for World of Warcraft.
 In college, I gained experience in the areas of Application Development, Database Management, Network Administration, Digital Forensics, Project Management, Needs Assessment, Information Security, and Multi-media Design.
-My goal is to get a local job in the information technology or information security fields once I graduate.
-Specifically, I am interested in automation programming to simplify user involvement and reduce the required skill threshold.
+After graduation, I found a job at USA Health as an Information Security Analyst.
+What drew me to this position was the opportunity to research new solutions to security vulnerabilities.
+Specifically, I am interested in automation programming aspect of this so that the team can simplify user involvement and reduce the required skill threshold needed to keep information secure.
