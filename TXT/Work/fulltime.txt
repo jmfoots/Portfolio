@@ -2,4 +2,5 @@
 ~Information Security Analyst |May 2020 - Present|University of South Alabama Health, Mobile, AL|
 Ensuring compliance with USA Health's PCI standards.
 Developing Standard Operating Procedures for Information Security tasks.
+Developing training modules for Cybersecurity Awareness.
 Developed PCI Compliance Policies, Procedures, and Checklists.
